@@ -2,7 +2,7 @@ import { getAgreementFromResults } from './../../spaces/poker-table/utils/getAgr
 import {
   getClosestCardToAverage,
   getCardWithMoreVotes,
-} from './../../spaces/poker-table/actions/playerActions';
+} from '../../spaces/poker-table/actions/playerActions';
 import Papa from 'papaparse';
 import {
   getMonthWithDayAndYearAndTimeInLocalTime,

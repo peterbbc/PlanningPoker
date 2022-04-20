@@ -1,4 +1,4 @@
-import { updatePokerTable } from './../data/poker';
+import { updatePokerTable } from '../data/poker';
 import {
   Player,
   PokerTable,

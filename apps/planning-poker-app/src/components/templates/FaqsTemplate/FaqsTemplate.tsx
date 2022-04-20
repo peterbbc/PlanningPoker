@@ -9,7 +9,7 @@ import {
 } from '@we-agile-you/react-base';
 import { Navigation } from '../../organisms/Navigation/Navigation';
 import { Link } from '../../atoms/Link/Link';
-import styles from './Faqs.module.scss';
+import styles from './FaqsTemplate.module.scss';
 
 const FAQS = [
   {
@@ -250,7 +250,7 @@ const FAQS = [
   },
 ];
 
-export const Faqs = () => {
+export const FaqsTemplate = () => {
   return (
     <>
       <Navigation title="FAQs" isShowShadowOnScrolled />

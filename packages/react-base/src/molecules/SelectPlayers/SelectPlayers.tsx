@@ -9,7 +9,7 @@ import { ProfileImage } from '../../atoms/ProfileImage/ProfileImage';
 import { Span } from '../../atoms/text/Span/Span';
 
 import { Player } from '@we-agile-you/types-planning-poker';
-import { DEFAULT_DISPLAY_NAME } from '@we-agile-you/planning-poker-app/src/spaces/poker-table/constants';
+// import { DEFAULT_DISPLAY_NAME } from '@we-agile-you/planning-poker-app';
 
 export type SelectPlayersValue = 'all' | string[];
 

@@ -1,10 +1,11 @@
 import { Position, ResolvedPosition } from "./types";
+
 export const POPOVER_MARGIN_FROM_ANCHOR = 8;
 
 type Priorities = { [priority in Position]: ResolvedPosition[] };
 
 export const PRIORITIES: Priorities = {
-  bottom: [
+  "bottom": [
     "bottom",
     "bottom-left",
     "bottom-right",
@@ -49,7 +50,7 @@ export const PRIORITIES: Priorities = {
     "right-bottom",
     "right-top",
   ],
-  left: [
+  "left": [
     "left",
     "left-bottom",
     "left-top",
@@ -94,7 +95,7 @@ export const PRIORITIES: Priorities = {
     "top-left",
     "top-right",
   ],
-  top: [
+  "top": [
     "top",
     "top-left",
     "top-right",
@@ -139,7 +140,7 @@ export const PRIORITIES: Priorities = {
     "right-bottom",
     "right-top",
   ],
-  right: [
+  "right": [
     "right",
     "right-bottom",
     "right-top",

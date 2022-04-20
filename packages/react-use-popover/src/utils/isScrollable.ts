@@ -1,4 +1,4 @@
-export const isScrollable = function (element: HTMLElement | Document) {
+export const isScrollable = (element: HTMLElement | Document): boolean => {
   if (!element || element === window.document) return false;
   // Compare the height to see if the element has scrollable content
   element = element as HTMLElement;

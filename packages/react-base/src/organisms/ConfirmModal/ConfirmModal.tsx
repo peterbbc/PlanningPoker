@@ -1,11 +1,9 @@
-import {
-  Header4,
-  Modal,
-  Paragraph,
-  SubmitRow,
-  VerticalSpacing,
-} from '@we-agile-you/react-base';
 import React, { ReactNode } from 'react';
+import { Header4 } from "../../atoms/text/Header4/Header4";
+import { Modal } from "../Modal/Modal";
+import { Paragraph } from "../../atoms/text/Paragraph/Paragraph";
+import { SubmitRow } from "../../molecules/SubmitRow/SubmitRow";
+import { VerticalSpacing } from "../../atoms/spacings/VerticalSpacing/VerticalSpacing";
 
 interface ConfirmModalProps {
   isDanger?: boolean;

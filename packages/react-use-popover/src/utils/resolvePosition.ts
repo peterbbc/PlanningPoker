@@ -5,7 +5,7 @@ const itFitsAtPosition = (
   position: ResolvedPosition,
   anchorElement: HTMLElement,
   dropdownElement: HTMLElement
-): Boolean => {
+): boolean => {
   const anchorClientRect = anchorElement.getBoundingClientRect();
   const dropdownClientRect = dropdownElement.getBoundingClientRect();
 
@@ -83,11 +83,7 @@ const itFitsAtPosition = (
       break;
   }
 
-  if (freeXSpace < dropdownClientRect.width) {
-    return false;
-  }
-
-  return true;
+  return freeXSpace >= dropdownClientRect.width;
 };
 
 export const resolvePosition = (

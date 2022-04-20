@@ -10,7 +10,7 @@ import { VerticalSpacing } from '../../atoms/spacings/VerticalSpacing/VerticalSp
 import { SubmitRow } from '../SubmitRow/SubmitRow';
 
 import getCroppedImg from './cropImage';
-import { updateCurrentUserPicture } from '../../../../apps/planning-poker-app/src/spaces/auth/data/user';
+import { updateCurrentUserPicture } from '../../../../../apps/planning-poker-app/src/spaces/auth/data/user';
 
 interface ImageCropperProps {
   image: File;

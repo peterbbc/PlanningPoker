@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, FormEvent } from 'react';
-import { useNotification } from '../../../../apps/planning-poker-app/src/spaces/notifications/useNotification';
+import { useNotification } from '../../../../../apps/planning-poker-app/src/spaces/notifications/useNotification';
 import { ButtonLink } from '../../atoms/ButtonLink/ButtonLink';
 import { VerticalSpacing } from '../../atoms/spacings/VerticalSpacing/VerticalSpacing';
 import { Span } from '../../atoms/text/Span/Span';

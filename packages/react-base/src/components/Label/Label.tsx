@@ -4,6 +4,7 @@ import cx from 'classnames';
 import styles from './Label.module.scss';
 
 interface FormLabelProps {
+  children?: React.ReactNode
   htmlFor?: string;
   isPlaceholder?: boolean;
   hasLeftAddon?: boolean;
