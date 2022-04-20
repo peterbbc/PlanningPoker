@@ -1,0 +1,7 @@
+export const USER_SIGNED_IN = 'USER_SIGNED_IN';
+export const USER_SIGNED_OUT = 'USER_SIGNED_OUT';
+export const USER_FETCHED = 'USER_FETCHED';
+export const USER_UPDATED = 'USER_UPDATED';
+export const USER_UPDATED_EMAIL = 'USER_UPDATED_EMAIL';
+
+export const DISPLAY_NAME_MAX_LENGTH = 20;

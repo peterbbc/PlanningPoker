@@ -1,0 +1,37 @@
+{
+  "name": "planning-poker-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "planning-poker-site",
+  "author": "Peter Bloxidge",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "gatsby": "^4.12.1",
+    "gatsby-plugin-react-helmet": "^5.12.1",
+    "gatsby-plugin-sass": "^5.12.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.44",
+    "@types/react-dom": "^17.0.15",
+    "@types/react-helmet": "^6.1.5",
+    "typescript": "^4.6.3"
+  },
+  "workspaces": [
+    "../apps/planning-poker-app"
+  ]
+}

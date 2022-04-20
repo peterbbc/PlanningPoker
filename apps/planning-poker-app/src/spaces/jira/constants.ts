@@ -1,0 +1,2 @@
+export const JIRA_UPDATED = 'JIRA_UPDATED';
+export const JIRA_START_FETCH = 'JIRA_START_FETCH';
