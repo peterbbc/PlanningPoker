@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, FormEvent } from 'react';
-import { useNotification } from '../../../../../apps/planning-poker-app/src/spaces/notifications/useNotification';
+// import { useNotification } from '../../../../../apps/planning-poker-app/src/spaces/notifications/useNotification';
 import { ButtonLink } from '../../atoms/ButtonLink/ButtonLink';
 import { VerticalSpacing } from '../../atoms/spacings/VerticalSpacing/VerticalSpacing';
 import { Span } from '../../atoms/text/Span/Span';
@@ -36,7 +36,7 @@ export const FormInputInlineEdit = ({
     null,
   );
 
-  const { showNotification } = useNotification();
+  // const { showNotification } = useNotification();
 
   const firstInputRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
@@ -63,10 +63,10 @@ export const FormInputInlineEdit = ({
         })
         .catch((error) => {
           if (error.message) {
-            showNotification({
-              title: error.message,
-              style: 'error',
-            });
+            // showNotification({
+            //   title: error.message,
+            //   style: 'error',
+            // });
           }
         })
         .finally(() => setIsLoading(false));

@@ -10,7 +10,7 @@ import { VerticalSpacing } from '../../atoms/spacings/VerticalSpacing/VerticalSp
 import { SubmitRow } from '../SubmitRow/SubmitRow';
 
 import getCroppedImg from './cropImage';
-import { updateCurrentUserPicture } from '../../../../../apps/planning-poker-app/src/spaces/auth/data/user';
+// import { updateCurrentUserPicture } from '../../../../../apps/planning-poker-app/src/spaces/auth/data/user';
 
 interface ImageCropperProps {
   image: File;
@@ -48,7 +48,7 @@ export const ImageCropper = ({
         return;
       }
 
-      await updateCurrentUserPicture(croppedImage, onSaved);
+      // await updateCurrentUserPicture(croppedImage, onSaved);
     } catch (e) {
       setIsLoading(false);
       console.error(e);

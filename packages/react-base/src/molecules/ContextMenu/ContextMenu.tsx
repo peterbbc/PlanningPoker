@@ -1,4 +1,4 @@
-import { IconValue } from '@we-agile-you/react-base';
+// import { IconValue } from '@we-agile-you/react-base';
 import React, { ReactNode } from 'react';
 import cx from 'classnames';
 import { Icon } from '../../atoms/Icon/Icon';
@@ -8,7 +8,7 @@ import styles from './ContextMenu.module.scss';
 
 export type ContextMenuElement = {
   label: ReactNode;
-  icon?: IconValue;
+  icon?: /* IconValue */ typeof Icon;
   onClick: () => void;
 };
 interface ContextMenuProps {

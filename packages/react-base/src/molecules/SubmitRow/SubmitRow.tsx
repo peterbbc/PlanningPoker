@@ -1,8 +1,7 @@
-import { Button } from '@we-agile-you/react-base';
 import cx from 'classnames';
 import React, { ReactNode } from 'react';
 import { HoritzontalSpacing } from '../../atoms/spacings/HoritzontalSpacing/HoritzontalSpacing';
-
+import { Button } from "../../atoms/Button/Button";
 import styles from './SubmitRow.module.scss';
 
 interface SubmitRowProps {

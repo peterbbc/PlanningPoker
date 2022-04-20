@@ -119,10 +119,10 @@ export const PointsPicker = ({
               {deck.map((card) => (
                 <li key={card} className={styles.item}>
                   <ButtonIcon
-                    icon={card}
-                    isActive={`${value}`.trim() === `${card}`.trim()}
-                    onClick={(event) => handleOptionClick(event, card)}
-                  ></ButtonIcon>
+                      icon={card}
+                      isActive={`${value}`.trim() === `${card}`.trim()}
+                      onClick={(event) => handleOptionClick(event, card)}
+                  />
                 </li>
               ))}
             </ul>
