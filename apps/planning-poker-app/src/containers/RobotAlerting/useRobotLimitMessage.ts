@@ -1,5 +1,5 @@
-import { FREEMIUM_ISSUES_VOTED_LIMIT } from '@we-agile-you/constants-planning-poker';
 import { useMemo } from 'react';
+import { FREEMIUM_ISSUES_VOTED_LIMIT } from '../../constants/premium';
 import useCurrentUser from '../../spaces/auth/hooks/useCurrentUser';
 import { useCurrentTable } from './../../spaces/poker-table/hooks/useCurrentTable';
 export const useRobotLimitMessage = () => {

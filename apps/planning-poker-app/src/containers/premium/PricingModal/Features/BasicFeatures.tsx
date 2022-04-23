@@ -1,7 +1,7 @@
 import {
   FREEMIUM_ISSUES_VOTED_LIMIT,
   FREEMIUM_VOTING_LIMIT,
-} from '@we-agile-you/constants-planning-poker';
+} from '../../../../constants/premium';
 import { Paragraph, Span } from '@we-agile-you/react-base';
 import React from 'react';
 
