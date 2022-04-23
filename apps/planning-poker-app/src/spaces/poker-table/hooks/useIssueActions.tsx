@@ -1,7 +1,7 @@
-import { FREEMIUM_ISSUES_VOTED_LIMIT } from '@we-agile-you/constants-planning-poker';
 import { Issue, NotificationType } from '@we-agile-you/types-planning-poker';
 import { useSelector } from 'react-redux';
 
+import { FREEMIUM_ISSUES_VOTED_LIMIT } from '../../../constants/premium';
 import { AppState } from '../../../state/createStore';
 import { useAppContext } from '../../app/hooks/useAppContext';
 import useCurrentUser from '../../auth/hooks/useCurrentUser';

@@ -1,7 +1,6 @@
 import { NotificationType } from '@we-agile-you/types-planning-poker';
 import cx from 'classnames';
-import React, { useRef } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ButtonIcon } from '../../atoms/ButtonIcon/ButtonIcon';
 import { Icon } from '../../atoms/Icon/Icon';
 

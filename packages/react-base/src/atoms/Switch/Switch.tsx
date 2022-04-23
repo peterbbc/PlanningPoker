@@ -20,7 +20,7 @@ interface Props extends SwitchProps {
   theme?: 'primary' | 'base';
 }
 
-const IOSSwitch = withStyles((theme: Theme) =>
+export const Switch = withStyles((theme: Theme) =>
   createStyles({
     root: {
       width: 42,
@@ -102,5 +102,3 @@ const IOSSwitch = withStyles((theme: Theme) =>
     />
   );
 });
-
-export const Switch = IOSSwitch;

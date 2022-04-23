@@ -69,7 +69,6 @@ export type IconValue =
   | 'eye2'
   | 'add'
   | 'trash'
-  | 'ellipsis-h'
   | 'comment'
   | 'open'
   | 'invite'
@@ -96,149 +95,157 @@ export type IconValue =
   | 'user-plus'
   | 'user';
 
+// export enum IconValue {
+//   ellipsisH = 'ellipsis-h',
+//   ellipsisV = 'ellipsis-v',
+//   manageFacilitators = 'manage-facilitators',
+//   save = 'save',
+//   list = 'list',
+//   back = 'back',
+//   check = 'check',
+//   timer = 'timer',
+//   link = 'link',
+//   cog = 'cog',
+//   export = 'export',
+//   play = 'play',
+//   restart = 'restart',
+//   burger = 'burger',
+//   upgrade = 'upgrade',
+//   close = 'close',
+//   cards = 'cards',
+//   eye = 'eye',
+//   eye2 = 'eye2',
+//   add = 'add',
+//   trash = 'trash',
+//   comment = 'comment',
+//   open = 'open',
+//   invite = 'invite',
+//   info = 'info',
+//   camera = 'camera',
+//   top = 'top',
+//   detach = 'detach',
+//   issues = 'issues',
+//   login = 'login',
+//   alert = 'alert',
+//   likeOutline = 'like-outline',
+//   likeSolid = 'like-solid',
+//   import = 'import',
+//   shield = 'shield',
+//   plus = 'plus',
+//   userNew = 'user-new',
+//   union = 'union',
+//   reset = 'reset',
+//   logo = 'logo',
+//   hilfe = 'hilfe',
+//   downgrade = 'downgrade',
+//   chevronDown = 'chevron-down',
+//   pencil = 'pencil',
+//   userPlus = 'user-plus',
+//   user = 'user'
+// }
+
 interface IconProps {
   icon: IconValue;
 }
 
 export const Icon: React.FC<IconProps> = ({ icon }) => {
-  if (icon === 'user-plus') {
-    return <UserPlus />;
+  switch (icon) {
+    case 'user-plus': return <UserPlus />
+    case 'user': return <User />
+    case 'check': return <Check />
+    case 'add': return <Add />
+    case 'export': return <Export />
+    case 'detach': return <Detach />
+    case 'like-outline': return <LikeOutline />
+    case 'like-solid': return <LikeSolid />
+    case 'manage-facilitators': return <ManageFacilitators />
+    case 'link': return <Link />
+    case 'timer': return <Timer />
+    case 'upgrade': return <Upgrade />
+    case 'downgrade': return <Downgrade />
+    case 'top': return <Top />
+    case 'alert': return <Alert />
+    case 'camera': return <Camera />
+    case 'cog': return <Cog />
+    case 'cards': return <Cards />
+    case 'union': return <Union />
+    case 'restart': return <Restart />
+    case 'reset': return <Reset />
+    case 'burger': return <Burger />
+    case 'trash': return <Trash />
+    case 'save': return <Save />
+    case 'hilfe': return <Hilfe />
+    case 'back': return <Back />
+    case 'play': return <Play />
+    case 'eye': return <Eye />
+    case 'eye2': return <Eye2 />
+    case 'list': return <List />
+    case 'info': return <Info />
+    case 'open': return <Open />
+    case 'ellipsis-h': return <ElipisisHoritzontal />
+    case 'ellipsis-v': return <ElipisisVertical />
+    case 'pencil': return <Pencil />
+    case 'comment': return <Comment />
+    case 'login': return <Login />
+    case 'shield': return <Shield />
+    case 'logo': return <Logo />
+    case 'import': return <Import />
+    case 'user-new': return <UserNew />
+    case 'close': return <Close />
+    case 'invite': return <Invite />
+    case 'issues': return <Issues />
+    case 'plus': return <Plus />
+    case 'chevron-down': return <ChevronDown />
   }
-  if (icon === 'user') {
-    return <User />;
-  }
-  if (icon === 'check') {
-    return <Check />;
-  }
-  if (icon === 'add') {
-    return <Add />;
-  }
-  if (icon === 'export') {
-    return <Export />;
-  }
-  if (icon === 'detach') {
-    return <Detach />;
-  }
-  if (icon === 'like-outline') {
-    return <LikeOutline />;
-  }
-  if (icon === 'like-solid') {
-    return <LikeSolid />;
-  }
-  if (icon === 'manage-facilitators') {
-    return <ManageFacilitators />;
-  }
-  if (icon === 'link') {
-    return <Link />;
-  }
-  if (icon === 'timer') {
-    return <Timer />;
-  }
-  if (icon === 'upgrade') {
-    return <Upgrade />;
-  }
-  if (icon === 'downgrade') {
-    return <Downgrade />;
-  }
-  if (icon === 'top') {
-    return <Top />;
-  }
-  if (icon === 'alert') {
-    return <Alert />;
-  }
-  if (icon === 'camera') {
-    return <Camera />;
-  }
-  if (icon === 'cog') {
-    return <Cog />;
-  }
-  if (icon === 'cards') {
-    return <Cards />;
-  }
-  if (icon === 'union') {
-    return <Union />;
-  }
-  if (icon === 'restart') {
-    return <Restart />;
-  }
-  if (icon === 'reset') {
-    return <Reset />;
-  }
-  if (icon === 'burger') {
-    return <Burger />;
-  }
-  if (icon === 'trash') {
-    return <Trash />;
-  }
-  if (icon === 'save') {
-    return <Save />;
-  }
-  if (icon === 'hilfe') {
-    return <Hilfe />;
-  }
-  if (icon === 'back') {
-    return <Back />;
-  }
-  if (icon === 'play') {
-    return <Play />;
-  }
-  if (icon === 'eye') {
-    return <Eye />;
-  }
-  if (icon === 'eye2') {
-    return <Eye2 />;
-  }
-  if (icon === 'list') {
-    return <List />;
-  }
-  if (icon === 'info') {
-    return <Info />;
-  }
-  if (icon === 'open') {
-    return <Open />;
-  }
-  if (icon === 'ellipsis-h') {
-    return <ElipisisHoritzontal />;
-  }
-  if (icon === 'ellipsis-v') {
-    return <ElipisisVertical />;
-  }
-  if (icon === 'pencil') {
-    return <Pencil />;
-  }
-  if (icon === 'comment') {
-    return <Comment />;
-  }
-  if (icon === 'login') {
-    return <Login />;
-  }
-  if (icon === 'shield') {
-    return <Shield />;
-  }
-  if (icon === 'logo') {
-    return <Logo />;
-  }
-  if (icon === 'import') {
-    return <Import />;
-  }
-  if (icon === 'user-new') {
-    return <UserNew />;
-  }
-  if (icon === 'close') {
-    return <Close />;
-  }
-  if (icon === 'invite') {
-    return <Invite />;
-  }
-  if (icon === 'issues') {
-    return <Issues />;
-  }
-  if (icon === 'plus') {
-    return <Plus />;
-  }
-  if (icon === 'chevron-down') {
-    return <ChevronDown />;
-  }
-
-  return null;
 };
+
+// export const Icon: React.FC<IconProps> = ({ icon }) => {
+//   switch (icon) {
+//      case IconValue.ellipsisH: return <ElipisisHoritzontal/>
+//      case IconValue.ellipsisV: return <ElipisisVertical/>
+//      case IconValue.manageFacilitators: return <ManageFacilitators/>
+//      case IconValue.save: return <Save/>
+//      case IconValue.list: return <List/>
+//      case IconValue.back: return <Back/>
+//      case IconValue.check: return <Check/>
+//      case IconValue.timer: return <Timer/>
+//      case IconValue.link: return <Link/>
+//      case IconValue.cog: return <Cog/>
+//      case IconValue.export: return <Export/>
+//      case IconValue.play: return <Play/>
+//      case IconValue.restart: return <Restart/>
+//      case IconValue.burger: return <Burger/>
+//      case IconValue.upgrade: return <Upgrade/>
+//      case IconValue.close: return <Close/>
+//      case IconValue.cards: return <Cards/>
+//      case IconValue.eye: return <Eye/>
+//      case IconValue.eye2: return <Eye2/>
+//      case IconValue.add: return <Add/>
+//      case IconValue.trash: return <Trash/>
+//      case IconValue.comment: return <Comment/>
+//      case IconValue.open: return <Open/>
+//      case IconValue.invite: return <Invite/>
+//      case IconValue.info: return <Info/>
+//      case IconValue.camera: return <Camera/>
+//      case IconValue.top: return <Top/>
+//      case IconValue.detach: return <Detach/>
+//      case IconValue.issues: return <Issues/>
+//      case IconValue.login: return <Login/>
+//      case IconValue.alert: return <Alert/>
+//      case IconValue.likeOutline: return <LikeOutline/>
+//      case IconValue.likeSolid: return <LikeSolid/>
+//      case IconValue.import: return <Import/>
+//      case IconValue.shield: return <Shield/>
+//      case IconValue.plus: return <Plus/>
+//      case IconValue.userNew: return <UserNew/>
+//      case IconValue.union: return <Union/>
+//      case IconValue.reset: return <Reset/>
+//      case IconValue.logo: return <Logo/>
+//      case IconValue.hilfe: return <Hilfe/>
+//      case IconValue.downgrade: return <Downgrade/>
+//      case IconValue.chevronDown: return <ChevronDown/>
+//      case IconValue.pencil: return <Pencil/>
+//      case IconValue.userPlus: return <UserPlus/>
+//      case IconValue.user: return <User/>
+//   }
+// };
