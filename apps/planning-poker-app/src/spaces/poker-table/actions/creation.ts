@@ -1,4 +1,4 @@
-import { createPokerGame } from './../data/poker';
+import { createPokerGame } from '../data/poker';
 import { PokerTable, User } from '@we-agile-you/types-planning-poker';
 import { Dispatch } from 'redux';
 import {

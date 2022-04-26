@@ -1,5 +1,5 @@
 import { useLocation } from '@we-agile-you/react-base';
-import { useNotification } from './../../notifications/useNotification';
+import { useNotification } from '../../notifications/useNotification';
 
 import { navigate } from 'gatsby';
 import {

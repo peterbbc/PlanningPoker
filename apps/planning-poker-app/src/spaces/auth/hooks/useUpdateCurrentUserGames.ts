@@ -1,4 +1,4 @@
-import { updateCurrentUserGameHistory } from './../data/user';
+import { updateCurrentUserGameHistory } from '../data/user';
 import { useEffect, useMemo, useState } from 'react';
 
 import { useCurrentTable } from '../../poker-table/hooks/useCurrentTable';

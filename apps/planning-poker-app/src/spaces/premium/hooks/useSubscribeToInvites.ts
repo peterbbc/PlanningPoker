@@ -1,6 +1,6 @@
 import { Invite } from '@we-agile-you/types-planning-poker';
 import { useEffect, useState } from 'react';
-import { subscribeToUseInvites } from './../data/subscribeToUserInvites';
+import { subscribeToUseInvites } from '../data/subscribeToUserInvites';
 export const useSubscribeToInvites = (premiumUserId?: string | null) => {
   const [invites, setInvites] = useState<Invite[] | null>(null);
 

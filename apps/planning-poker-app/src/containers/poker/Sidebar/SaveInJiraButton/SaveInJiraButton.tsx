@@ -23,8 +23,7 @@ export const SaveInJiraButton = () => {
 
   const [isSaveInJiraModalOpen, setIsSaveInJiraModalOpen] = useState(false);
   const [isJiraSettingsModalOpen, setIsJiraSettingsModalOpen] = useState(false);
-  const [isJiraCredentialsModalOpen, setIsJiraCredentialsModalOpen] =
-    useState(false);
+  const [isJiraCredentialsModalOpen, setIsJiraCredentialsModalOpen] = useState(false);
   const [isNoIssuesModalOpen, setIsNoIssuesModalOpen] = useState(false);
 
   const [hasClickedSavedInJira, setHasClickedSavedInJira] = useState(false);

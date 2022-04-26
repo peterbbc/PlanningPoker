@@ -7,12 +7,25 @@
   "license": "ISC",
   "scripts": {
     "build": "npm run build:dev",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --progress --mode=development",
+    "build:prod": "webpack --progress --mode=production --node-env=production",
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "react": "^18.0.0"
+    "@stripe/react-stripe-js": "^1.7.2",
+    "@we-agile-you/js-base": "^0.1.0",
+    "@we-agile-you/types-planning-poker": "^0.1.0",
+    "classnames": "^2.3.1",
+    "firebase": "^9.6.11",
+    "react-redux": "^8.0.1",
+    "react-sortable-hoc": "^2.0.0",
+    "redux": "^4.2.0"
+  },
+  "peerDependencies": {
+    "@types/react": "^17.0.0",
+    "gatsby": "^4.12.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
@@ -26,6 +39,8 @@
     "webpack-cli": "^4.9.2"
   },
   "workspaces": [
-    "../../packages/react-base"
+    "../../packages/js-base",
+    "../../packages/react-base",
+    "../../packages/types-planning-poker"
   ]
 }

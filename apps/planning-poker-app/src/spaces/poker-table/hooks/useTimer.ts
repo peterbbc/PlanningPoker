@@ -1,7 +1,7 @@
 import {
   hotjarIdentify,
   HOTJAR_IDENTIFY_KEYS,
-} from './../../../vendors/hotjar/identify';
+} from '../../../vendors/hotjar/identify';
 import { usePrevious } from '@we-agile-you/react-base';
 import { useState, useEffect } from 'react';
 import { useCurrentTable } from './useCurrentTable';
