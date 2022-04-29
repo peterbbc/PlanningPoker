@@ -31,7 +31,7 @@ import useCurrentUser from '../../../spaces/auth/hooks/useCurrentUser';
 import { createPokerTable } from '../../../spaces/poker-table/actions/creation';
 import { changeSettings } from '../../../spaces/poker-table/actions/settings';
 import { DEFAULT_CARD_LIST } from '../../../spaces/poker-table/constants';
-import { AppState } from '../../../state/createStore';
+import { AppState } from "../../../spaces/rootReducer";
 
 import { SelectFacilitator } from './SelectFacilitator';
 import { SelectWhoCanEditIssues } from './SelectWhoCanEditIssues';

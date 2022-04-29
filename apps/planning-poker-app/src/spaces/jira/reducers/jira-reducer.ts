@@ -1,4 +1,4 @@
-import { AuthActionTypes } from '../../auth/types.d';
+import { AuthActionTypes } from '../../auth/types';
 import { JiraActionTypes, JiraState } from '../types';
 import { JIRA_START_FETCH, JIRA_UPDATED } from '../constants';
 import { USER_SIGNED_OUT } from '../../auth/constants';

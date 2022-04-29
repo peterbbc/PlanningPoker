@@ -1,8 +1,8 @@
 import {
   buldPresenceInPokerGame,
   updatePlayerInfo,
-} from './../../poker-table/data/pokerPresence';
-import { useCurrentTable } from './../../poker-table/hooks/useCurrentTable';
+} from '../../poker-table/data/pokerPresence';
+import { useCurrentTable } from '../../poker-table/hooks/useCurrentTable';
 import { useEffect } from 'react';
 import useCurrentUser from '../../auth/hooks/useCurrentUser';
 

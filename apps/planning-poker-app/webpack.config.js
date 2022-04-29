@@ -27,7 +27,11 @@ const config = {
                 use: ['css-loader', 'sass-loader'],
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2|png|jpg|gif|mp4|web[mp])$/i,
                 type: 'asset',
             },
 
@@ -37,7 +41,7 @@ const config = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-    },
+    }
 };
 
 module.exports = () => {

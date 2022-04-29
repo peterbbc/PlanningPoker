@@ -1,5 +1,5 @@
-import { CustomDeck } from './../../../../../../packages/types-planning-poker/auth.d';
 import {
+  CustomDeck,
   PokerTableSummary,
   User,
   UserMetadata,

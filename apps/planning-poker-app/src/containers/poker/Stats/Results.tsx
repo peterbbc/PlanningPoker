@@ -8,7 +8,7 @@ import { useCurrentTable } from '../../../spaces/poker-table/hooks/useCurrentTab
 import { getAgreementFromResults } from '../../../spaces/poker-table/utils/getAgreementFromResults';
 import { getAverageFromResults } from '../../../spaces/poker-table/utils/getAverageFromResults';
 import { getMostVoredCardsFromResults } from '../../../spaces/poker-table/utils/getMostVoredCardsFromResults';
-import { AppState } from '../../../state/createStore';
+import { AppState } from "../../../spaces/rootReducer";
 
 import styles from './Results.module.scss';
 import { StatsItem } from './StatsItem/StatsItem';

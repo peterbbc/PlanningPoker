@@ -1,6 +1,6 @@
 import { ButtonDropdown, Icon } from '@we-agile-you/react-base';
 import React, { useRef, useState, useEffect, useMemo } from 'react';
-import { ContextMenu } from '@we-agile-you/react-base/molecules/ContextMenu/ContextMenu';
+import { ContextMenu } from '@we-agile-you/react-base';
 import { ImportFromJiraModal } from '../../../ImportFromJiraModal/ImportFromJiraModal';
 import { ImportFromUrlsModal } from '../../../ImportFromUrlsModal/ImportFromUrlsModal';
 import { JiraCredentialsModal } from '../../../JiraCredentialsModal/JiraCredentialsModal';

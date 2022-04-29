@@ -13,7 +13,7 @@ import {
 import {
   ContextMenu,
   ContextMenuElement,
-} from '@we-agile-you/react-base/molecules/ContextMenu/ContextMenu';
+} from '@we-agile-you/react-base';
 import {
   Invite,
   User,

@@ -1,4 +1,4 @@
-import { getMockedPlayers } from './mocks';
+// import { getMockedPlayers } from './mocks';
 import { useCurrentTable } from './useCurrentTable';
 import { Player } from '@we-agile-you/types-planning-poker';
 
@@ -98,24 +98,24 @@ export const usePlayerDistribution = (layout: 'horizontal' | 'vertical') => {
     bottom: [],
   };
 
-  if (
-    process.env.GATSBY_ENV !== 'production' &&
-    (pokerTable.id === 'Q7Li2vL6XtTHVMw3zxQc' ||
-      pokerTable.id === 'hnMFYaLB5spgnr6vLZ5M' ||
-      pokerTable.id === 'nTZc8aMQY2LhIPvaoEeq')
-  ) {
-    const mockedPlayers: Player[] = getMockedPlayers(players[0], pokerTable.id);
-
-    playerDistribution =
-      layout === 'vertical'
-        ? mapPlayersToVerticalDistribution(mockedPlayers)
-        : mapPlayersToHorizontalDistribution(mockedPlayers);
-
-    return {
-      playerDistribution,
-      totalPlayers: mockedPlayers.length,
-    };
-  }
+  // if (
+  //   process.env.GATSBY_ENV !== 'production' &&
+  //   (pokerTable.id === 'Q7Li2vL6XtTHVMw3zxQc' ||
+  //     pokerTable.id === 'hnMFYaLB5spgnr6vLZ5M' ||
+  //     pokerTable.id === 'nTZc8aMQY2LhIPvaoEeq')
+  // ) {
+  //   const mockedPlayers: Player[] = getMockedPlayers(players[0], pokerTable.id);
+  //
+  //   playerDistribution =
+  //     layout === 'vertical'
+  //       ? mapPlayersToVerticalDistribution(mockedPlayers)
+  //       : mapPlayersToHorizontalDistribution(mockedPlayers);
+  //
+  //   return {
+  //     playerDistribution,
+  //     totalPlayers: mockedPlayers.length,
+  //   };
+  // }
 
   playerDistribution =
     layout === 'vertical'

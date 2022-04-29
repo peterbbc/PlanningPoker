@@ -1,7 +1,7 @@
 import { Player, PokerTable } from '@we-agile-you/types-planning-poker';
 import { useSelector } from 'react-redux';
 
-import { AppState } from '../../../state/createStore';
+import { AppState } from '../../rootReducer';
 import useCurrentUser from '../../auth/hooks/useCurrentUser';
 
 interface CurrentPokerTable {

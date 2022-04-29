@@ -1,5 +1,5 @@
 import { ButtonDropdown, ConfirmModal, Icon } from '@we-agile-you/react-base';
-import { ContextMenu } from '@we-agile-you/react-base/molecules/ContextMenu/ContextMenu';
+import { ContextMenu } from '@we-agile-you/react-base';
 import React, { useState } from 'react';
 import { useIssueActions } from '../../../../spaces/poker-table/hooks/useIssueActions';
 import { DownloadIssuesModal } from '../../../DownloadIssuesModal/DownloadIssuesModal';

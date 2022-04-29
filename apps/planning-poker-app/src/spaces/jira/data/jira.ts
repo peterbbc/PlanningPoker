@@ -1,5 +1,5 @@
 import { getObjectWithoutUndefinedValues } from '@we-agile-you/js-base';
-import { JiraResource, JiraProperties, Field, IssueType } from './../types.d';
+import { JiraResource, JiraProperties, Field, IssueType } from '../types';
 import firebaseDefault from 'firebase/compat/app';
 import { CONFIG } from '../../../vendors/jira/jira';
 import { JIRA_UPDATED } from '../constants';

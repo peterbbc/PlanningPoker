@@ -5,7 +5,7 @@ import {
   DropdownItem,
   Icon,
 } from '@we-agile-you/react-base';
-import { PointsPicker } from '@we-agile-you/react-base/molecules/PointsPicker/PointsPicker';
+import { PointsPicker } from '@we-agile-you/react-base';
 import { Issue } from '@we-agile-you/types-planning-poker';
 import cx from 'classnames';
 import React, { MouseEvent, useRef, useState } from 'react';

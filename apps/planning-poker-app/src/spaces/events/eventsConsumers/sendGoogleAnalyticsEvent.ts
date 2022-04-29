@@ -13,4 +13,10 @@ export const sendGoogleAnalyticsEvent = (event: WAYEvent) => {
   } catch (e) {
     console.error(e);
   }
-};
+}
+
+declare global {
+  interface Window {
+    dataLayer: any;
+  }
+}

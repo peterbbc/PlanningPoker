@@ -1,4 +1,4 @@
-import { getAgreementFromResults } from './../../spaces/poker-table/utils/getAgreementFromResults';
+import { getAgreementFromResults } from '../../spaces/poker-table/utils/getAgreementFromResults';
 import {
   getClosestCardToAverage,
   getCardWithMoreVotes,

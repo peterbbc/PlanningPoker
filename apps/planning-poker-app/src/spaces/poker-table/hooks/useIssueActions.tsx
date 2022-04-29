@@ -1,13 +1,13 @@
 import { Issue, NotificationType } from '@we-agile-you/types-planning-poker';
 import { useSelector } from 'react-redux';
+import { arrayMove } from 'react-sortable-hoc';
 
 import { FREEMIUM_ISSUES_VOTED_LIMIT } from '../../../constants/premium';
-import { AppState } from '../../../state/createStore';
+import { AppState } from '../../rootReducer';
 import { useAppContext } from '../../app/hooks/useAppContext';
 import useCurrentUser from '../../auth/hooks/useCurrentUser';
 import { useNotification } from '../../notifications/useNotification';
 import { updatePokerTable } from '../data/poker';
-import { arrayMove } from 'react-sortable-hoc';
 
 interface IssueActions {
   setVotingIssue: (issue: Issue | number) => void;

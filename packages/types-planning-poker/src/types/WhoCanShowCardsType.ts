@@ -1,3 +1,1 @@
-export interface WhoCanEditIssuesType {
-
-}
+export type WhoCanEditIssuesType = string[]

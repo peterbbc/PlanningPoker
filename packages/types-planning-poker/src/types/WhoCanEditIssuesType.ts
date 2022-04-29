@@ -1,3 +1,1 @@
-export interface WhoCanShowCardsType {
-
-}
+export type WhoCanShowCardsType = string[]

@@ -23,3 +23,9 @@ export const hotjarIdentify = (identifyKey: string, uid?: string | null) => {
     console.log('## Hotjar tracking: ', identifyKey, ' @ uid: ', uid);
   }
 };
+
+declare global {
+  interface Window {
+    hj: any;
+  }
+}

@@ -16,7 +16,7 @@ import { TextareaInlineEdit } from '../../../components/molecules/TextareaInline
 import styles from './IssueModal.module.scss';
 import { JiraDescription } from '../../../components/molecules/JiraDescription/JiraDescription';
 import { hideCards } from '../../../spaces/poker-table/data/poker';
-import { PointsPicker } from '@we-agile-you/react-base/molecules/PointsPicker/PointsPicker';
+import { PointsPicker } from '@we-agile-you/react-base';
 import { useNotification } from '../../../spaces/notifications/useNotification';
 
 interface IssueModalProps {

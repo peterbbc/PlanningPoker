@@ -24,10 +24,12 @@ export { FlexBox } from './atoms/FlexBox/FlexBox';
 export { ProfileImage } from './atoms/ProfileImage/ProfileImage';
 
 // Molecules
+export { ContextMenu } from "./molecules/ContextMenu/ContextMenu";
 export { SubmitRow } from './molecules/SubmitRow/SubmitRow';
 export { ButtonActivable } from './molecules/ButtonActivable/ButtonActivable';
 export { ButtonDropdown } from './molecules/ButtonDropdown/ButtonDropdown';
 // export { PlayerPicker } from './molecules/PlayerPicker/PlayerPicker';
+export { PointsPicker } from "./molecules/PointsPicker/PointsPicker";
 export { DropdownItem } from './molecules/DropdownItem/DropdownItem';
 export { BurgerMenuItem } from './molecules/BurgerMenuItem/BurgerMenuItem';
 export { FormInputInlineEdit } from './molecules/FormInputInlineEdit/FormInputInlineEdit';

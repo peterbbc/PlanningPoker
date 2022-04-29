@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { fetchJiraProperties, jiraUpdateAction } from '../data/jira';
-import { AppState } from '../../../state/createStore';
+import { AppState } from '../../rootReducer';
 import useCurrentUser from '../../auth/hooks/useCurrentUser';
 import { JIRA_START_FETCH } from '../constants';
 import { JiraProperties } from '../types';

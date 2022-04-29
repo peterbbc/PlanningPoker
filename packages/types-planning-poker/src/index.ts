@@ -1,4 +1,6 @@
+export { CustomDeck } from "./types/CustomDeck";
 export { Customer } from "./types/Customer";
+export { CustomerAddress } from "./types/CustomerAddress";
 export { Invite } from "./types/Invite";
 export { InviteToUpdate } from "./types/InviteToUpdate";
 export { Invoice } from "./types/Invoice";

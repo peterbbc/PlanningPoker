@@ -1,5 +1,5 @@
 import { getMonthWithDayAndYearInLocalTime } from '@we-agile-you/js-base';
-import { getTaxFromBillingDetails } from '@we-agile-you/js-base/utils/taxes';
+import { getTaxFromBillingDetails } from '@we-agile-you/js-base';
 import {
   FlexBox,
   Paragraph,

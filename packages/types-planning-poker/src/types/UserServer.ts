@@ -1,6 +1,7 @@
 import { Timestamp } from "firebase/firestore";
 
 export interface UserServer {
+    displayName?: string
     registeredAt?: Timestamp
     subscriptionStartDate?: Timestamp
     subscriptionCurrentPeriodEnd?: Timestamp

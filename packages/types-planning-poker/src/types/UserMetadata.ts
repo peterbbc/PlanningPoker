@@ -1,3 +1,1 @@
-export interface UserMetadata {
-
-}
+export { UserMetadata } from "firebase/auth";

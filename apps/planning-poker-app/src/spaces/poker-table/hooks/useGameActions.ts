@@ -1,4 +1,4 @@
-import { updateCurrentUser } from './../../auth/data/user';
+import { updateCurrentUser } from '../../auth/data/user';
 import { deletePokerGame } from '../data/poker';
 import useCurrentUser from '../../auth/hooks/useCurrentUser';
 

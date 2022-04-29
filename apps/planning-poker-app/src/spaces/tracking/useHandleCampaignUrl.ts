@@ -1,4 +1,4 @@
-import { updateCurrentUser } from './../auth/data/user';
+import { updateCurrentUser } from '../auth/data/user';
 import { useLocation } from '@we-agile-you/react-base';
 import useCurrentUser from '../auth/hooks/useCurrentUser';
 
