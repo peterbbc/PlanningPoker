@@ -4,7 +4,7 @@ import {
   useLocation,
   ConfirmModal,
 } from '@we-agile-you/react-base';
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 import React, { useEffect, useRef, useState } from 'react';
 import useCurrentUser from '../../../../spaces/auth/hooks/useCurrentUser';
 import { useCurrentTable } from '../../../../spaces/poker-table/hooks/useCurrentTable';

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { onAuthStateChanged } from '../data/auth';
 import { subscribeToUser } from '../data/user';
-import { USER_FETCHED, USER_SIGNED_IN, USER_SIGNED_OUT } from '../constants';
+import { AuthActionType } from '../constants';
 
 export const useSubscribeToAuthAndCurrentUser = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ export const useSubscribeToAuthAndCurrentUser = () => {
         // User signed in
 
         dispatch({
-          type: USER_SIGNED_IN,
+          type: AuthActionType.USER_SIGNED_IN,
           uid: user.uid,
           email: user.email,
           isAnonymous: user.isAnonymous,
@@ -27,7 +27,7 @@ export const useSubscribeToAuthAndCurrentUser = () => {
           user.uid,
           (user, isPremium, isFacilitator, isTaxExempt) => {
             dispatch({
-              type: USER_FETCHED,
+              type: AuthActionType.USER_FETCHED,
               user,
               isPremium,
               isFacilitator,
@@ -45,7 +45,7 @@ export const useSubscribeToAuthAndCurrentUser = () => {
         }
 
         dispatch({
-          type: USER_SIGNED_OUT,
+          type: AuthActionType.USER_SIGNED_OUT,
         });
       }
     });

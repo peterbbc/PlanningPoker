@@ -3,12 +3,7 @@ import { Player, PokerTable } from '@we-agile-you/types-planning-poker';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import {
-  RECEIVE_POKER_TABLE_DATA_CHANGE,
-  RECEIVE_POKER_TABLE_PLAYERS_CHANGE,
-  REQUEST_SUBSCRIBE_TO_POKER_TABLE,
-  UNSUBSCRIBE_TO_POKER_TABLE,
-} from '../constants';
+import { PokerTableActionType } from '../constants';
 
 const useSubscribeToPokerTable = (
   tableId: string,
@@ -18,12 +13,12 @@ const useSubscribeToPokerTable = (
 
   useEffect(() => {
     dispatch({
-      type: REQUEST_SUBSCRIBE_TO_POKER_TABLE,
+      type: PokerTableActionType.REQUEST_SUBSCRIBE_TO_POKER_TABLE,
     });
 
     const handleTableChange = (table: Partial<PokerTable>) => {
       dispatch({
-        type: RECEIVE_POKER_TABLE_DATA_CHANGE,
+        type: PokerTableActionType.RECEIVE_POKER_TABLE_DATA_CHANGE,
         data: table,
       });
       setTableExists(true);
@@ -31,7 +26,7 @@ const useSubscribeToPokerTable = (
 
     const handleTablePlayersChange = (players: Player[]) => {
       dispatch({
-        type: RECEIVE_POKER_TABLE_PLAYERS_CHANGE,
+        type: PokerTableActionType.RECEIVE_POKER_TABLE_PLAYERS_CHANGE,
         players,
       });
     };
@@ -51,7 +46,7 @@ const useSubscribeToPokerTable = (
       unsubscribeToPokerTable();
 
       dispatch({
-        type: UNSUBSCRIBE_TO_POKER_TABLE,
+        type: PokerTableActionType.UNSUBSCRIBE_TO_POKER_TABLE,
       });
     };
   }, [tableId, dispatch]);

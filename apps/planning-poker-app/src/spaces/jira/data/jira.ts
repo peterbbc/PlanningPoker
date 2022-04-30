@@ -2,7 +2,7 @@ import { getObjectWithoutUndefinedValues } from '@we-agile-you/js-base';
 import { JiraResource, JiraProperties, Field, IssueType } from '../types';
 import firebaseDefault from 'firebase/compat/app';
 import { CONFIG } from '../../../vendors/jira/jira';
-import { JIRA_UPDATED } from '../constants';
+import { JiraActionType } from '../constants';
 import { JiraIssue } from '../types';
 
 export const jiraHandleAuth = (
@@ -69,13 +69,13 @@ export const jiraGetPermissions = (
       return Promise.reject({ error });
     });
 
-export const jiraSearch = (
+export const jiraSearch = async (
   jql: string | null,
   onTokenExpired: () => void,
   uid: string,
   selectedStoryPointsField?: string,
   firebase = firebaseDefault,
-) => {
+): Promise<JiraIssue[]> => {
   console.log('JIRA @@@@@::: jiraSearch');
   return firebase
     .functions()
@@ -314,13 +314,13 @@ export const fetchJiraProperties = async (
 export const jiraUpdateAction = (jiraProperties: any) => {
   if (!jiraProperties) {
     return {
-      type: JIRA_UPDATED,
+      type: JiraActionType.JIRA_UPDATED,
       properties: null,
     };
   }
 
   return {
-    type: JIRA_UPDATED,
+    type: JiraActionType.JIRA_UPDATED,
     properties: jiraProperties,
   };
 };

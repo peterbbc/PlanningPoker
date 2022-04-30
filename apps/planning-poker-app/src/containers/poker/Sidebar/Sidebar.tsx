@@ -56,7 +56,7 @@ export const Sidebar = () => {
           typeof issue.storyPoints === 'number') &&
         Number(issue.storyPoints);
 
-      if (points !== false && !Number.isNaN(points)) {
+      if (!Number.isNaN(points)) {
         return total !== null ? total + points : points;
       }
       return total;

@@ -7,7 +7,7 @@ import {
   FlexBox,
 } from '@we-agile-you/react-base';
 import { CustomDeck } from '@we-agile-you/types-planning-poker';
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 import React, { useRef, useState } from 'react';
 import { CreateDeckModal } from '../../../containers/CreateDeckModal/CreateDeckModal';
 import SettingsForm from '../../../containers/poker/SettingsForm/SettingsForm';

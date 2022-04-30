@@ -13,7 +13,7 @@ import React, { FormEvent, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
   DISPLAY_NAME_MAX_LENGTH,
-  USER_SIGNED_IN,
+  AuthActionType,
 } from '../../../spaces/auth/constants';
 import { linkEmailCredentialToCurrentUser } from '../../../spaces/auth/data/auth';
 import { updateCurrentUserWhenRegistered } from '../../../spaces/auth/data/user';
@@ -90,7 +90,7 @@ const Signup: React.FC<SignupProps> = ({
 
         if (user) {
           dispatch({
-            type: USER_SIGNED_IN,
+            type: AuthActionType.USER_SIGNED_IN,
             uid: user.uid,
             email: user.email,
             isAnonymous: user.isAnonymous,

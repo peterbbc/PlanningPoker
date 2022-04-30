@@ -10,7 +10,7 @@ import useCurrentUser from '../../spaces/auth/hooks/useCurrentUser';
 import { getCurrentUserGamesCreated } from '../../spaces/auth/data/user';
 import { DEFAULT_GAME_NAME } from '../../spaces/poker-table/constants';
 import { useCurrentTable } from '../../spaces/poker-table/hooks/useCurrentTable';
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 import { getMonthWithDayAndYearAndTimeInLocalTime } from '@we-agile-you/js-base';
 
 interface MyGamesModalProps {

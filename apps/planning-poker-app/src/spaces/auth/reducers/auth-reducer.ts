@@ -1,12 +1,7 @@
-import { Auth, AuthActionTypes } from '../types';
-import {
-  USER_FETCHED,
-  USER_SIGNED_IN,
-  USER_SIGNED_OUT,
-  USER_UPDATED_EMAIL,
-} from '../constants';
+import { AuthState, AuthActions } from '../types';
+import { AuthActionType } from '../constants';
 
-export const initialAuthState: Auth = {
+export const initialAuthState: AuthState = {
   isIdle: true,
   uid: null,
   email: null,
@@ -19,10 +14,10 @@ export const initialAuthState: Auth = {
 
 export const authReducer = function authReducer(
   state = initialAuthState,
-  action: AuthActionTypes,
-): Auth {
+  action: AuthActions,
+): AuthState {
   switch (action.type) {
-    case USER_SIGNED_IN:
+    case AuthActionType.USER_SIGNED_IN:
       return {
         isIdle: false,
         isAnonymous: !!action.isAnonymous,
@@ -34,7 +29,7 @@ export const authReducer = function authReducer(
         user: null,
       };
 
-    case USER_SIGNED_OUT:
+    case AuthActionType.USER_SIGNED_OUT:
       return {
         isIdle: false,
         uid: null,
@@ -46,7 +41,7 @@ export const authReducer = function authReducer(
         user: null,
       };
 
-    case USER_FETCHED:
+    case AuthActionType.USER_FETCHED:
       return {
         ...state,
         isIdle: false,
@@ -56,7 +51,7 @@ export const authReducer = function authReducer(
         user: action.user,
       };
 
-    case USER_UPDATED_EMAIL:
+    case AuthActionType.USER_UPDATED_EMAIL:
       return {
         ...state,
         email: action.email,

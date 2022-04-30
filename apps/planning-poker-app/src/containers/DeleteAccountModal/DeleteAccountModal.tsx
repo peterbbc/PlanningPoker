@@ -1,5 +1,5 @@
 import { Button, FormInput, Modal, ModalTitle } from '@we-agile-you/react-base';
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 import React, { FormEvent, useState } from 'react';
 import { Link } from '../../components/atoms/Link/Link';
 import {

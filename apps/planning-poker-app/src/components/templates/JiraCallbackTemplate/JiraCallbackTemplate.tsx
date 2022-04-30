@@ -1,5 +1,5 @@
 import { useLocation } from '@we-agile-you/react-base';
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 import React, { useEffect } from 'react';
 import Helmet from 'react-helmet';
 import useCurrentUser from '../../../spaces/auth/hooks/useCurrentUser';

@@ -1,14 +1,6 @@
 import { PokerTable } from '@we-agile-you/types-planning-poker';
-import {
-  RECEIVE_CREATED_POKER_TABLE,
-  RECEIVE_POKER_TABLE_DATA_CHANGE,
-  RECEIVE_POKER_TABLE_PLAYERS_CHANGE,
-  REQUEST_CREATE_POKER_TABLE,
-  REQUEST_SUBSCRIBE_TO_POKER_TABLE,
-  UNSUBSCRIBE_TO_POKER_TABLE,
-} from '../constants';
-
-import { PokerTableActionTypes } from '../types';
+import { PokerTableActionType } from '../constants';
+import { PokerTableActions } from '../types';
 
 export const initialPokerTableState: PokerTable = {
   isCreating: false,
@@ -27,29 +19,29 @@ export const initialPokerTableState: PokerTable = {
 
 export const pokerTableReducer = function pokerTableReducer(
   state = initialPokerTableState,
-  action: PokerTableActionTypes,
+  action: PokerTableActions,
 ): PokerTable {
   switch (action.type) {
-    case REQUEST_CREATE_POKER_TABLE:
+    case PokerTableActionType.REQUEST_CREATE_POKER_TABLE:
       return {
         ...state,
         isCreating: true,
       };
 
-    case RECEIVE_CREATED_POKER_TABLE:
+    case PokerTableActionType.RECEIVE_CREATED_POKER_TABLE:
       return {
         ...state,
         isCreating: false,
         id: action.pokerTableId,
       };
 
-    case REQUEST_SUBSCRIBE_TO_POKER_TABLE:
+    case PokerTableActionType.REQUEST_SUBSCRIBE_TO_POKER_TABLE:
       return {
         ...state,
         isFetching: true,
       };
 
-    case RECEIVE_POKER_TABLE_DATA_CHANGE:
+    case PokerTableActionType.RECEIVE_POKER_TABLE_DATA_CHANGE:
       return {
         ...state,
         ...action.data,
@@ -58,7 +50,7 @@ export const pokerTableReducer = function pokerTableReducer(
         playersAll: state.playersAll,
       };
 
-    case RECEIVE_POKER_TABLE_PLAYERS_CHANGE:
+    case PokerTableActionType.RECEIVE_POKER_TABLE_PLAYERS_CHANGE:
       const players = action.players;
 
       return {
@@ -86,7 +78,7 @@ export const pokerTableReducer = function pokerTableReducer(
         playersAll: players,
       };
 
-    case UNSUBSCRIBE_TO_POKER_TABLE:
+    case PokerTableActionType.UNSUBSCRIBE_TO_POKER_TABLE:
       return {
         ...initialPokerTableState,
       };

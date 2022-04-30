@@ -1,11 +1,44 @@
 import { User } from "@we-agile-you/types-planning-poker";
 import { Action } from "redux";
+import { AuthActionType } from "./constants";
 
-export interface AuthActionTypes extends Action {
-
+interface UserSignedInAction extends Action {
+    type: AuthActionType.USER_SIGNED_IN
+    isAnonymous: boolean
+    uid: string
+    email: string
 }
 
-export interface Auth {
+interface UserSignedOutAction extends Action {
+    type: AuthActionType.USER_SIGNED_OUT
+}
+
+interface UserFetchedAction extends Action {
+    type: AuthActionType.USER_FETCHED
+    isPremium: boolean
+    isFacilitator: boolean
+    isTaxExempt: boolean
+    user: User
+}
+
+interface UserUpdatedAction extends Action {
+    type: AuthActionType.USER_UPDATED
+}
+
+interface UserUpdatedEmailAction extends Action {
+    type: AuthActionType.USER_UPDATED_EMAIL
+    email: string
+}
+
+export type AuthActions =
+    UserSignedInAction |
+    UserSignedOutAction |
+    UserFetchedAction |
+    UserUpdatedAction |
+    UserUpdatedEmailAction
+
+
+export interface AuthState {
     isIdle: boolean
     uid: string | null
     email: string | null

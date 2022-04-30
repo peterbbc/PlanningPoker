@@ -2,6 +2,8 @@ import defaultFirebase from 'firebase/compat/app';
 
 import { Player } from '@we-agile-you/types-planning-poker';
 import { PLAYERS_COLLECTION } from './poker';
+import firebase from "firebase/compat/app";
+import Timestamp = firebase.firestore.Timestamp;
 
 export const buldPresenceInPokerGame = (
   uid: string,
@@ -32,7 +34,7 @@ export const buldPresenceInPokerGame = (
     last_changed: firebase.firestore.FieldValue.serverTimestamp(),
   };
   const onConnexionSatusChange = (
-    snapshot: firebase.default.database.DataSnapshot,
+    snapshot: firebase.database.DataSnapshot,
   ) => {
     // eslint-disable-next-line eqeqeq
     if (snapshot.val() == false) {

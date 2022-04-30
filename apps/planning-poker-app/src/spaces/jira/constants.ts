@@ -1,2 +1,4 @@
-export const JIRA_UPDATED = 'JIRA_UPDATED';
-export const JIRA_START_FETCH = 'JIRA_START_FETCH';
+export enum JiraActionType {
+    JIRA_UPDATED = 'JIRA_UPDATED',
+    JIRA_START_FETCH = 'JIRA_START_FETCH',
+}

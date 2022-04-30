@@ -1,7 +1,7 @@
-import { AuthActionTypes } from '../../auth/types';
-import { JiraActionTypes, JiraState } from '../types';
-import { JIRA_START_FETCH, JIRA_UPDATED } from '../constants';
-import { USER_SIGNED_OUT } from '../../auth/constants';
+import { AuthActions } from '../../auth/types';
+import { JiraActions, JiraState } from '../types';
+import { JiraActionType } from '../constants';
+import { AuthActionType } from '../../auth/constants';
 
 export const initialJiraState: JiraState = {
   isIdle: true,
@@ -11,15 +11,15 @@ export const initialJiraState: JiraState = {
 
 export const jiraReducer = function jiraReducer(
   state = initialJiraState,
-  action: JiraActionTypes | AuthActionTypes,
+  action: JiraActions | AuthActions,
 ): JiraState {
   switch (action.type) {
-    case JIRA_START_FETCH:
+    case JiraActionType.JIRA_START_FETCH:
       return {
         ...state,
         isIdle: false,
       };
-    case JIRA_UPDATED:
+    case JiraActionType.JIRA_UPDATED:
       return {
         ...state,
         isIdle: false,
@@ -27,7 +27,7 @@ export const jiraReducer = function jiraReducer(
         isFirstTime: !action.properties,
       };
 
-    case USER_SIGNED_OUT:
+    case AuthActionType.USER_SIGNED_OUT:
       return { ...initialJiraState };
     default:
       return state;

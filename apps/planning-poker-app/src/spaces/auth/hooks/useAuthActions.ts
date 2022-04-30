@@ -1,13 +1,13 @@
 import { useLocation } from '@we-agile-you/react-base';
 import { useNotification } from '../../notifications/useNotification';
 
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 import {
   signOut as signOutAction,
   updateEmail as updateEmailAction,
   updatePassword as updatePasswordAction,
 } from '../data/auth';
-import { USER_UPDATED_EMAIL } from '../constants';
+import { AuthActionType } from '../constants';
 import { useDispatch } from 'react-redux';
 
 export const useAuthActions = () => {
@@ -36,7 +36,10 @@ export const useAuthActions = () => {
           content: `New email: ${email}`,
         });
 
-        dispatch({ type: USER_UPDATED_EMAIL, email });
+        dispatch({
+          type: AuthActionType.USER_UPDATED_EMAIL,
+          email
+        });
       })
       .catch(function (error) {
         showNotification({

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import cx from 'classnames';
 
 import styles from './Link.module.scss';
-import { Link as GatsbyLink } from 'gatsby';
+import GatsbyLink from 'gatsby-link';
 
 interface LinkProps {
   children: ReactNode;

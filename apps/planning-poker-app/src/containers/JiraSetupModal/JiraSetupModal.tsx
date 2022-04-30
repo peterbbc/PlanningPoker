@@ -24,7 +24,7 @@ import { useNotification } from '../../spaces/notifications/useNotification';
 import styles from './JiraSetupModal.module.scss';
 import { useDispatch } from 'react-redux';
 import { Loader } from '../../components/molecules/Loader/Loader';
-import { navigate } from 'gatsby';
+import { navigate } from '@reach/router';
 
 export type JiraRedirectState = {
   code?: string;

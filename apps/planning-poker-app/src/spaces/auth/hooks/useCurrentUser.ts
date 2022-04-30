@@ -1,14 +1,13 @@
 import { useSelector } from 'react-redux';
 import { AppState } from "../../rootReducer";
+import { AuthState } from '../types';
 
-import { Auth } from '../types';
+const useCurrentUser = (): AuthState => {
+  const authState = useSelector((state: AppState) => state.auth);
 
-const useCurrentUser = (): Auth => {
-  const user = useSelector((state: AppState) => state.auth);
-
-  return user.user && user.uid
-    ? { ...user, user: { ...user.user, uid: user.uid } }
-    : user;
+  return authState.user && authState.uid
+    ? { ...authState, user: { ...authState.user, uid: authState.uid } }
+    : authState;
 };
 
 export default useCurrentUser;

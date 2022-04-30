@@ -1,3 +1,5 @@
+import { Timestamp } from "firebase/firestore";
+
 export interface Player {
     uid: string
     displayName?: string
@@ -7,4 +9,6 @@ export interface Player {
     tableId: string
     tableName?: string
     isSpectator?: boolean
+
+    last_changed?: Timestamp
 }
