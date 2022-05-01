@@ -1,5 +1,5 @@
-// import { useLocation } from './useLocation';
+import { useLocation } from './useLocation';
 
 export function useQuery() {
-  return new URLSearchParams(/*useLocation().search*/);
+  return new URLSearchParams(useLocation().search);
 }

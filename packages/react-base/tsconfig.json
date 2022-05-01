@@ -7,6 +7,10 @@
     "allowSyntheticDefaultImports": true,
 //    "noImplicitAny": true,
     "allowJs": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "rootDir": "src",
+    "outDir": "dist"
   },
   "include": [
     "typings/**/*",

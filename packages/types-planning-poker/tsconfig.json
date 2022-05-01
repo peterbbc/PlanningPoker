@@ -29,6 +29,7 @@
 		"experimentalDecorators": true,
 		"downlevelIteration": true,
 		"declaration": true,
+		"emitDeclarationOnly": true,
 
 		"pretty": true
 	},

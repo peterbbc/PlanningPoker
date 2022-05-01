@@ -18,13 +18,13 @@ export { VerticalSpacing } from './atoms/spacings/VerticalSpacing/VerticalSpacin
 export { Button } from './atoms/Button/Button';
 export { ButtonLink } from './atoms/ButtonLink/ButtonLink';
 export { ButtonIcon } from './atoms/ButtonIcon/ButtonIcon';
-// export { Switch } from './atoms/Switch/Switch';
+export { Switch } from './atoms/Switch/Switch';
 export { ModalTitle } from './atoms/ModalTitle/ModalTitle';
 export { FlexBox } from './atoms/FlexBox/FlexBox';
 export { ProfileImage } from './atoms/ProfileImage/ProfileImage';
 
 // Molecules
-export { ContextMenu } from "./molecules/ContextMenu/ContextMenu";
+export { ContextMenu, ContextMenuElement } from "./molecules/ContextMenu/ContextMenu";
 export { SubmitRow } from './molecules/SubmitRow/SubmitRow';
 export { ButtonActivable } from './molecules/ButtonActivable/ButtonActivable';
 export { ButtonDropdown } from './molecules/ButtonDropdown/ButtonDropdown';
@@ -69,5 +69,5 @@ export { HelpTooltip } from './components/HelpTooltip/HelpTooltip';
 // Hooks
 export { useHandleClickOuside } from './hooks/useHandleClickOutside';
 export { usePrevious } from './hooks/usePrevious';
-// export { useLocation } from './hooks/useLocation';
+export { useLocation } from './hooks/useLocation';
 export { useQuery } from './hooks/useQuery';

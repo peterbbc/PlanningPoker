@@ -5,11 +5,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
 
-
 const config = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        filename: 'index.js',
+        publicPath: '/'
     },
     plugins: [
         // Add your plugins here

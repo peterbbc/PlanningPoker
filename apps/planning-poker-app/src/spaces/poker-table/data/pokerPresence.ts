@@ -3,7 +3,6 @@ import defaultFirebase from 'firebase/compat/app';
 import { Player } from '@we-agile-you/types-planning-poker';
 import { PLAYERS_COLLECTION } from './poker';
 import firebase from "firebase/compat/app";
-import Timestamp = firebase.firestore.Timestamp;
 
 export const buldPresenceInPokerGame = (
   uid: string,

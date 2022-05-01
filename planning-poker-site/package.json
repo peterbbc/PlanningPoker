@@ -17,12 +17,13 @@
   },
   "dependencies": {
     "@we-agile-you/planning-poker-app": "^0.1.0",
-    "gatsby": "^4.12.1",
+    "gatsby": "^4.13.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
     "gatsby-plugin-sass": "^5.12.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-helmet": "^6.1.0",
+    "react-redux": "^8.0.1",
     "sass": "^1.50.0"
   },
   "devDependencies": {
