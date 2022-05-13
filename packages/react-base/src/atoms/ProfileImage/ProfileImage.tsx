@@ -4,7 +4,8 @@ import cx from 'classnames';
 
 import styles from './ProfileImage.module.scss';
 import { Icon } from '../Icon/Icon';
-import { Tooltip, useHandleClickOuside } from '../../index';
+import { Tooltip } from "../Tooltip/Tooltip";
+import { useHandleClickOuside } from "../../hooks/useHandleClickOutside";
 import { usePopover } from 'react-use-popover';
 import { isTouchDevice } from '@we-agile-you/js-base';
 

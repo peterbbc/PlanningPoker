@@ -5,7 +5,11 @@ const config: GatsbyConfig = {
     title: `Planning Poker Site`,
     siteUrl: `https://www.planningpokeronline.com`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"]
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-image"
+  ]
 };
 
 export default config;

@@ -6,4 +6,6 @@ export { FaqsTemplate } from "./components/templates/FaqsTemplate/FaqsTemplate";
 
 export { AuthSubscriber } from "./spaces/app/wrappers/AuthSubscriber";
 
-export { rootReducer, AppState } from "./spaces/rootReducer";
+export { authReducer } from "./spaces/auth/reducers/auth-reducer";
+export { jiraReducer } from "./spaces/jira/reducers/jira-reducer";
+export { pokerTableReducer } from "./spaces/poker-table/reducers/poker-table-reducer";

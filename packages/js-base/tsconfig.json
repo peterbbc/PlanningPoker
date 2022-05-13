@@ -8,7 +8,6 @@
 			"dom"
 		],
 
-		"rootDir": "src",
 		"outDir": "lib",
 
 		"strict": true,
@@ -32,8 +31,6 @@
 
 		"pretty": true
 	},
-	"include": [
-		"typings/**/*",
-		"src/**/*"
-	]
+	"include": ["src"],
+	"exclude": ["node_modules"]
 }

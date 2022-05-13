@@ -1,6 +1,16 @@
 import { combineReducers, createStore as reduxCreateStore } from 'redux';
 
-import { rootReducer, AppState } from '@we-agile-you/planning-poker-app';
+import { pokerTableReducer } from '@we-agile-you/planning-poker-app/src';
+import { authReducer } from '@we-agile-you/planning-poker-app/src';
+import { jiraReducer } from '@we-agile-you/planning-poker-app/src';
+
+const rootReducer = combineReducers({
+  pokerTable: pokerTableReducer,
+  auth: authReducer,
+  jira: jiraReducer,
+});
+
+type AppState = ReturnType<typeof rootReducer>;
 
 export function createStore(preloadedState?: AppState) {
   const isReduxExtensionEnabled =

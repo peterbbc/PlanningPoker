@@ -20,6 +20,7 @@
     "gatsby": "^4.13.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
     "gatsby-plugin-sass": "^5.12.1",
+    "gatsby-plugin-image": "^2.13.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^6.1.0",
