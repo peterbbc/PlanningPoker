@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Layout } from '@we-agile-you/planning-poker-app';
-import { FaqsTemplate } from '@we-agile-you/planning-poker-app';
+import { Layout } from '../planning-poker-app';
+import { FaqsTemplate } from '../planning-poker-app';
 
 export default function Faqs() {
   return (

@@ -1,0 +1,1 @@
+export type WhoCanEditIssuesType = string[] | null

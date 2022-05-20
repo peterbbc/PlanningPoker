@@ -1,6 +1,6 @@
 {
   "name": "planning-poker-site",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "planning-poker-site",
   "author": "Peter Bloxidge",
@@ -16,25 +16,35 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@we-agile-you/planning-poker-app": "^0.1.0",
+    "@material-ui/core": "^4.12.4",
+    "@stripe/react-stripe-js": "^1.8.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "classnames": "^2.3.1",
+    "firebase": "^9.8.1",
+    "firebase-admin": "^10.2.0",
     "gatsby": "^4.13.1",
+    "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-react-helmet": "^5.12.1",
     "gatsby-plugin-sass": "^5.12.1",
-    "gatsby-plugin-image": "^2.13.0",
+    "papaparse": "^5.3.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-dropzone": "^14.2.1",
+    "react-easy-crop": "^4.2.0",
     "react-helmet": "^6.1.0",
     "react-redux": "^8.0.1",
+    "react-select": "^5.3.2",
+    "react-sortable-hoc": "^2.0.0",
+    "redux-devtools-extension": "^2.13.9",
     "sass": "^1.50.0"
   },
   "devDependencies": {
+    "@types/body-scroll-lock": "^3.1.0",
     "@types/node": "^17.0.23",
+    "@types/papaparse": "^5.3.2",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.15",
     "@types/react-helmet": "^6.1.5",
     "typescript": "^4.6.3"
-  },
-  "workspaces": [
-    "../apps/planning-poker-app"
-  ]
+  }
 }

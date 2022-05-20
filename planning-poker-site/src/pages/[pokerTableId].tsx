@@ -1,6 +1,6 @@
 import React from 'react';
-import { Layout } from '@we-agile-you/planning-poker-app';
-import { PokerTableTemplate } from '@we-agile-you/planning-poker-app';
+import { Layout } from '../planning-poker-app';
+import { PokerTableTemplate } from '../planning-poker-app';
 
 // @ts-ignore
 export default function PokerTablePage({ params }) {

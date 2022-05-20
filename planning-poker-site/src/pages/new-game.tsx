@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { NewGameTemplate } from '@we-agile-you/planning-poker-app';
-import { Layout } from '@we-agile-you/planning-poker-app';
+import { NewGameTemplate } from '../planning-poker-app';
+import { Layout } from '../planning-poker-app';
 
 export default function NewGame() {
   return (

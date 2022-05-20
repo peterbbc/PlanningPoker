@@ -2,9 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Provider } from 'react-redux';
 import { createStore } from '../../state/createStore';
-import { AuthSubscriber } from '@we-agile-you/planning-poker-app/src';
+import { AuthSubscriber } from "../../planning-poker-app";
 
-// eslint-disable-next-line react/display-name,react/prop-types
 // @ts-ignore
 export default ({ element }) => {
   // Instantiating store in `wrapRootElement` handler ensures:

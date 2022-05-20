@@ -1,8 +1,8 @@
 import { combineReducers, createStore as reduxCreateStore } from 'redux';
 
-import { pokerTableReducer } from '@we-agile-you/planning-poker-app/src';
-import { authReducer } from '@we-agile-you/planning-poker-app/src';
-import { jiraReducer } from '@we-agile-you/planning-poker-app/src';
+import { pokerTableReducer } from '../planning-poker-app';
+import { authReducer } from '../planning-poker-app';
+import { jiraReducer } from '../planning-poker-app';
 
 const rootReducer = combineReducers({
   pokerTable: pokerTableReducer,
@@ -16,21 +16,19 @@ export function createStore(preloadedState?: AppState) {
   const isReduxExtensionEnabled =
     process.env.GATSBY_ENV !== 'production' &&
     typeof window !== 'undefined' &&
+    // @ts-ignore
     window.__REDUX_DEVTOOLS_EXTENSION__;
 
-  const store = isReduxExtensionEnabled
+  return isReduxExtensionEnabled
     ? reduxCreateStore(
         rootReducer,
         preloadedState,
+        // @ts-ignore
         window.__REDUX_DEVTOOLS_EXTENSION__(),
       )
     : reduxCreateStore(rootReducer, preloadedState);
-
-  return store;
 }
 
 export function createStoreSSR(preloadedState?: AppState) {
-  const store = reduxCreateStore(rootReducer, preloadedState);
-
-  return store;
+  return reduxCreateStore(rootReducer, preloadedState);
 }

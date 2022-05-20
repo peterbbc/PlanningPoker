@@ -1,8 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { HomeTemplate } from '@we-agile-you/planning-poker-app';
-import { Layout } from '@we-agile-you/planning-poker-app';
-import axios from 'axios';
+import { HomeTemplate } from '../planning-poker-app';
+import { Layout } from '../planning-poker-app';
 
 export default function Home() {
   return (
