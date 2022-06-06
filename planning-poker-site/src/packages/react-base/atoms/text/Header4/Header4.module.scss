@@ -1,12 +1,25 @@
 .header4 {
-  /* Header4-module--header4--3Go2M */
+  color: #1a2935;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 920px) and (min-height: 670px) {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
 }
+
 .header4--center {
-  /* Header4-module--header4--center--2PtXq */
+  text-align: center;
 }
+
 .header4--primary {
-  /* Header4-module--header4--primary--y0CyC */
+  color: #3993ff;
 }
+
 .header4--white {
-  /* Header4-module--header4--white--3wOvj */
+  color: #fff;
 }

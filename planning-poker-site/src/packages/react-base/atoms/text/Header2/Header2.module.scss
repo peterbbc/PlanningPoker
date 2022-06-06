@@ -1,6 +1,17 @@
 .header2 {
-  /* Header2-module--header2--1HlcX */
+  color: #1a2935;
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 920px) and (min-height: 670px) {
+    font-size: 4.2rem;
+    font-weight: 700;
+  }
 }
+
 .header2--light {
-  /* Header2-module--header2--light--1qOFd */
+  color: #fff;
 }

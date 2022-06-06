@@ -24,7 +24,7 @@ export const HoritzontalSpacing = ({
 }: HoritzontalSpacingProps) => (
   <div
     className={cx(
-      styles['horitzontal-spacer'],
+      styles.horitzontalSpacer,
       styles[`horitzontal-spacer--${spacing}`],
       className,
     )}

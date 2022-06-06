@@ -1,3 +1,18 @@
 .header1 {
-  /* Header1-module--header1--3uqnC */
+  color: #1a2935;
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.05em;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 920px) and (min-height: 670px) {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.1em;
+  }
+}
+
+.header1--center {
+  text-align: center;
 }

@@ -12,7 +12,7 @@ interface Header3Props {
 export const Header3 = ({ children, isLight, id }: Header3Props) => (
   <h3
     id={id}
-    className={cx(styles.header3, isLight && styles['header3--light'])}
+    className={cx(styles.header3, isLight && styles.header3Light)}
   >
     {children}
   </h3>

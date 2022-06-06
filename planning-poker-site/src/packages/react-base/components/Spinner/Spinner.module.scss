@@ -1,9 +1,31 @@
 .spinner {
-  /* Spinner-module--spinner--3O19r */
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
+  border: 4px solid #a8aeb2;
+  border-radius: 100%;
+  border-right-color: transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+
+  &.small {
+    border: 2px solid #a8aeb2;
+    height: 16px;
+    width: 16px;
+  }
 }
-.spinner-border {
-  /* Spinner-module--spinner-border--G7h9L */
+
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
 }
-.small {
-  /* Spinner-module--small--2GDGm */
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
 }

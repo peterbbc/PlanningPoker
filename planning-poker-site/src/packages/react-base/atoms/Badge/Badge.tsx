@@ -10,7 +10,7 @@ interface BadgeProps {
 
 export const Badge = ({ style, children }: BadgeProps) => {
   return (
-    <div className={cx(styles['badge'], styles[`badge--${style}`])}>
+    <div className={cx(styles.badge, styles[`badge--${style}`])}>
       {children}
     </div>
   );

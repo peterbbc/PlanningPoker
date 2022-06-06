@@ -1,9 +1,21 @@
 .badge {
-  /* Badge-module--badge--2fTmg */
+  align-items: center;
+  border-radius: .4rem;
+  color: #3993ff;
+  display: inline-flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 3.2rem;
+  justify-content: center;
+  padding: 0 1.6rem;
 }
+
 .badge--success {
-  /* Badge-module--badge--success--AaJgz */
+  background-color: rgba(0, 214, 143, .118);
+  color: #00d68f;
 }
+
 .badge--warning {
-  /* Badge-module--badge--warning--YRjLK */
+  background-color: rgba(255, 170, 0, .118);
+  color: #fa0;
 }

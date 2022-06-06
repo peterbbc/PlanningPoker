@@ -1,45 +1,71 @@
 .span {
-  /* Span-module--span--sZUht */
+  display: inline-block;
+  line-height: 1.4em;
 }
+
 .span--center {
-  /* Span-module--span--center--2on-_ */
+  text-align: center;
 }
+
 .span--body {
-  /* Span-module--span--body--14RcX */
+  font-size: 1.8rem;
 }
+
 .span--small {
-  /* Span-module--span--small--1Stxk */
+  font-size: 1.6rem;
 }
+
 .span--micro {
-  /* Span-module--span--micro--2qCvf */
+  font-size: 1.4rem;
 }
+
 .span--regular {
-  /* Span-module--span--regular--1doC1 */
+  font-weight: 400;
 }
+
 .span--semibold {
-  /* Span-module--span--semibold--ZqOKd */
+  font-weight: 600;
 }
+
 .span--bold {
-  /* Span-module--span--bold--3uNhh */
+  font-weight: 700;
 }
+
 .span--with-tooltip {
-  /* Span-module--span--with-tooltip--1gIyt */
+  border-bottom: 1px dashed;
+  cursor: default;
 }
+
 .span--hide-underline {
-  /* Span-module--span--hide-underline--1loud */
+  border-bottom: none;
 }
+
 .span--black {
-  /* Span-module--span--black--2qTn3 */
+  border-bottom-color: #1a2935;
+  color: #1a2935;
 }
+
+.span--white {
+  border-bottom-color: #fff;
+  color: #fff;
+}
+
 .span--grey500 {
-  /* Span-module--span--grey500--2rMD_ */
+  border-bottom-color: #a8aeb2;
+  color: #a8aeb2;
 }
+
 .span--grey600 {
-  /* Span-module--span--grey600--1jBup */
+  border-bottom-color: #48545d;
+  color: #48545d;
 }
+
 .span--success {
-  /* Span-module--span--success--3NZqy */
+  border-bottom-color: #00d68f;
+  color: #00d68f;
 }
+
 .span--primary {
-  /* Span-module--span--primary--1lMGk */
+  border-bottom-color: #3993ff;
+  color: #3993ff;
 }

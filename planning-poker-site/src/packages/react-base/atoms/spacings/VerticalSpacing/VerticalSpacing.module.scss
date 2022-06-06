@@ -1,60 +1,81 @@
 .vertical-spacer--spacing-xxs {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xxs--2JP-p */
+  height: .4rem
 }
+
 .vertical-spacer--spacing-xs {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xs--2OqNa */
+  height: .8rem
 }
+
 .vertical-spacer--spacing-s {
-  /* VerticalSpacing-module--vertical-spacer--spacing-s--1IGZH */
+  height: 1.2rem
 }
+
 .vertical-spacer--spacing-m {
-  /* VerticalSpacing-module--vertical-spacer--spacing-m--1vD9u */
+  height: 1.6rem
 }
+
 .vertical-spacer--spacing-l {
-  /* VerticalSpacing-module--vertical-spacer--spacing-l--3V6kM */
+  height: 2.4rem
 }
+
 .vertical-spacer--spacing-xl {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xl--1oEiy */
+  height: 3.2rem
 }
+
 .vertical-spacer--spacing-xxl {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xxl--2nH6M */
+  height: 4rem
 }
+
 .vertical-spacer--spacing-xxl-2 {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xxl-2--3DQIb */
+  height: 4.8rem
 }
+
 .vertical-spacer--spacing-xxl-3 {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xxl-3--7uSnP */
+  height: 5.6rem
 }
+
 .vertical-spacer--spacing-xxl-4 {
-  /* VerticalSpacing-module--vertical-spacer--spacing-xxl-4--oAhA1 */
+  height: 6.4rem
 }
-.vertical-spacer-xl--spacing-xxs {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xxs--3hx2X */
-}
-.vertical-spacer-xl--spacing-xs {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xs--3esgs */
-}
-.vertical-spacer-xl--spacing-s {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-s--2Jn6f */
-}
-.vertical-spacer-xl--spacing-m {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-m--3vui6 */
-}
-.vertical-spacer-xl--spacing-l {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-l--1eXSl */
-}
-.vertical-spacer-xl--spacing-xl {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xl--z1eEA */
-}
-.vertical-spacer-xl--spacing-xxl {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xxl--2VRHs */
-}
-.vertical-spacer-xl--spacing-xxl-2 {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xxl-2--3I1SZ */
-}
-.vertical-spacer-xl--spacing-xxl-3 {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xxl-3--3D0tv */
-}
-.vertical-spacer-xl--spacing-xxl-4 {
-  /* VerticalSpacing-module--vertical-spacer-xl--spacing-xxl-4--1T2wf */
+
+@media (max-width: 1400px) {
+  .vertical-spacer-xl--spacing-xxs {
+    height: .4rem
+  }
+
+  .vertical-spacer-xl--spacing-xs {
+    height: .8rem
+  }
+
+  .vertical-spacer-xl--spacing-s {
+    height: 1.2rem
+  }
+
+  .vertical-spacer-xl--spacing-m {
+    height: 1.6rem
+  }
+
+  .vertical-spacer-xl--spacing-l {
+    height: 2.4rem
+  }
+
+  .vertical-spacer-xl--spacing-xl {
+    height: 3.2rem
+  }
+
+  .vertical-spacer-xl--spacing-xxl {
+    height: 4rem
+  }
+
+  .vertical-spacer-xl--spacing-xxl-2 {
+    height: 4.8rem
+  }
+
+  .vertical-spacer-xl--spacing-xxl-3 {
+    height: 5.6rem
+  }
+
+  .vertical-spacer-xl--spacing-xxl-4 {
+    height: 6.4rem
+  }
 }
