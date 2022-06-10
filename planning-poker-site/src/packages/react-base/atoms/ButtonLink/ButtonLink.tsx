@@ -1,4 +1,4 @@
-import classnames from 'classnames';
+import cx from 'classnames';
 import React from 'react';
 
 import styles from './ButtonLink.module.scss';
@@ -39,14 +39,14 @@ const ButtonFC: React.ForwardRefRenderFunction<
     }
   };
 
-  const resolvedClassName = classnames(
+  const resolvedClassName = cx(
     className,
-    styles['button-link'],
+    styles.buttonLink,
     buttonColor && styles[`color-${buttonColor}`],
     fontWeight && styles[`font-weight-${fontWeight}`],
     size && styles[`size-${size}`],
     {
-      [styles['is-disabled']]: isDisabled,
+      [styles.isDisabled]: isDisabled,
       [styles[`tooltip--${tooltipPosition}`]]: tooltipPosition,
     },
     'is-clickable',
@@ -61,10 +61,10 @@ const ButtonFC: React.ForwardRefRenderFunction<
       translate={translate}
       ref={ref}
     >
-      <span className={classnames(styles['content'], 'is-clickable')}>
+      <span className="is-clickable">
         {children}
       </span>
-      {tooltip && <div className={styles['tooltip']}>{tooltip}</div>}
+      {tooltip && <div>{tooltip}</div>}
     </button>
   );
 };

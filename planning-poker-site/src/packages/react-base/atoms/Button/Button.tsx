@@ -1,4 +1,4 @@
-import classnames from 'classnames';
+import cx from 'classnames';
 import React, { useRef, useState } from 'react';
 import ReactDom from 'react-dom';
 import { usePopover } from '../../../react-use-popover';
@@ -95,20 +95,19 @@ const ButtonFC: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> =
       }
     };
 
-    const resolvedClassName = classnames(
+    const resolvedClassName = cx(
       className,
-      styles['button'],
+      styles.button,
       styles[`style-${buttonStyle}`],
       styles[`color-${buttonColor}`],
-      overBackgroundColor &&
-        styles[`over-background-color-${overBackgroundColor}`],
+      overBackgroundColor && styles[`over-background-color-${overBackgroundColor}`],
       size && styles[`size-${size}`],
       {
-        [styles['is-loading']]: isLoading,
-        [styles['is-disabled']]: isDisabled,
-        [styles['is-active']]: isActive,
-        [styles['is-block']]: isBlock,
-        [styles['header-button']]: isHeaderButton,
+        [styles.isLoading]: isLoading,
+        [styles.isDisabled]: isDisabled,
+        [styles.isActive]: isActive,
+        [styles.isBlock]: isBlock,
+        [styles.headerButton]: isHeaderButton,
         [styles[`tooltip--${tooltipPosition}`]]: tooltipPosition,
       },
       'is-clickable',
@@ -127,23 +126,21 @@ const ButtonFC: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> =
         onMouseLeave={handleMouseLeave}
       >
         {isLoading && (
-          <span className={styles['spinner-wrapper']}>
-            <Spinner className={styles['spinner']} size="medium" />
+          <span className={styles.spinnerWrapper}>
+            <Spinner className={styles.spinner} size="medium" />
           </span>
         )}
-        <span className={classnames(styles['content'], 'is-clickable')}>
+        <span className={cx(styles.content, 'is-clickable')}>
           {icon && (
-            <span
-              className={classnames(styles['icon-elemnent'], 'is-clickable')}
-            >
+            <span className={cx(styles.iconElemnent, 'is-clickable')}>
               {icon}
             </span>
           )}
           {children && (
             <span
-              className={classnames(
-                styles['label'],
-                icon && styles['label--icon'],
+              className={cx(
+                styles.label,
+                icon && styles.labelIcon,
                 'is-clickable',
               )}
             >
