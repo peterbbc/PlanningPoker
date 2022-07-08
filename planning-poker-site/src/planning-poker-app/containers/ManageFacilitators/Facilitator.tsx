@@ -174,15 +174,15 @@ export const Facilitator = ({
       }
     }
     return (
-      <div className={styles['facilitator']}>
-        <div className={styles['facilitator__img']}>
+      <div className={styles.facilitator}>
+        <div className={styles.facilitator__img}>
           <ProfileImage
             src={facilitator?.profilePictureUrl}
             alt={facilitator?.displayName}
             size="l"
           />
         </div>
-        <div className={styles['facilitator__info']}>
+        <div className={styles.facilitator__info}>
           <Paragraph fontWeight="bold">
             {facilitator?.displayName}{' '}
             {uid === facilitatorUid && <Span color="grey500">(You)</Span>}
@@ -198,10 +198,10 @@ export const Facilitator = ({
             </Paragraph>
           )}
         </div>
-        <div className={styles['facilitator__status']}>
+        <div className={styles.facilitator__status}>
           <Badge style="success">Active</Badge>
         </div>
-        <div className={styles['facilitator__actions']}>
+        <div className={styles.facilitator__actions}>
           <ButtonDropdown
             isOpen={isContextMenuOpen}
             isIconButton
@@ -264,11 +264,11 @@ export const Facilitator = ({
 
   if (invite) {
     return (
-      <div className={styles['facilitator']}>
-        <div className={styles['facilitator__pick']}>
-          <div className={styles['facilitator__empty-profile-pick']} />
+      <div className={styles.facilitator}>
+        <div className={styles.facilitator__pick}>
+          <div className={styles.facilitator__emptyProfilePick} />
         </div>
-        <div className={styles['facilitator__email']}>
+        <div className={styles.facilitator__email}>
           <Paragraph>{invite.email}</Paragraph>
           {invite.canManageFacilitators && (
             <Paragraph size="micro" color="grey600">
@@ -276,10 +276,10 @@ export const Facilitator = ({
             </Paragraph>
           )}
         </div>
-        <div className={styles['facilitator__status']}>
+        <div className={styles.facilitator__status}>
           <Badge style="warning">Pending</Badge>
         </div>
-        <div className={styles['facilitator__actions']}>
+        <div className={styles.facilitator__actions}>
           <ButtonIcon
             icon={<Icon icon="link" />}
             onClick={handleGetLinkClick}
@@ -355,17 +355,17 @@ export const Facilitator = ({
   }
 
   return (
-    <div className={styles['facilitator']}>
-      <div className={styles['facilitator__info']}>
-        <div className={styles['facilitator__empty-profile-pick']} />
+    <div className={styles.facilitator}>
+      <div className={styles.facilitator__info}>
+        <div className={styles.facilitator__emptyProfilePick} />
       </div>
-      <div className={styles['facilitator__info']}>
+      <div className={styles.facilitator__info}>
         <Paragraph>Empty seat</Paragraph>
       </div>
-      <div className={styles['facilitator__status']}>
+      <div className={styles.facilitator__status}>
         <ButtonLink onClick={onInviteClick}>Send invite</ButtonLink>
       </div>
-      <div className={styles['facilitator__actions']}>
+      <div className={styles.facilitator__actions}>
         {showAddMyself && (
           <ButtonLink onClick={handleAddMyself}>Add myself</ButtonLink>
         )}

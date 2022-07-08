@@ -1,6 +1,25 @@
 .link {
-  /* FormatedElement-module--link--14d9D */
+  &:hover {
+    color: #74b3ff;
+  }
 }
+
 .link-icon {
-  /* FormatedElement-module--link-icon--2vNOB */
+  align-items: flex-end;
+  display: inline-flex;
+  height: 1em;
+  margin-left: .4rem;
+  position: relative;
+  text-decoration: none;
+  width: 1em;
+
+  > svg {
+    flex-shrink: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}
+
+.p {
+  min-height: 1em;
 }

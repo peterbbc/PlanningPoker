@@ -71,10 +71,10 @@ export const MyGamesModal = ({ onClose }: MyGamesModalProps) => {
       <Modal
         onClose={handleCloseModal}
         titleTopBar={
-          <div className={styles['top-bar-content']}>
-            <div className={styles['top-bar-title']}>
+          <div className={styles.topBarContent}>
+            <div className={styles.topBarTitle}>
               <Icon icon="cards" />
-              <span className={styles['title-span']}>My Games</span>
+              <span className={styles.titleSpan}>My Games</span>
             </div>
             <div className={styles.tabs}>
               <Tabs
@@ -116,7 +116,7 @@ export const MyGamesModal = ({ onClose }: MyGamesModalProps) => {
                   }))}
                 />
               ) : (
-                <div className={styles['empty-message']}>
+                <div className={styles.emptyMessage}>
                   You haven´t joined any game, when you do it will appear here.
                 </div>
               )}
@@ -124,7 +124,7 @@ export const MyGamesModal = ({ onClose }: MyGamesModalProps) => {
           ) : (
             <div>
               {gamesCreated === null ? (
-                <div className={styles['empty-message']}>Loading</div>
+                <div className={styles.emptyMessage}>Loading</div>
               ) : gamesCreated && gamesCreated.length > 0 ? (
                 <List
                   onLinkClick={() => handleCloseModal()}
@@ -141,7 +141,7 @@ export const MyGamesModal = ({ onClose }: MyGamesModalProps) => {
                   }))}
                 />
               ) : (
-                <div className={styles['empty-message']}>
+                <div className={styles.emptyMessage}>
                   You haven´t created any game, when you do it will appear here.
                 </div>
               )}

@@ -291,7 +291,7 @@ export const CreatePremiumModal = ({
     >
       <ModalTitle>Create premium account</ModalTitle>
       {customerId ? (
-        <div className={styles['wrapper']}>
+        <div className={styles.wrapper}>
           <div>
             <Stepper
               steps={STEPS.map((step) => {
@@ -389,7 +389,7 @@ export const CreatePremiumModal = ({
               )}
             <VerticalSpacing spacing="spacing-xxl" />
 
-            <div className={styles['next-cta-container']}>
+            <div className={styles.nextCtaContainer}>
               <Button
                 form={`${step}-form`}
                 isLoading={!!isLoading}

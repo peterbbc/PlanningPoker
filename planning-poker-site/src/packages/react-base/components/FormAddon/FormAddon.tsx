@@ -19,10 +19,10 @@ export const FormAddon = ({
   return (
     <div
       className={cx(
-        styles['form-addon'],
-        isRight && styles['form-addon--right'],
-        isNoLabel && styles['form-addon--no-label'],
-        onClick && styles['form-addon--clickable'],
+        styles.formAddon,
+        isRight && styles.formAddonRight,
+        isNoLabel && styles.formAddonNoLabel,
+        onClick && styles.formAddonClickable,
       )}
       onClick={onClick}
     >

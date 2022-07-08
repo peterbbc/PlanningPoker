@@ -75,7 +75,7 @@ export const ManageFacilitatorsQuantity = ({
   };
 
   return (
-    <div className={styles['manage-facilitators-total']}>
+    <div className={styles.manageFacilitatorsTotal}>
       <Header4>Change plan</Header4>
       <VerticalSpacing spacing="spacing-xs" />
       <Paragraph>
@@ -130,27 +130,27 @@ export const ManageFacilitatorsQuantity = ({
       {(isIncreasingQuanitity || isDecreasingQuanitity) && (
         <>
           <VerticalSpacing spacing="spacing-xl" />
-          <div className={styles['change-preview']}>
+          <div className={styles.changePreview}>
             <FlexBox justifyContent="space-between">
               {isIncreasingQuanitity ? (
                 <FlexBox
                   alignItems="center"
-                  className={styles['change-preview__flexbox']}
+                  className={styles.changePreview__flexbox}
                 >
                   <Span spanStyle="bold">1 upgrade</Span>
                   <HoritzontalSpacing spacing="spacing-s" />
-                  <div className={styles['upgrade-icon']}>
+                  <div className={styles.upgradeIcon}>
                     <Icon icon="upgrade" />
                   </div>
                 </FlexBox>
               ) : (
                 <FlexBox
                   alignItems="center"
-                  className={styles['change-preview__flexbox']}
+                  className={styles.changePreview__flexbox}
                 >
                   <Span spanStyle="bold">1 downgrade</Span>
                   <HoritzontalSpacing spacing="spacing-s" />
-                  <div className={styles['downgrade-icon']}>
+                  <div className={styles.downgradeIcon}>
                     <Icon icon="downgrade" />
                   </div>
                 </FlexBox>

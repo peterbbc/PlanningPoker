@@ -1,3 +1,9 @@
 .alert {
-  /* PaymentFailedAlert-module--alert--dUcLw */
+  box-shadow: 0 4px 8px hsla(204, 6%, 68%, .4);
+  left: 50%;
+  max-width: 90vw;
+  position: fixed;
+  top: 2.4rem;
+  transform: translateX(-50%);
+  width: 40rem;
 }

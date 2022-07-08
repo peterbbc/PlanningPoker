@@ -55,7 +55,7 @@ const CopyInviteLinkModal = ({ onClose, link }: CopyInviteLinkModalProps) => {
       </Paragraph>
       <VerticalSpacing spacing="spacing-xl" />
       <FormInput label="Invitation url" ref={inputRef} readOnly value={link} />
-      <div className={styles['submit-row']}>
+      <div className={styles.submitRow}>
         <Button isBlock onClick={handleCopyLinkClick}>
           Copy invitation link
         </Button>

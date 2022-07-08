@@ -1,27 +1,71 @@
 .stepper {
-  /* Stepper-module--stepper--OVYqD */
-}
-.step {
-  /* Stepper-module--step--3sMLE */
-}
-.ball-line {
-  /* Stepper-module--ball-line--2hCZ4 */
-}
-.ball {
-  /* Stepper-module--ball--LUR6F */
-}
-.ball--active {
-  /* Stepper-module--ball--active--1VntK */
-}
-.line {
-  /* Stepper-module--line--2_7IU */
-}
-.line--active {
-  /* Stepper-module--line--active--22mCB */
-}
-.line--transparent {
-  /* Stepper-module--line--transparent--hlswy */
-}
-.step--is-clickable {
-  /* Stepper-module--step--is-clickable--32_gT */
+  cursor: default;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  width: 100%;
+
+  .step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .ball-line {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 4rem 1fr;
+      height: 4rem;
+      margin-bottom: .8rem;
+      width: 100%;
+
+      .ball {
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid #d1d4d7;
+        border-radius: 100%;
+        color: #d1d4d7;
+        display: flex;
+        font-size: 1.8rem;
+        font-weight: 700;
+        height: 4rem;
+        justify-content: center;
+        width: 4rem;
+      }
+
+      .ball--active {
+        background-color: #3993ff;
+        border-color: #3993ff;
+        color: #fff;
+      }
+
+      .line {
+        background-color: #d1d4d7;
+        height: 2px;
+      }
+
+      .line--active {
+        background-color: #3993ff;
+      }
+
+      .line--transparent {
+        opacity: 0;
+      }
+    }
+
+    .step--is-clickable {
+      cursor: pointer;
+
+      &:hover {
+        .ball-line {
+          .ball {
+            background-color: #f9f9f9;
+          }
+
+          .ball--active {
+            background-color: #74b3ff;
+            border-color: #74b3ff;
+          }
+        }
+      }
+    }
+  }
 }

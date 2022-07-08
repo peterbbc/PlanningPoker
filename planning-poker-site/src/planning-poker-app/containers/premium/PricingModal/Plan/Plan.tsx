@@ -51,8 +51,8 @@ export const Plan = ({ plan, isLoading, onProceed, onClose }: PlanProps) => {
   return (
     <div
       className={cx(
-        styles['plan'],
-        plan === 'premium' && styles['plan--is-premium'],
+        styles.plan,
+        plan === 'premium' && styles.planIsPremium,
       )}
     >
       <VerticalSpacing spacing="spacing-l" />
@@ -60,8 +60,8 @@ export const Plan = ({ plan, isLoading, onProceed, onClose }: PlanProps) => {
       <VerticalSpacing spacing="spacing-xs" />
       <Paragraph>{plans[plan].subtitle}</Paragraph>
       <VerticalSpacing spacing="spacing-l" />
-      <FlexBox alignItems="center" className={styles['price-container']}>
-        <div className={styles['price']}>${plans[plan].price}</div>
+      <FlexBox alignItems="center" className={styles.priceContainer}>
+        <div className={styles.price}>${plans[plan].price}</div>
         <HoritzontalSpacing spacing="spacing-xs" />
         {plan === 'premium' && (
           <>
@@ -79,14 +79,14 @@ export const Plan = ({ plan, isLoading, onProceed, onClose }: PlanProps) => {
               <VerticalSpacing spacing="spacing-xxs" />
               <Paragraph color="grey600">or 300$ billed yearly</Paragraph>
             </div>
-            <div className={styles['price-help']}>
+            <div className={styles.priceHelp}>
               <Span
                 color="grey600"
                 tooltipPosition="bottom-left"
                 spanStyle="regular"
                 hideUnderline
                 tooltip={
-                  <div className={styles['info-dropdown']}>
+                  <div className={styles.infoDropdown}>
                     <Paragraph size="small" color="white" align="left">
                       One facilitator is usually enough for small organizations,
                       big ones might want one for each scrum master or team
@@ -106,9 +106,9 @@ export const Plan = ({ plan, isLoading, onProceed, onClose }: PlanProps) => {
         )}
       </FlexBox>
       <VerticalSpacing spacing="spacing-l" />
-      <div className={styles['cta-container']}>
+      <div className={styles.ctaContainer}>
         {isCurrentPlan ? (
-          <Link to="new-game" className={styles['cta-new-game']}>
+          <Link to="new-game" className={styles.ctaNewGame}>
             <Button
               isBlock
               buttonStyle={plan === 'premium' ? 'secondary' : 'tertiary'}

@@ -71,7 +71,7 @@ export const SwitchToYearly = () => {
     getMonthWithDayInLocalTime(new Date(trialLineItem?.period?.end * 1000));
 
   return (
-    <div className={styles['switch-to-yearly']}>
+    <div className={styles.switchToYearly}>
       {typeof user.subscriptionScheduledQuanity === 'number' && (
         <>
           <InlineAlert
@@ -98,7 +98,7 @@ export const SwitchToYearly = () => {
           </>
         ))}
       <VerticalSpacing spacing="spacing-xs" />
-      <hr className={styles['hr']} />
+      <hr className={styles.hr} />
       <VerticalSpacing spacing="spacing-xs" />
       {user.subscriptionStatus !== 'trialing' ? (
         <>

@@ -31,7 +31,7 @@ export const AddressPicker = ({ value, onChange }: AddressPickerProps) => {
       />
       <VerticalSpacing spacing="spacing-xs" />
       <FlexBox justifyContent="space-between">
-        <div className={styles['input-conatiner']}>
+        <div className={styles.inputConatiner}>
           <FormInput
             isNoMargin
             value={value?.postal_code || ''}
@@ -43,7 +43,7 @@ export const AddressPicker = ({ value, onChange }: AddressPickerProps) => {
             }
           />
         </div>
-        <div className={styles['input-conatiner']}>
+        <div className={styles.inputConatiner}>
           <FormInput
             isNoMargin
             value={value?.city || ''}

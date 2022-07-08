@@ -1,6 +1,10 @@
 .plans {
-  /* PricingModal-module--plans--3PVPs */
-}
-.spacing {
-  /* PricingModal-module--spacing--28wiR */
+  @media (max-width: 1020px) {
+    flex-wrap: wrap;
+
+    .spacing {
+      height: 4rem;
+      width: 100%;
+    }
+  }
 }

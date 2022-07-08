@@ -50,8 +50,8 @@ export const ProfileImagePicker = ({
 
   return (
     <>
-      <div className={styles['image-picker']}>
-        <div {...getRootProps()} className={styles['dropzone']}>
+      <div className={styles.imagePicker}>
+        <div {...getRootProps()} className={styles.dropzone}>
           <FlexBox>
             <div>
               <input {...getInputProps()} />

@@ -1,27 +1,74 @@
 .plan {
-  /* Plan-module--plan--1-oZd */
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  box-sizing: content-box;
+  max-width: 37rem;
+  padding: 0 2.4rem;
+  position: relative;
+
+  .price-container {
+    height: 6.8rem;
+  }
+
+  .price {
+    font-size: 5.6rem;
+    font-weight: 600;
+    letter-spacing: -.1rem;
+    line-height: 1.3em;
+  }
+
+  .price-help {
+    margin-left: auto;
+  }
+
+  .cta-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+    justify-content: space-between;
+    margin-top: auto;
+    position: relative;
+  }
+
+  .cta-new-game {
+    width: 100%;
+  }
+
+  .current-plan {
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
+  @media (max-width: 1020px) {
+    width: 100%;
+
+    .price-container {
+      height: auto;
+    }
+
+    .cta-container {
+      height: 9.8rem;
+    }
+  }
 }
-.price-container {
-  /* Plan-module--price-container--3sHEd */
-}
-.price {
-  /* Plan-module--price--208kS */
-}
-.price-help {
-  /* Plan-module--price-help--aK_nY */
-}
-.cta-container {
-  /* Plan-module--cta-container--39y2d */
-}
-.cta-new-game {
-  /* Plan-module--cta-new-game--VNstk */
-}
-.current-plan {
-  /* Plan-module--current-plan--L8XRp */
-}
+
 .plan--is-premium {
-  /* Plan-module--plan--is-premium--35E-l */
+  border-top: none;
+
+  &:after {
+    background: #3993ff;
+    border-radius: 8px 8px 0 0;
+    content: "";
+    height: 4px;
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: 2px;
+  }
 }
+
 .info-dropdown {
-  /* Plan-module--info-dropdown--1gkgt */
+  padding: .4rem;
 }

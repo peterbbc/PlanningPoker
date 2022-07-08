@@ -1,12 +1,29 @@
 .form {
-  /* CheckoutForm-module--form--3bSWK */
+  height: 100%;
 }
+
 .card-label-wrapper {
-  /* CheckoutForm-module--card-label-wrapper--2T7EJ */
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
+
 .card-label {
-  /* CheckoutForm-module--card-label--3_YBc */
+  color: #1a2935;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
+
 .stripe-powered {
-  /* CheckoutForm-module--stripe-powered--3Xa1H */
+  color: #a8aeb2;
+  cursor: default;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 16px;
+
+  svg {
+    fill: #a8aeb2;
+    transform: translateY(1.5px);
+    vertical-align: text-bottom;
+  }
 }

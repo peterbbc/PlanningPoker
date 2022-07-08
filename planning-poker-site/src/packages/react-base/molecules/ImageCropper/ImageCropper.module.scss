@@ -1,9 +1,16 @@
 .crop-container {
-  /* ImageCropper-module--crop-container--3PPsQ */
+  border-radius: 8px;
+  height: 42rem;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 53.4rem;
 }
+
 .controls {
-  /* ImageCropper-module--controls--2NM7H */
+  padding: 0 4.8rem;
 }
+
 .slider {
-  /* ImageCropper-module--slider--2Vr8W */
+  color: #3993ff !important;
 }

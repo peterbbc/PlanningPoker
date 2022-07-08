@@ -1,9 +1,40 @@
 .item {
-  /* BurgerMenuItem-module--item--1N6dY */
-}
-.icon {
-  /* BurgerMenuItem-module--icon--swTvY */
-}
-.right {
-  /* BurgerMenuItem-module--right--1bx_v */
+  align-items: center;
+  color: #1a2935;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 400;
+  height: 5.6rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #ebf4ff;
+  }
+
+  .icon {
+    align-items: center;
+    color: #a8aeb2;
+    display: flex;
+    height: 5.6rem;
+    justify-content: center;
+    width: 5.6rem;
+
+    svg {
+      width: 2.4rem;
+    }
+  }
+
+  .right {
+    margin-left: auto;
+  }
+
+  @media (min-width: 920px) {
+    height: 4.8rem;
+
+    .icon {
+      height: 4.8rem;
+      width: 4.8rem;
+    }
+  }
 }

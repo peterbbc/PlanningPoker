@@ -71,7 +71,7 @@ export const ManageFacilitatorsQuantityConfirm = ({
 
   if (!user || !previewInvoiceData) {
     return (
-      <div className={styles['manage-facilitators-total']}>
+      <div className={styles.manageFacilitatorsTotal}>
         <Header4>Change plan</Header4>
         <VerticalSpacing spacing="spacing-xl" />
         <FlexBox justifyContent="center">
@@ -82,7 +82,7 @@ export const ManageFacilitatorsQuantityConfirm = ({
   }
 
   return (
-    <div className={styles['manage-facilitators-total']}>
+    <div className={styles.manageFacilitatorsTotal}>
       <Header4>Change plan</Header4>
       <VerticalSpacing spacing="spacing-xl" />
 

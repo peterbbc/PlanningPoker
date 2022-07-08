@@ -56,7 +56,7 @@ export const MyInvoicesModal = ({ onClose }: MyInvoicesModalProps) => {
             }))}
           />
         ) : (
-          <div className={styles['empty-message']}>
+          <div className={styles.emptyMessage}>
             You still haven´t created any game, when you do it will appear here.
           </div>
         )}

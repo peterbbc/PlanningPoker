@@ -1,3 +1,11 @@
 .alert {
-  /* NotAcceptedTermsAlert-module--alert--2rVAb */
+  border-radius: 7px;
+  box-shadow: 0 4px 8px hsla(204, 6%, 68%, .2);
+  left: 50%;
+  max-width: 90vw;
+  position: fixed;
+  top: 2.4rem;
+  transform: translateX(-50%);
+  width: 60rem;
+  z-index: 99999;
 }

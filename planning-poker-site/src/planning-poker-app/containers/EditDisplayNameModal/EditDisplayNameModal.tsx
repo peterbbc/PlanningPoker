@@ -138,7 +138,7 @@ export const EditDisplayNameModal = ({
             </FormGroup>
             {isPromptedModal && (
               <>
-                <div className={styles['extra-actions']}>
+                <div className={styles.extraActions}>
                   <ButtonLink onClick={() => setIsOpenAuthType('sign-in')}>
                     Login
                   </ButtonLink>

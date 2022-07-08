@@ -204,7 +204,7 @@ const Signup: React.FC<SignupProps> = ({
             : 'Sign Up'}
         </Button>
       </FormGroup>
-      <div className={styles['form-actions']}>
+      <div className={styles.formActions}>
         <div>
           <span>Already have an account? </span>
           <HoritzontalSpacing spacing="spacing-xs" />

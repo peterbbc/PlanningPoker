@@ -1,3 +1,25 @@
 .back-to-top-button {
-  /* BackToTopButton-module--back-to-top-button--2mRbD */
+  align-items: center;
+  background: rgba(26, 41, 53, .9);
+  border: 0;
+  border-radius: 50%;
+  bottom: 4rem;
+  box-shadow: 0 4px 16px rgba(26, 41, 53, .4);
+  cursor: pointer;
+  display: inline-flex;
+  height: 4.8rem;
+  justify-content: center;
+  outline: 0;
+  padding: 0;
+  position: fixed;
+  right: 4rem;
+  text-decoration: none;
+  transition: all .09s linear;
+  width: 4.8rem;
+
+  &:active,
+  &:hover {
+    background: #1a2935;
+    box-shadow: 0 4px 16px rgba(26, 41, 53, .4);
+  }
 }

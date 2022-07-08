@@ -15,39 +15,39 @@ export const Stepper = ({ steps, activeStep, onClickStep }: StepperProps) => {
   const activeStepIndex = steps.findIndex((step) => step.value === activeStep);
 
   return (
-    <div className={styles['stepper']}>
+    <div className={styles.stepper}>
       {steps.map((step, i) => {
         const isClickable = activeStepIndex !== i && step.isClickable;
         return (
           <div
             key={step.value}
             className={cx(
-              styles['step'],
-              isClickable && styles['step--is-clickable'],
+              styles.step,
+              isClickable && styles.stepIsClickable,
             )}
             onClick={isClickable ? () => onClickStep(step.value) : undefined}
           >
-            <div className={styles['ball-line']}>
+            <div className={styles.ballLine}>
               <div
                 className={cx(
-                  styles['line'],
-                  i <= activeStepIndex && styles['line--active'],
-                  i === 0 && styles['line--transparent'],
+                  styles.line,
+                  i <= activeStepIndex && styles.lineActive,
+                  i === 0 && styles.lineTransparent,
                 )}
               />
               <div
                 className={cx(
-                  styles['ball'],
-                  i <= activeStepIndex && styles['ball--active'],
+                  styles.ball,
+                  i <= activeStepIndex && styles.ballActive,
                 )}
               >
                 {i + 1}
               </div>
               <div
                 className={cx(
-                  styles['line'],
-                  i <= activeStepIndex && styles['line--active'],
-                  i === steps.length - 1 && styles['line--transparent'],
+                  styles.line,
+                  i <= activeStepIndex && styles.lineActive,
+                  i === steps.length - 1 && styles.lineTransparent,
                 )}
               />
             </div>

@@ -1,30 +1,125 @@
 .profile-img {
-  /* ProfileImage-module--profile-img--2Ja-6 */
+  display: inline-block;
+  flex-shrink: 0;
+  position: relative;
+
+  &, img {
+    border-radius: 50%;
+  }
 }
+
 .profile-img--empty {
-  /* ProfileImage-module--profile-img--empty--2hnDi */
+  align-items: center;
+  background-color: #d7e9ff;
+  color: #3993ff;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  justify-content: center;
 }
+
 .profile-img--clickable {
-  /* ProfileImage-module--profile-img--clickable--1wD7t */
+  cursor: pointer;
 }
+
+.profile-img--is-transition {
+  &, img {
+    transition: all .2s linear;
+  }
+}
+
 .shadow {
-  /* ProfileImage-module--shadow--2MPRS */
+  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 41, 53, .08) 0, rgba(26, 41, 53, .16) 100%);
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
+
 .button {
-  /* ProfileImage-module--button--3xlAH */
+  align-items: flex-end;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  bottom: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  display: flex;
+  height: 100%;
+  left: 0;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .button-icon {
+    align-items: center;
+    background-color: #ebf4ff;
+    border-radius: 50%;
+    bottom: 0;
+    color: #3993ff;
+    display: flex;
+    height: 2.4rem;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 2.4rem;
+
+    &:hover {
+      background-color: #d7e9ff;
+    }
+  }
+
+  svg {
+    width: 1.4rem;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, .03);
+  }
 }
-.button-icon {
-  /* ProfileImage-module--button-icon--2gT3G */
+
+.profile-img--s {
+  &, img {
+    font-size: 1.2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
 }
+
 .profile-img--m {
-  /* ProfileImage-module--profile-img--m--2cTYz */
+  &, img {
+    height: 3.2rem;
+    width: 3.2rem
+  }
 }
+
 .profile-img--l {
-  /* ProfileImage-module--profile-img--l--3DaOs */
+  &, img {
+    font-size: 1.6rem;
+    height: 4.8rem;
+    width: 4.8rem
+  }
 }
+
 .profile-img--xl {
-  /* ProfileImage-module--profile-img--xl--zNJIn */
+  &, img {
+    font-size: 1.8rem;
+    height: 6.4rem;
+    width: 6.4rem
+  }
 }
+
 .profile-img--xxl {
-  /* ProfileImage-module--profile-img--xxl--1vVx9 */
+  &, img {
+    font-size: 2.4rem;
+    height: 9.8rem;
+    width: 9.6rem
+  }
 }

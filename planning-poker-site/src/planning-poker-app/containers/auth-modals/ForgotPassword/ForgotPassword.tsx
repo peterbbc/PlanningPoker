@@ -48,7 +48,7 @@ const ForgotPassword: React.FC<ForgotPasswordProps> = ({
   return (
     <>
       {isSucccess ? (
-        <div className={styles['success-message']}>
+        <div className={styles.successMessage}>
           <p>
             We have sent an email to <b>{email}</b>.
           </p>
@@ -75,7 +75,7 @@ const ForgotPassword: React.FC<ForgotPasswordProps> = ({
               Send recovery link
             </Button>
           </FormGroup>
-          <div className={styles['form-actions']}>
+          <div className={styles.formActions}>
             <div>
               <ButtonLink onClick={onClickSignup}>Create account</ButtonLink>
             </div>

@@ -1,12 +1,44 @@
 .label {
-  /* Label-module--label--k_bnE */
-}
-.placeholder {
-  /* Label-module--placeholder--2-T1Y */
-}
-.label--has-left-addon {
-  /* Label-module--label--has-left-addon--3WAWz */
-}
-.label--multiple {
-  /* Label-module--label--multiple--LlMLt */
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #1a2935;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: 2rem;
+  left: 1.2rem;
+  margin: 0;
+  padding: 0 .8rem;
+  position: absolute;
+  top: 0;
+  transition: all .2s;
+  z-index: 2;
+
+  @media (min-width: 920px) {
+    font-size: 1.2rem;
+  }
+
+  &.placeholder {
+    background: transparent;
+    color: #a8aeb2;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: auto;
+    left: 1.6rem;
+    margin: 0;
+    padding: 1rem 0 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+
+    &.label--multiple {
+      display: flex;
+      top: 0;
+    }
+  }
+
+  &.label--has-left-addon {
+    left: 6.8rem;
+  }
 }

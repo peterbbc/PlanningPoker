@@ -1,15 +1,24 @@
 .inline-alert {
-  /* InlineAlert-module--inline-alert--2AaO7 */
+  border: 2px solid;
+  border-radius: .8rem;
+  padding: 1.6rem;
 }
+
 .inline-alert--danger {
-  /* InlineAlert-module--inline-alert--danger--1CQev */
+  background-color: #fff2f5;
+  border-color: #ff3d71;
 }
+
 .inline-alert--success {
-  /* InlineAlert-module--inline-alert--success--x2cb4 */
+  background-color: #f8faf9;
+  border-color: #00d68f;
 }
+
 .inline-alert--info {
-  /* InlineAlert-module--inline-alert--info--1FwSg */
+  background-color: #ebf4ff;
+  border-color: #0095ff;
 }
+
 .inline-alert--clickable {
-  /* InlineAlert-module--inline-alert--clickable--316DG */
+  cursor: pointer;
 }

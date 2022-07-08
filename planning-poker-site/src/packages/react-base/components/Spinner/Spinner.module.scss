@@ -1,5 +1,4 @@
 .spinner {
-  -webkit-animation: spinner-border .75s linear infinite;
   animation: spinner-border .75s linear infinite;
   border: 4px solid #a8aeb2;
   border-radius: 100%;
@@ -16,16 +15,8 @@
   }
 }
 
-@-webkit-keyframes spinner-border {
-  to {
-    -webkit-transform: rotate(1turn);
-    transform: rotate(1turn);
-  }
-}
-
 @keyframes spinner-border {
   to {
-    -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
   }
 }

@@ -31,8 +31,8 @@ export const SubmitRow = ({
   const align = props.align || 'block';
 
   return (
-    <div className={cx(styles['submit-row'], styles[`submit-row--${align}`])}>
-      <div className={styles['cancel']}>
+    <div className={cx(styles.submitRow, styles[`submit-row--${align}`])}>
+      <div className={styles.cancel}>
         {!isLoading && cancelLabel && (
           <Button
             buttonStyle="tertiary"
@@ -44,10 +44,10 @@ export const SubmitRow = ({
           </Button>
         )}
       </div>
-      <div className={styles['spacer']}>
+      <div className={styles.spacer}>
         <HoritzontalSpacing spacing="spacing-m" />
       </div>
-      <div className={styles['confirm']}>
+      <div className={styles.confirm}>
         {confirmLabel && (
           <Button
             buttonType="submit"

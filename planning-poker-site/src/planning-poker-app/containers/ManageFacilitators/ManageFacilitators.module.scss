@@ -1,30 +1,66 @@
 .facilitators {
-  /* ManageFacilitators-module--facilitators--2FFK0 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .facilitator {
-  /* ManageFacilitators-module--facilitator--4nxyn */
+  align-items: center;
+  -webkit-column-gap: 1.6rem;
+  column-gap: 1.6rem;
+  display: grid;
+  grid-template-columns: 4.8rem 1fr 12rem 9.8rem;
+  margin-bottom: 1.6rem;
+  width: 100%;
 }
+
 .facilitator__empty-profile-pick {
-  /* ManageFacilitators-module--facilitator__empty-profile-pick--3U-yd */
+  background-color: #f9f9f9;
+  border: 2px dashed #d1d4d7;
+  border-radius: 50%;
+  height: 4.8rem;
+  width: 4.8rem;
 }
+
 .facilitator__email {
-  /* ManageFacilitators-module--facilitator__email--CQq0g */
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 .facilitator__img {
-  /* ManageFacilitators-module--facilitator__img--qp2Os */
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+
 .facilitator__actions {
-  /* ManageFacilitators-module--facilitator__actions--25GLZ */
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+
+  > * {
+    flex-shrink: 0;
+  }
 }
+
 .upgrade-icon {
-  /* ManageFacilitators-module--upgrade-icon--36iwQ */
+  color: #00d68f;
+  line-height: 1;
 }
+
 .downgrade-icon {
-  /* ManageFacilitators-module--downgrade-icon--1Heeo */
+  color: #ff3d71;
+  line-height: 1;
 }
+
 .change-preview {
-  /* ManageFacilitators-module--change-preview--WmLnY */
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 2.4rem;
 }
+
 .change-preview__flexbox {
-  /* ManageFacilitators-module--change-preview__flexbox--6MbRk */
+  width: auto;
 }

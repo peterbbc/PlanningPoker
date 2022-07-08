@@ -24,10 +24,10 @@ export const DonutChart = ({ percentatge }: DonutChartProps) => {
     label = <RobotEmoji robot="party" />;
   }
   return (
-    <div className={styles['donut-chart']}>
-      <svg className={styles['chart']} viewBox="0 0 48 48">
+    <div className={styles.donutChart}>
+      <svg className={styles.chart} viewBox="0 0 48 48">
         <circle
-          className={styles['background-cricle']}
+          className={styles.backgroundCricle}
           cx="24"
           cy="22"
           r="22"
@@ -37,7 +37,7 @@ export const DonutChart = ({ percentatge }: DonutChartProps) => {
           cy="24"
           r="22"
           fill="transparent"
-          stroke-width="4"
+          strokeWidth="4"
           stroke="#e8e9ea"
         />
         <circle

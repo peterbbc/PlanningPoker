@@ -19,10 +19,10 @@ export const Label: React.FC<FormLabelProps> = ({
   ...labelProps
 }) => {
   const className = cx(
-    styles['label'],
-    isPlaceholder && styles['placeholder'],
-    hasLeftAddon && styles['label--has-left-addon'],
-    isMultiple && styles['label--multiple'],
+    styles.label,
+    isPlaceholder && styles.placeholder,
+    hasLeftAddon && styles.labelHasLeftAddon,
+    isMultiple && styles.labelMultiple,
   );
 
   return (

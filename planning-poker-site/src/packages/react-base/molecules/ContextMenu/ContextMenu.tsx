@@ -19,7 +19,7 @@ export const ContextMenu = ({ elements, maxHeight }: ContextMenuProps) => {
   return (
     <ul
       className={cx(
-        styles['list'],
+        styles.list,
         maxHeight && styles[`list--max-height-${maxHeight}`],
       )}
     >

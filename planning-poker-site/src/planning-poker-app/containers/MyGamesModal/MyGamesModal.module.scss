@@ -1,12 +1,24 @@
 .tabs {
-  /* MyGamesModal-module--tabs--2QKN2 */
+  padding: .8rem;
 }
+
+.top-bar-content {
+}
+
 .top-bar-title {
-  /* MyGamesModal-module--top-bar-title--3NZ06 */
+  align-items: center;
+  display: flex;
+  height: 5.6rem;
+  justify-content: center;
 }
+
 .title-span {
-  /* MyGamesModal-module--title-span--pGZ3I */
+  margin-left: 1.6rem;
 }
+
 .empty-message {
-  /* MyGamesModal-module--empty-message--1yxQL */
+  font-weight: 700;
+  opacity: .5;
+  padding: 0 4rem 4rem;
+  text-align: center;
 }

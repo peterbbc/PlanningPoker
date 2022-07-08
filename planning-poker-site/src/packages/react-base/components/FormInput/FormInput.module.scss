@@ -1,3 +1,27 @@
 .icon {
-  /* FormInput-module--icon--1FiZ_ */
+  align-items: center;
+  color: #0095ff;
+  display: flex;
+  justify-content: center;
+  margin-right: .4rem;
+
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.clear-button {
+  color: #a8aeb2 !important;
+  position: absolute;
+  right: 4rem;
+  top: calc(50% + .4rem);
+  transform: translateY(-50%);
+  z-index: 9;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    color: #48545d !important;
+  }
 }

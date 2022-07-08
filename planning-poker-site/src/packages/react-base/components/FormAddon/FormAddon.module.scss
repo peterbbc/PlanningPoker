@@ -1,12 +1,38 @@
 .form-addon {
-  /* FormAddon-module--form-addon--3kWXa */
+  align-items: center;
+  background: #f9f9f9;
+  border: solid #e8e9ea;
+  border-radius: .6rem 0 0 .6rem;
+  border-width: 0 1px 0 0;
+  color: #1a2935;
+  display: flex;
+  font-weight: 700;
+  height: calc(5.6rem - 4px);
+  justify-content: center;
+  left: 2px;
+  position: absolute;
+  top: calc(1rem + 2px);
+  width: calc(5.6rem - 4px);
+  z-index: 2;
+
+  @media (min-width: 920px) {
+    height: calc(4.8rem - 4px);
+    width: calc(4.8rem - 4px);
+  }
 }
+
 .form-addon--no-label {
-  /* FormAddon-module--form-addon--no-label--1KyhT */
+  top: 2px;
 }
+
 .form-addon--right {
-  /* FormAddon-module--form-addon--right--2jNSU */
+  border-radius: 0 .6rem .6rem 0;
+  border-width: 0 0 0 1px;
+  left: auto;
+  right: 2px;
 }
+
 .form-addon--clickable {
-  /* FormAddon-module--form-addon--clickable--3xxKk */
+  background: #f1f1f1;
+  cursor: pointer;
 }

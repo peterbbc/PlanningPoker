@@ -26,11 +26,11 @@ export const CardValueSide: React.FC<CardValueSideProps> = ({
   onClick,
 }) => {
   const className = cx(
-    styles['value-side'],
-    isSelected && styles['is-selected'],
-    isValueSideStyle && styles['is-value-side-style'],
-    isButton && styles['is-button'],
-    isDisabled && styles['is-disabled'],
+    styles.valueSide,
+    isSelected && styles.isSelected,
+    isValueSideStyle && styles.isValueSideStyle,
+    isButton && styles.isButton,
+    isDisabled && styles.isDisabled,
     size && styles[size],
     'notranslate',
   );

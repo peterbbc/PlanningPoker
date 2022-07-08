@@ -1,33 +1,50 @@
 .flexbox {
-  /* FlexBox-module--flexbox--1BBt9 */
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
+
 .flexbox--inline {
-  /* FlexBox-module--flexbox--inline--14gLz */
+  display: inline-flex;
+  width: auto;
 }
+
 .flexbox--start {
-  /* FlexBox-module--flexbox--start--14fav */
+  justify-content: flex-start;
 }
+
 .flexbox--center {
-  /* FlexBox-module--flexbox--center--1N6Wx */
+  justify-content: center;
 }
+
 .flexbox--end {
-  /* FlexBox-module--flexbox--end--2SJEg */
+  justify-content: flex-end;
 }
+
 .flexbox--space-between {
-  /* FlexBox-module--flexbox--space-between--1S89F */
+  justify-content: space-between;
 }
+
+.flexbox--space-evenly {
+  justify-content: space-evenly;
+}
+
 .flexbox--align-start {
-  /* FlexBox-module--flexbox--align-start--1vDtl */
+  align-items: flex-start
 }
+
 .flexbox--align-center {
-  /* FlexBox-module--flexbox--align-center--23yEX */
+  align-items: center
 }
+
 .flexbox--align-end {
-  /* FlexBox-module--flexbox--align-end--1BVvP */
+  align-items: flex-end
 }
+
 .flexbox--align-strech {
-  /* FlexBox-module--flexbox--align-strech--2Pe0p */
+  align-items: stretch
 }
+
 .flexbox--wrap-elements {
-  /* FlexBox-module--flexbox--wrap-elements--1fyPi */
+  flex-wrap: wrap
 }

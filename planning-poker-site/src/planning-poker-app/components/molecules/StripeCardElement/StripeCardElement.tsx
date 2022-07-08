@@ -14,7 +14,7 @@ export const StripeCardElement = ({
   isError,
 }: StripeCardElementProps) => {
   return (
-    <div className={cx(styles.wrapper, isError && styles['wrapper--error'])}>
+    <div className={cx(styles.wrapper, isError && styles.wrapperError)}>
       <CardElement
         onChange={onChange}
         options={{

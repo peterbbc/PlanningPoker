@@ -275,7 +275,7 @@ const SettingsForm = forwardRef(function SettingsForm(
   const showManageDecks = !isCreateForm && !!customDecks?.length;
 
   return (
-    <div className={styles['settings']}>
+    <div className={styles.settings}>
       <form onSubmit={handleFormSubmit}>
         {!isCreateForm && pokerTable.ownerId && (
           <SelectFacilitator

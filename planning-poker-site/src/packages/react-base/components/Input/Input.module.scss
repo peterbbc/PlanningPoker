@@ -1,21 +1,69 @@
 .input {
-  /* Input-module--input--l73_O */
+  appearance: none;
+  background: transparent;
+  border: 2px solid #e8e9ea;
+  border-radius: .6rem;
+  color: #1a2935;
+  font-size: 1.6rem;
+  height: 5.6rem;
+  outline: none;
+  padding: 0 1.6rem;
+  position: relative;
+  transition: all .1s;
+  width: 100%;
+  z-index: 1;
+
+  @media (min-width: 920px) {
+    height: 4.8rem;
+
+    @at-root .input--filter {
+      border-width: 1px;
+      font-size: 1.4rem;
+      height: 3.2rem;
+      padding: 0 .8rem;
+    }
+  }
+
+  &:hover {
+    border-color: #d1d4d7;
+  }
+
+  &:focus {
+    border-color: #3993ff;
+  }
 }
-.input--filter {
-  /* Input-module--input--filter--1rP9g */
-}
+
 .input--has-left-addon {
-  /* Input-module--input--has-left-addon--1qurU */
+  padding-left: 5.6rem;
 }
+
 .input--has-right-addon {
-  /* Input-module--input--has-right-addon--1vcfC */
+  padding-right: 5.6rem;
 }
+
 .input--first {
-  /* Input-module--input--first--3MBwj */
+  border-radius: .6rem .6rem 0 0;
+  border-width: 2px 2px 1px;
+
+  &:focus {
+    border-width: 2px;
+  }
 }
+
 .input--center {
-  /* Input-module--input--center--xez4G */
+  border-radius: 0;
+  border-width: 1px 2px;
+
+  &:focus {
+    border-width: 2px;
+  }
 }
+
 .input--last {
-  /* Input-module--input--last--uvoa7 */
+  border-radius: 0 0 .6rem .6rem;
+  border-width: 1px 2px 2px;
+
+  &:focus {
+    border-width: 2px;
+  }
 }

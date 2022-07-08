@@ -23,7 +23,7 @@ const ROBOTS = {
 export const RobotEmoji = ({ robot }: RobotEmojiProps) => {
   return (
     <img
-      className={styles['robot-emoji']}
+      className={styles.robotEmoji}
       src={ROBOTS[robot]}
       alt={`robot ${robot}`}
     />

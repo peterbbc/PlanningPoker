@@ -123,10 +123,10 @@ export const VotingHistoryModal = ({ onClose }: VotingHistoryModalProps) => {
           )}
         </div>
       ) : (
-        <div className={styles['voting-history-modal']}>
+        <div className={styles.votingHistoryModal}>
           <ModalTitle>Voting history</ModalTitle>
           <FlexBox justifyContent="space-between">
-            <div className={styles['meeting-select']}>
+            <div className={styles.meetingSelect}>
               <FormSelect
                 options={selectMeetingOptions}
                 value={selectedMeeting}
@@ -142,7 +142,7 @@ export const VotingHistoryModal = ({ onClose }: VotingHistoryModalProps) => {
               />
             </div>
           </FlexBox>
-          <div className={styles['table-wrapper']}>
+          <div className={styles.tableWrapper}>
             <table width="100%">
               <colgroup>
                 <col span={1} style={{ width: hasSomeIssue ? '40%' : '10%' }} />

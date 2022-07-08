@@ -14,13 +14,13 @@ export const FeatureItem: React.FC<FeatureItemProps> = ({
   isStrong,
 }) => (
   <div className={styles.item}>
-    <div className={cx(styles['icon-container'])}>
+    <div className={cx(styles.iconContainer)}>
       <Icon icon="check" />
     </div>
     <div
       className={cx(
-        styles['text-container'],
-        isStrong && styles['text-container--strong'],
+        styles.textContainer,
+        isStrong && styles.textContainerStrong,
       )}
     >
       {children}

@@ -42,7 +42,7 @@ export const UpdatePaymentMethodModal = ({
         </>
       )}
 
-      <div className={styles['checkout-form-wrapper']}>
+      <div className={styles.checkoutFormWrapper}>
         <StripeElementsProvider>
           <UpdatePaymentMethodForm onSuccess={onClose} />
         </StripeElementsProvider>

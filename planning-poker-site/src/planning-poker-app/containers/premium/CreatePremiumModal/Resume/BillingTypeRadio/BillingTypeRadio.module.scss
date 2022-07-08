@@ -1,12 +1,32 @@
 .item {
-  /* BillingTypeRadio-module--item--sfsfE */
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.6rem;
 }
+
 .radio {
-  /* BillingTypeRadio-module--radio--2TlWB */
+  flex-shrink: 0;
+  margin: 0;
 }
+
 .label {
-  /* BillingTypeRadio-module--label--3fRHp */
+  align-items: center;
+  display: flex;
+  margin-left: 1.6rem;
+  width: 100%;
 }
+
 .save-label {
-  /* BillingTypeRadio-module--save-label--1-Co2 */
+  align-items: center;
+  background-color: #d7e9ff;
+  border-radius: 4px;
+  color: #0095ff;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 1.4rem !important;
+  font-weight: 600;
+  height: 3.2rem;
+  line-height: 1em;
+  margin-left: 1.6rem;
+  padding: 0 1.2rem;
 }

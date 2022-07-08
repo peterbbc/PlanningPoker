@@ -1,9 +1,13 @@
 .submit-row {
-  /* EditDisplayNameModal-module--submit-row--2KoVP */
+  text-align: right;
 }
+
 .extra-actions {
-  /* EditDisplayNameModal-module--extra-actions--lQYvl */
-}
-.extra-action {
-  /* EditDisplayNameModal-module--extra-action--3Io69 */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+
+  .extra-action {
+    font-weight: 400;
+  }
 }

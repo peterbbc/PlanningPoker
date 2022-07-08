@@ -9,12 +9,12 @@ export const ManageDecksForm = () => {
   const { user } = useCurrentUser();
 
   return (
-    <ul className={styles['decks']}>
+    <ul className={styles.decks}>
       {user?.customDecks?.length ? (
         user?.customDecks.map((deck, i) => (
           <li key={i}>
             <div>{`${deck.name} (${deck.value})`}</div>
-            <div className={styles['delete-button']}>
+            <div className={styles.deleteButton}>
               <ButtonLink
                 buttonColor="danger"
                 onClick={() => removeDeckFromUser(user, i)}

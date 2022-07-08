@@ -42,7 +42,7 @@ const InvitePlayersModal: React.FC<InvitePlayersModalProps> = ({ onClose }) => {
         readOnly
         value={typeof window !== 'undefined' ? window.location.href : ''}
       />
-      <div className={styles['submit-row']}>
+      <div className={styles.submitRow}>
         <Button isBlock onClick={handleCopyLinkClick}>
           Copy invitation link
         </Button>

@@ -1,6 +1,19 @@
 .wrapper {
-  /* StripeCardElement-module--wrapper--1DdYX */
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #e8e9ea;
+  border-radius: 6px;
+  display: flex;
+  height: 56px;
+  justify-content: stretch;
+  padding: 0 24px;
+  width: 100%;
+
+  > div {
+    width: 100%;
+  }
 }
+
 .wrapper--error {
-  /* StripeCardElement-module--wrapper--error--3HSAp */
+  border-color: #ff3d71;
 }

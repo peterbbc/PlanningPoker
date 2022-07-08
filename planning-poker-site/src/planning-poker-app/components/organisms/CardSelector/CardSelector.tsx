@@ -32,9 +32,9 @@ export const CardSelector: React.FC<CardSelectorProps> = ({
       }
     }
 
-    const className = cx(styles['card'], {
-      [styles['disabled']]: isDisabled,
-      [styles['selected']]: isActive,
+    const className = cx(styles.card, {
+      [styles.disabled]: isDisabled,
+      [styles.selected]: isActive,
     });
 
     return (
@@ -51,11 +51,11 @@ export const CardSelector: React.FC<CardSelectorProps> = ({
     );
   }
 
-  const className = cx(styles['container']);
+  const className = cx(styles.container);
 
   return (
     <div className={className}>
-      <ul ref={cardListRef} className={cx(styles['card-list'])}>
+      <ul ref={cardListRef} className={cx(styles.cardList)}>
         {cards.map((card, i) => renderCardItem(card, i.toString()))}
       </ul>
 

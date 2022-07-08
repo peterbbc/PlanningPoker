@@ -55,7 +55,7 @@ export const Resume = ({
   }
 
   return (
-    <div className={styles['resume']}>
+    <div className={styles.resume}>
       <Paragraph fontWeight="bold">Premium plan</Paragraph>
       <VerticalSpacing spacing="spacing-l" />
       <Paragraph size="small" fontWeight="bold">
@@ -109,7 +109,7 @@ export const Resume = ({
           </FlexBox>
         </div>
       ) : (
-        <div className={styles['totals']}>
+        <div className={styles.totals}>
           <FlexBox justifyContent="space-between">
             <Span spanStyle="bold" size="small">
               Total today:

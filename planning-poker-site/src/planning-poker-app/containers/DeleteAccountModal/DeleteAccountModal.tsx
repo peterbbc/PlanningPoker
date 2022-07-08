@@ -91,7 +91,7 @@ export const DeleteAccountModal = ({ onClose }: DeleteAccountModalProps) => {
             required
           />
           {errorMessage && (
-            <div className={styles['error-message']}>{errorMessage}</div>
+            <div className={styles.errorMessage}>{errorMessage}</div>
           )}
           <Button buttonType="submit" isLoading={isLoading} isBlock>
             Continue

@@ -74,12 +74,11 @@ const InputFC: React.ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
       id={name}
       ref={ref}
       className={cx(
-        styles['input'],
-        hasLeftAddon && styles['input--has-left-addon'],
-        hasRightAddon && styles['input--has-right-addon'],
+        styles.input,
+        hasLeftAddon && styles.inputHasLeftAddon,
+        hasRightAddon && styles.inputHasRightAddon,
         style && styles[`input--${style}`],
-        formInputMultiplePosition &&
-          styles[`input--${formInputMultiplePosition}`],
+        formInputMultiplePosition && styles[`input--${formInputMultiplePosition}`],
       )}
       type={type}
       value={value}

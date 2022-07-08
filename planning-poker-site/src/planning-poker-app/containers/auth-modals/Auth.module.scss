@@ -1,24 +1,54 @@
 .box {
-  /* Auth-module--box--3UMjL */
+  max-width: 400px;
+  padding-top: 1.6rem;
+  width: 100%;
 }
+
 .title {
-  /* Auth-module--title--1samh */
+  margin: 0 0 3.2rem;
+  text-align: center;
 }
+
 .headline {
-  /* Auth-module--headline--168xu */
+  font-size: 1.4rem;
+  margin: 0 0 2.4rem;
+
+  @media(min-width:720px) {
+    margin: -3.6rem 0 3.6rem;
+  }
 }
+
 .form-actions {
-  /* Auth-module--form-actions--H0x-P */
+  align-items: center;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  margin: 3.2rem 0;
+
+  > div:not(:first-child) {
+    margin-left: 2.8rem;
+  }
 }
+
 .question {
-  /* Auth-module--question--3Zxcb */
+  color: #a8aeb2;
+  font-weight: 500;
+  margin: 0 0 .2rem;
 }
+
 .change-action {
-  /* Auth-module--change-action--q2-63 */
+  font-weight: 500 !important;
+  text-decoration: none;
 }
+
 .success-message {
-  /* Auth-module--success-message--1dh99 */
+  font-size: 1.6rem;
+  margin: 0 0 1.6rem;
 }
+
 .error-message {
-  /* Auth-module--error-message--3Qdyp */
+  color: #ff3d71;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+  text-align: center;
 }

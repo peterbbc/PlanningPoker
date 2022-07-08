@@ -1,6 +1,10 @@
 .wrapper {
-  /* CreatePremiumModal-module--wrapper--T5-T3 */
+  column-gap: 5.6rem;
+  display: grid;
+  grid-template-columns: 1fr 43.3rem;
+  width: 95.4rem;
 }
+
 .next-cta-container {
-  /* CreatePremiumModal-module--next-cta-container--2ilb8 */
+  padding: 0 4rem;
 }

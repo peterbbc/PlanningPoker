@@ -1,12 +1,21 @@
 .form-input-inline-edit {
-  /* FormInputInlineEdit-module--form-input-inline-edit--36vEo */
-}
-.value-container {
-  /* FormInputInlineEdit-module--value-container--3niKx */
-}
-.inputs {
-  /* FormInputInlineEdit-module--inputs--3Ceit */
-}
-.form-input {
-  /* FormInputInlineEdit-module--form-input--1arK- */
+  .value-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.4rem;
+
+    .form-input {
+      width: 100%;
+    }
+
+    @media (min-width: 920px) {
+      flex-wrap: nowrap;
+      padding-top: 1.6rem;
+    }
+  }
 }

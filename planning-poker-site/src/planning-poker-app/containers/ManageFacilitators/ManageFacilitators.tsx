@@ -65,7 +65,7 @@ export const ManageFacilitators = ({
   );
 
   return (
-    <div className={styles['manage-facilitators']}>
+    <div className={styles.manageFacilitators}>
       <Header4>Manage facilitators</Header4>
       <VerticalSpacing spacing="spacing-xl" />
       <Paragraph>
@@ -108,7 +108,7 @@ export const ManageFacilitators = ({
         </>
       )}
       <VerticalSpacing spacing="spacing-xxl" />
-      <div className={styles['facilitator']}>
+      <div className={styles.facilitator}>
         <div></div>
         <div>
           <Paragraph color="grey500">Name</Paragraph>
@@ -118,7 +118,7 @@ export const ManageFacilitators = ({
         </div>
         <div></div>
       </div>
-      <ul className={styles['facilitators']}>
+      <ul className={styles.facilitators}>
         {premiumUserFacilitators?.map((facilitatorID) => (
           <li key={facilitatorID}>
             <Facilitator

@@ -27,7 +27,7 @@ export const BillingTypeRadio = ({
             label: (
               <FlexBox>
                 <span>Yearly ($300/year)</span>
-                <span className={styles['save-label']}>SAVE 16%</span>
+                <span className={styles.saveLabel}>SAVE 16%</span>
               </FlexBox>
             ),
           },

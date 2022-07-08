@@ -1,9 +1,26 @@
 .container {
-  /* CardSelector-module--container--2Kc-7 */
+  position: relative;
 }
+
 .card-list {
-  /* CardSelector-module--card-list--U_7kd */
-}
-.card {
-  /* CardSelector-module--card--1i2Mh */
+  list-style: none;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1.6rem;
+  text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+
+  .card {
+    display: inline-block;
+    margin: 0 .8rem;
+    transition: all .1s linear;
+    vertical-align: top;
+    white-space: nowrap;
+  }
 }

@@ -92,7 +92,7 @@ const SignIn: React.FC<SigninProps> = ({
           {isSubscribingToPremium ? 'Login and proceed to checkout' : 'Login'}
         </Button>
       </FormGroup>
-      <div className={styles['form-actions']}>
+      <div className={styles.formActions}>
         <div>
           <ButtonLink onClick={onClickSignup}>Create account</ButtonLink>
         </div>

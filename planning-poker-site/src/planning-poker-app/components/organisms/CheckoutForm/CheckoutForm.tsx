@@ -19,9 +19,9 @@ export const CheckoutForm = ({
 }: CheckoutFormProps) => {
   return (
     <>
-      <div className={styles['card-label-wrapper']}>
+      <div className={styles.cardLabelWrapper}>
         <Paragraph fontWeight="bold">Card details</Paragraph>
-        <div className={styles['stripe-powered']}>
+        <div className={styles.stripePowered}>
           <span>
             <span>
               Powered by{' '}

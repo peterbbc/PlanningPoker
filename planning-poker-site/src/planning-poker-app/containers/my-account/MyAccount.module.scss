@@ -1,42 +1,78 @@
 .tabs {
-  /* MyAccount-module--tabs--8qJZM */
+  padding: .8rem;
 }
+
 .title-span {
-  /* MyAccount-module--title-span--3-Q4t */
+  margin-left: 1.6rem;
 }
+
 .empty-message {
-  /* MyAccount-module--empty-message--SUXiE */
+  font-weight: 700;
+  opacity: .5;
+  padding: 0 4rem 4rem;
+  text-align: center;
 }
+
 .section-title {
-  /* MyAccount-module--section-title--1nWPC */
+  align-items: center;
+  display: flex;
+  font-size: 2.4rem;
+  margin: 0;
 }
+
 .section-subtitle {
-  /* MyAccount-module--section-subtitle--1cAH1 */
+  align-items: center;
+  color: #1a2935;
+  display: flex;
+  font-size: 1.8rem;
+  margin: 0;
 }
+
 .section-value {
-  /* MyAccount-module--section-value--38Xuq */
+  font-size: 1.8rem;
+  margin: .8rem 0 0;
 }
+
 .subscription-status {
-  /* MyAccount-module--subscription-status--3MsbI */
+  background-color: #00d68f;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-weight: 700;
+  margin: 0 0 0 1rem;
+  padding: .4rem .8rem;
+  text-align: center;
 }
+
 .subscription-status--past-due {
-  /* MyAccount-module--subscription-status--past-due--KmvO2 */
+  background-color: #fa0;
 }
-.subscription-status--unpaid {
-  /* MyAccount-module--subscription-status--unpaid--1JsYY */
-}
+
+.subscription-status--unpaid,
 .subscription-status--incomplete {
-  /* MyAccount-module--subscription-status--incomplete--YUhTV */
+  background-color: #ff3d71;
 }
+
 .subscription-status--canceled {
-  /* MyAccount-module--subscription-status--canceled--1MjpF */
+  background-color: #a8aeb2;
 }
+
 .switch-to-yearly {
-  /* MyAccount-module--switch-to-yearly--t3hNk */
+  background: #f9f9f9;
+  border-radius: .8rem;
 }
+
 .switch-to-yearly__icon {
-  /* MyAccount-module--switch-to-yearly__icon--3_e0R */
+  flex-shrink: 0;
+  height: 4.8rem;
+  width: 4.8rem;
+
+  > img {
+    width: 2.4rem;
+  }
 }
+
 .switch-to-yearly__cta {
-  /* MyAccount-module--switch-to-yearly__cta--2MxLx */
+  flex-shrink: 0;
 }

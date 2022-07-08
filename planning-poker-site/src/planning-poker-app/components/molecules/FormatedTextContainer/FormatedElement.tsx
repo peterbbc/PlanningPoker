@@ -38,7 +38,7 @@ export const FormatedElement = ({ i, element, mode }: FormatedElementProps) => {
             <a
               onClick={(event) => event.stopPropagation()}
               href={element.url}
-              className={styles['link']}
+              className={styles.link}
               target="_blank"
               rel="noopener noreferrer"
               key={i.toString()}

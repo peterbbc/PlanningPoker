@@ -1,9 +1,58 @@
 .voting-history-modal {
-  /* VotingHistoryModal-module--voting-history-modal--t3EeO */
-}
-.table-wrapper {
-  /* VotingHistoryModal-module--table-wrapper--1mm1s */
-}
-.meeting-select {
-  /* VotingHistoryModal-module--meeting-select--1OdBu */
+  max-width: 1600px;
+  min-height: 50vh;
+  width: 90vw;
+
+  .table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  table,
+  td,
+  th {
+    border: none;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    max-width: 100%;
+    min-width: 900px;
+
+    thead {
+      background-color: #f9f9f9;
+      height: 4.8rem;
+    }
+
+    td,
+    th {
+      border-bottom: 1px solid #e8e9ea;
+      font-size: 1.4rem;
+      max-width: 200px;
+      padding: 0 1.6rem;
+      text-align: left;
+
+      &:not(:first-child):not(:last-child) {
+        text-align: right;
+      }
+
+      &:last-child {
+        padding-left: 3.2rem;
+      }
+    }
+
+    td {
+      > span {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .meeting-select {
+    width: 30rem;
+  }
 }

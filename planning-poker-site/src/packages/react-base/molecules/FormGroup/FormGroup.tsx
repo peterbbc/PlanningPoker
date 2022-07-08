@@ -19,10 +19,10 @@ export const FormGroup: React.FC<FormGroupProps> = ({
   return (
     <div
       className={cx(
-        styles['form-group'],
+        styles.formGroup,
         className,
-        isSubmit && styles['form-group--submit'],
-        isNoMargin && styles['form-group--no-margin'],
+        isSubmit && styles.formGroupSubmit,
+        isNoMargin && styles.formGroupNoMargin,
       )}
     >
       {children}
