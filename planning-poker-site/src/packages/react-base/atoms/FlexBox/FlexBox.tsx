@@ -24,11 +24,11 @@ export const FlexBox = ({
 }: FlexBoxProps) => (
   <div
     className={cx(
-      styles.flexbox,
-      isInline && styles.flexboxInline,
+      styles['flexbox'],
+      isInline && styles['flexbox--inline'],
       justifyContent && styles[`flexbox--${justifyContent}`],
       alignItems && styles[`flexbox--align-${alignItems}`],
-      wrapElements && styles.flexboxWrapElements,
+      wrapElements && styles[`flexbox--wrap-elements`],
       className,
     )}
     onClick={onClick}

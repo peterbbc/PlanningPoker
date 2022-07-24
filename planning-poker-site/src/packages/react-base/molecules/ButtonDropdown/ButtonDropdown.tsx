@@ -119,8 +119,9 @@ export const ButtonDropdown = ({
             className={cx(
               className,
               styles.button,
-              isOpen && styles.buttonIsActive,
-              isLight && styles.buttonLight,
+              isOpen && styles[`button--is-active`],
+              isLight && styles[`button--light`],
+              hideChevron && styles['button--hide-chevron'],
             )}
           >
             {children}
@@ -134,7 +135,7 @@ export const ButtonDropdown = ({
       {isOpen &&
         ReactDOM.createPortal(
           <div
-            className={cx(styles.dropdown, styles[`dropdown--${size}`])}
+            className={cx(styles['dropdown'], styles[`dropdown--${size}`])}
             style={dropdownStyle}
             ref={(el) => {
               setDropdownElement(el);

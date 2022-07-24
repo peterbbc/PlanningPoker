@@ -65,7 +65,7 @@ export const ImageCropper = ({
 
   return (
     <div>
-      <div className={styles.cropContainer}>
+      <div className={styles['crop-container']}>
         <Cropper
           image={imageDataUrl}
           crop={crop}
@@ -79,7 +79,7 @@ export const ImageCropper = ({
         />
       </div>
       <VerticalSpacing spacing="spacing-m" />
-      <div className={styles.controls}>
+      <div className={styles['controls']}>
         <FlexBox justifyContent="space-between">
           <Span color="grey500">Zoom</Span>
           <Span color="grey500">{`${zoom?.toFixed(2)} %`}</Span>
@@ -91,7 +91,7 @@ export const ImageCropper = ({
           step={0.1}
           aria-labelledby="Zoom"
           onChange={(_e, zoom) => setZoom(Number(zoom))}
-          classes={{ root: styles.slider }}
+          classes={{ root: styles['slider'] }}
         />
       </div>
       <VerticalSpacing spacing="spacing-xl" />

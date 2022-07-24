@@ -27,7 +27,7 @@ export const BackToTopButton = () => {
   if (!isScrolled) return null;
 
   return (
-    <button className={styles.backToTopButton} onClick={handleClick}>
+    <button className={styles['back-to-top-button']} onClick={handleClick}>
       <svg
         width="24"
         height="24"

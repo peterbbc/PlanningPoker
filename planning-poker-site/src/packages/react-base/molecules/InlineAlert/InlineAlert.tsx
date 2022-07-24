@@ -28,9 +28,9 @@ export const InlineAlert = ({
   return (
     <FlexBox
       className={cx(
-        styles.inlineAlert,
+        styles['inline-alert'],
         styles[`inline-alert--${style}`],
-        !!onClick && styles.inlineAlertClickable,
+        !!onClick && styles[`inline-alert--clickable`],
       )}
       alignItems="start"
       onClick={onClick}

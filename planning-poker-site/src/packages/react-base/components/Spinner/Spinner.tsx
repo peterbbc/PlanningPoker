@@ -9,11 +9,11 @@ interface SpinnerProps {
 }
 
 export const Spinner: React.FC<SpinnerProps> = ({ className, size }) => {
-  return <span
-    className={cx(
-      styles.spinner,
-      size && styles[size],
-      className,
-    )}
-  />;
+  const classNames = cx(
+    styles['spinner'],
+    size && styles[size],
+    className,
+  );
+
+  return <span className={classNames} />;
 };

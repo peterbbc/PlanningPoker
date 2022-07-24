@@ -23,7 +23,7 @@ export const Notifications = ({
 
   return (
     <>
-      <div className={styles.notificationsContainer}>
+      <div className={styles['notifications-container']}>
         {openNotifications.map((notification) => (
           <Notification
             key={notification.uuid}

@@ -41,12 +41,12 @@ const ButtonFC: React.ForwardRefRenderFunction<
 
   const resolvedClassName = cx(
     className,
-    styles.buttonLink,
+    styles['button-link'],
     buttonColor && styles[`color-${buttonColor}`],
     fontWeight && styles[`font-weight-${fontWeight}`],
     size && styles[`size-${size}`],
     {
-      [styles.isDisabled]: isDisabled,
+      [styles['is-disabled']]: isDisabled,
       [styles[`tooltip--${tooltipPosition}`]]: tooltipPosition,
     },
     'is-clickable',

@@ -24,11 +24,11 @@ const InputNumberFC: React.ForwardRefRenderFunction<
   const isMinButtonDisabled =
     typeof props.min === 'number' && value <= props.min;
   return (
-    <div className={styles.wrapper}>
+    <div className={styles['wrapper']}>
       <button
         className={cx(
-          styles.minusButton,
-          isMinButtonDisabled && styles.minusButtonDisabled,
+          styles['minus-button'],
+          isMinButtonDisabled && styles['minus-button--disabled'],
         )}
         type="button"
         disabled={isMinButtonDisabled}
@@ -45,7 +45,7 @@ const InputNumberFC: React.ForwardRefRenderFunction<
       </button>
       <input
         ref={ref}
-        className={styles.input}
+        className={styles['input']}
         {...props}
         value={props.value || undefined}
         type="number"
@@ -55,7 +55,7 @@ const InputNumberFC: React.ForwardRefRenderFunction<
       />
       <button
         type="button"
-        className={styles.plusButton}
+        className={styles['plus-button']}
         onClick={() => {
           const newValue = value + 1;
           if (typeof props.max !== 'undefined' && newValue > props.max) {

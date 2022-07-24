@@ -93,21 +93,21 @@ export const FormInputInlineEdit = ({
   };
 
   return (
-    <div className={styles.formInputInlineEdit}>
-      <div className={styles.label}>
+    <div className={styles['form-input-inline-edit']}>
+      <div className={styles['label']}>
         <Span spanStyle="bold">{label}</Span>
       </div>
       <VerticalSpacing spacing="spacing-s" />
       <form
         style={{ display: isFocus ? 'block' : 'none' }}
-        className={styles.form}
+        className={styles['form']}
         onSubmit={handleFormSubmit}
       >
-        <div className={styles.inputs}>
+        <div className={styles['inputs']}>
           {currentInputs &&
             currentInputs.map((input, i) => {
               return (
-                <div className={styles.formInput}>
+                <div className={styles['form-input']}>
                   <FormInput
                     key={input.id}
                     {...input}
@@ -128,7 +128,7 @@ export const FormInputInlineEdit = ({
       </form>
       <div
         style={{ display: isFocus ? 'none' : 'flex' }}
-        className={styles.valueContainer}
+        className={styles['value-container']}
       >
         <Span>{value}</Span>
         <ButtonLink onClick={handleChangeClick}>Change</ButtonLink>

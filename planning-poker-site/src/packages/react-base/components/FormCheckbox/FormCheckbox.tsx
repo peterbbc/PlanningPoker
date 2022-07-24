@@ -59,7 +59,7 @@ const FormCheckboxFC: React.ForwardRefRenderFunction<
         <div
           className={cx(
             styles.label,
-            inputProps.boxSize === 'big' && styles.labelBig,
+            inputProps.boxSize === 'big' && styles['label--big'],
           )}
         >
           <label htmlFor={props.id}>{label}</label>

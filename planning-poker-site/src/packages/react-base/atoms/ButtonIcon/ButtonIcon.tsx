@@ -1,4 +1,4 @@
-import classnames from 'classnames';
+import cx from 'classnames';
 import React, { useRef, useState } from 'react';
 import ReactDom from 'react-dom';
 import { usePopover } from '../../../react-use-popover';
@@ -25,6 +25,7 @@ export interface ButtonProps {
   isFloatingButton?: boolean;
   className?: string;
   translate?: 'no';
+  size?: 's' | 'sm' | 'm';
   isShowTooltipOnSmallScreen?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   containerBackgroundColor?: 'grey200' | 'primary-white';
@@ -58,6 +59,7 @@ const ButtonFC: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> =
       isShowTooltipOnSmallScreen,
       tooltipDontHide,
       isNoOpactity,
+      size,
     } = resolvedProps;
 
     const buttonRef = useRef<HTMLButtonElement | null>(null);
@@ -86,10 +88,11 @@ const ButtonFC: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> =
       }
     };
 
-    const resolvedClassName = classnames(
+    const resolvedClassName = cx(
       className,
       styles['button-icon'],
       styles[`color-${buttonColor}`],
+      size && styles[`size-${size}`],
       containerBackgroundColor &&
         styles[`color-container-${containerBackgroundColor}`],
       {

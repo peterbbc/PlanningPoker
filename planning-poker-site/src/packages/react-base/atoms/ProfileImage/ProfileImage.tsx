@@ -63,8 +63,8 @@ export const ProfileImage = ({
   return (
     <div
       className={cx(
-        styles.profileImg,
-        isEmpty && styles.profileImgEmpty,
+        styles['profile-img'],
+        isEmpty && styles['profile-img--empty'],
         styles[`profile-img--${size || 'm'}`],
       )}
       ref={imageRef}
@@ -81,12 +81,12 @@ export const ProfileImage = ({
       ) : (
         <>
           {src && <img src={src} alt={alt} />}
-          <div className={styles.shadow} />
+          <div className={styles['shadow']} />
         </>
       )}
       {(onClick || isClickable) && (
-        <button type="button" className={styles.button} onClick={onClick}>
-          <span className={styles.buttonIcon}>
+        <button type="button" className={styles['button']} onClick={onClick}>
+          <span className={styles['button-icon']}>
             <Icon icon="camera" />
           </span>
         </button>

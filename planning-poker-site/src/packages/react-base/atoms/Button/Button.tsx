@@ -97,17 +97,17 @@ const ButtonFC: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> =
 
     const resolvedClassName = cx(
       className,
-      styles.button,
+      styles['button'],
       styles[`style-${buttonStyle}`],
       styles[`color-${buttonColor}`],
       overBackgroundColor && styles[`over-background-color-${overBackgroundColor}`],
       size && styles[`size-${size}`],
       {
-        [styles.isLoading]: isLoading,
-        [styles.isDisabled]: isDisabled,
-        [styles.isActive]: isActive,
-        [styles.isBlock]: isBlock,
-        [styles.headerButton]: isHeaderButton,
+        [styles['is-loading']]: isLoading,
+        [styles['is-disabled']]: isDisabled,
+        [styles['is-active']]: isActive,
+        [styles['is-block']]: isBlock,
+        [styles['header-button']]: isHeaderButton,
         [styles[`tooltip--${tooltipPosition}`]]: tooltipPosition,
       },
       'is-clickable',
@@ -126,21 +126,21 @@ const ButtonFC: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> =
         onMouseLeave={handleMouseLeave}
       >
         {isLoading && (
-          <span className={styles.spinnerWrapper}>
-            <Spinner className={styles.spinner} size="medium" />
+          <span className={styles['spinner-wrapper']}>
+            <Spinner className={styles['spinner']} size="medium" />
           </span>
         )}
-        <span className={cx(styles.content, 'is-clickable')}>
+        <span className={cx(styles['content'], 'is-clickable')}>
           {icon && (
-            <span className={cx(styles.iconElemnent, 'is-clickable')}>
+            <span className={cx(styles['icon-elemnent'], 'is-clickable')}>
               {icon}
             </span>
           )}
           {children && (
             <span
               className={cx(
-                styles.label,
-                icon && styles.labelIcon,
+                styles['label'],
+                icon && styles['label--icon'],
                 'is-clickable',
               )}
             >

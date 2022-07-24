@@ -18,7 +18,7 @@ export const FilePicker = ({ onDrop }: FilePickerProps) => {
   });
 
   return (
-    <div {...getRootProps()} className={styles.dropzone}>
+    <div {...getRootProps()} className={styles['dropzone']}>
       <input {...getInputProps()} />
       <div>
         <FlexBox justifyContent="center">

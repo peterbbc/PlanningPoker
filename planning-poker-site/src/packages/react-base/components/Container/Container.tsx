@@ -19,9 +19,9 @@ export const Container = ({
   return (
     <div
       className={cx(
-        styles.container,
+        styles['container'],
         size && styles[`container--${size}`],
-        isCenteredInPage && styles.containerCentered,
+        isCenteredInPage && styles[`container--centered`],
         className,
       )}
     >
