@@ -122,12 +122,12 @@ export const HelpTooltip = (props: HelpTooltipProps) => {
       className={cx(
         styles.tooltip,
         styles[`tooltip--${position}`],
-        showOpacity && styles[`tooltip--is-open`],
+        showOpacity && styles.tooltipIsOpen,
         specialStyle && styles[`tooltip--${specialStyle}`],
       )}
       style={{ top: tooltipCoordinates.y, left: tooltipCoordinates.x }}
     >
-      <div className={styles['close']}>
+      <div className={styles.close}>
         <ButtonIcon
           buttonColor="light"
           onClick={(event) => {
@@ -140,12 +140,12 @@ export const HelpTooltip = (props: HelpTooltipProps) => {
           icon={<Icon icon="close" />}
         />
       </div>
-      <div className={styles['content']}>
-        <div className={styles['title']}>
-          <div className={styles['icon']}>
+      <div className={styles.content}>
+        <div className={styles.title}>
+          <div className={styles.icon}>
             <Icon icon="info" />
           </div>
-          <div className={styles['title-label']}>{title}</div>
+          <div className={styles.titleLabel}>{title}</div>
         </div>
         {children}
       </div>

@@ -28,22 +28,22 @@ export const Notification = ({ notification, onClose }: NotificationProps) => {
 
   return (
     <div className={cx(styles.notification)}>
-      <div className={styles['left']}>
+      <div className={styles.left}>
         {notification.style === 'error' ? (
-          <div className={styles['icon--error']}>
+          <div className={styles.iconError}>
             <Icon icon="close" />
           </div>
         ) : (
-          <div className={styles['icon']}>
+          <div className={styles.icon}>
             <Icon icon="check" />
           </div>
         )}
       </div>
-      <div className={styles['center']}>
+      <div className={styles.center}>
         <h2 className={styles.title}>{notification.title}</h2>
         <div className={styles.content}>{notification.content}</div>
       </div>
-      <div className={styles['right']}>
+      <div className={styles.right}>
         <ButtonIcon
           onClick={() => onClose()}
           buttonColor="light"

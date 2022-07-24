@@ -63,22 +63,22 @@ export const Modal = ({
   }, []);
 
   return (
-    <div className={cx(styles['wrapper'])}>
+    <div className={cx(styles.wrapper)}>
       <div
-        className={cx(styles['overlay'])}
+        className={cx(styles.overlay)}
         onClick={isNotClosable ? () => {} : onClose}
       />
       <div
         className={cx(
-          styles['modal'],
+          styles.modal,
           styles[`modal--width-${width}`],
-          isScrollVisisble && styles[`modal--scroll-visible`],
+          isScrollVisisble && styles.modalScrollVisible,
         )}
         key="content"
       >
-        <div className={cx(styles['header'])}>
+        <div className={cx(styles.header)}>
           {showBackButton && (
-            <div className={styles['back']}>
+            <div className={styles.back}>
               <ButtonIcon
                 onClick={onClickBackButton}
                 icon={<Icon icon="back" />}
@@ -87,15 +87,15 @@ export const Modal = ({
           )}
 
           {titleTopBar && (
-            <div className={styles['title-top-bar']}>{titleTopBar}</div>
+            <div className={styles.titleTopBar}>{titleTopBar}</div>
           )}
 
           {!!actionsTopBar && (
-            <div className={styles['top-bar-actions']}>{actionsTopBar}</div>
+            <div className={styles.topBarActions}>{actionsTopBar}</div>
           )}
 
           {!isNotClosable && (
-            <div className={styles['close']}>
+            <div className={styles.close}>
               <ButtonIcon onClick={onClose} icon={<Icon icon="close" />} />
             </div>
           )}
@@ -104,14 +104,14 @@ export const Modal = ({
         <div
           ref={contentRef}
           className={cx(
-            styles['content'],
+            styles.content,
             styles[`content--width-${width}`],
-            isNoPadding && styles[`content--no-padding`],
+            isNoPadding && styles.contentNoPadding,
             height && styles[`content--height-${height}`],
           )}
         >
           <div ref={innerContentRef}>
-            <div className={styles['top-spacer']} />
+            <div className={styles.topSpacer} />
             {children}
           </div>
         </div>

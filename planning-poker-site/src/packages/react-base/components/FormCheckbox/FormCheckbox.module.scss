@@ -1,11 +1,13 @@
 .wrapper {
-  /* FormCheckbox-module--wrapper--2IKFK */
+  align-items: center;
+  display: flex;
 }
 
 .label {
-  /* FormCheckbox-module--label--3uCJ3 */
-}
+  font-size: 1.6rem;
+  margin-left: .8rem;
 
-.label--big {
-  /* FormCheckbox-module--label--big--Vgz99 */
+  &--big {
+    font-size: 1.8rem;
+  }
 }

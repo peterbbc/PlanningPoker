@@ -33,7 +33,7 @@ export const SidebarLayoutWrapper = ({
         <div
           className={cx(
             styles.divider,
-            isSidebarOpen && styles['divider--is-open'],
+            isSidebarOpen && styles.dividerIsOpen,
           )}
         >
           <div className={styles.content}>{children}</div>
@@ -41,7 +41,7 @@ export const SidebarLayoutWrapper = ({
             <Sidebar />
           </aside>
           <div
-            className={styles['overlay']}
+            className={styles.overlay}
             onClick={() => setIsSidebarOpen(false)}
           />
         </div>

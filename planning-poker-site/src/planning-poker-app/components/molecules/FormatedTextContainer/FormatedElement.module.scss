@@ -1,4 +1,8 @@
 .link {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  word-break: break-word;
+
   &:hover {
     color: #74b3ff;
   }
@@ -18,8 +22,4 @@
     height: 1.6rem;
     width: 1.6rem;
   }
-}
-
-.p {
-  min-height: 1em;
 }

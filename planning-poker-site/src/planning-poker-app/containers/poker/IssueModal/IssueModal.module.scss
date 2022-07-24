@@ -1,47 +1,70 @@
-.issue-modal__footer {
-  /* IssueModal-module--issue-modal__footer--1lRSD */
-}
+.issue-modal {
+  &__footer {
+    align-items: flex-end;
+    display: flex;
+    height: 4.8rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
 
-.issue-modal__vote-now {
-  /* IssueModal-module--issue-modal__vote-now--1LvKe */
-}
+  &__points {
+  }
 
-.issue-modal__voting-wrapper {
-  /* IssueModal-module--issue-modal__voting-wrapper--1-ebk */
-}
+  &__vote-now {
+    margin: 0 0 -.8rem -1.6rem;
+  }
 
-.issue-modal__voting {
-  /* IssueModal-module--issue-modal__voting--2zj4R */
-}
+  &__voting-wrapper {
+    align-items: center;
+    display: flex;
+  }
 
-.issue-modal__voting-icon {
-  /* IssueModal-module--issue-modal__voting-icon--1Fz7G */
-}
+  &__voting {
+    align-items: center;
+    color: #1a2935;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: -.4rem;
+  }
 
-.issue-modal__stop-voting {
-  /* IssueModal-module--issue-modal__stop-voting--_CPFB */
+  &__voting-icon {
+    color: #a8aeb2;
+    margin-right: .8rem;
+    padding-top: .8rem;
+  }
+
+  &__stop-voting {
+    margin-left: .8rem;
+    padding-top: .8rem;
+  }
 }
 
 .key-container {
-  /* IssueModal-module--key-container--1d7_8 */
+  margin-bottom: .8rem;
+  width: 24rem;
 }
 
 .summary-container {
-  /* IssueModal-module--summary-container--2mmvi */
+  margin-bottom: 1.6rem;
 }
 
-.actions-container {
-  /* IssueModal-module--actions-container--11DH9 */
+.description-container {
 }
 
+.actions-container,
 .link-container {
-  /* IssueModal-module--link-container--2KHUP */
+  margin-bottom: 2.4rem;
 }
 
 .label {
-  /* IssueModal-module--label--26-nq */
-}
+  align-items: center;
+  color: #1a2935;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
 
-.label__span {
-  /* IssueModal-module--label__span--3ErM6 */
+  &__span {
+    margin: 0 .8rem 0 0;
+  }
 }

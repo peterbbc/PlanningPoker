@@ -1,19 +1,37 @@
 .card-list-label {
-  /* Panel-module--card-list-label--20xQj */
+  font-size: 1.8rem;
+  margin: 0 0 .8rem;
+  min-width: 48rem;
+  text-align: center;
+
+  span {
+    font-size: 1.6rem;
+  }
 }
 
 .counting-votes-label-container {
-  /* Panel-module--counting-votes-label-container--FERlt */
+  position: relative;
+
+  .count-now-button {
+    position: absolute;
+    right: 2.4rem;
+    top: 0;
+  }
 }
 
-.count-now-button {
-  /* Panel-module--count-now-button--3Skn7 */
-}
+@media (max-height: 600px) and (max-width: 920px) {
+  .card-list-label {
+    display: none;
+  }
 
-.deactivate-button {
-  /* Panel-module--deactivate-button--oHEU_ */
-}
+  .deactivate-button {
+    font-size: 1.4rem;
+  }
 
-.spectator-mode-container {
-  /* Panel-module--spectator-mode-container--13XSm */
+  .spectator-mode-container {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    justify-content: center;
+  }
 }

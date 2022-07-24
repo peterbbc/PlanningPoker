@@ -1,7 +1,16 @@
 .label-conatiner {
-  /* KeywordPicker-module--label-conatiner--11t7F */
+  display: flex;
+  justify-content: space-between;
 }
 
 .keyword {
-  /* KeywordPicker-module--keyword--1SMaB */
+  align-items: center;
+  background: #0095ff;
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .3)), #0095ff;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-flex;
+  height: 4rem;
+  margin: 0 .8rem .8rem 0;
+  padding-left: 1.6rem;
 }

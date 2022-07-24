@@ -1,23 +1,32 @@
 .last-updates {
-  /* LastUpdates-module--last-updates--2IFk9 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 40rem;
 }
 
-.header {
-  /* LastUpdates-module--header--2rtLr */
+.contact,
+.header,
+.update {
+  padding: 0 2.4rem;
 }
 
 .update {
-  /* LastUpdates-module--update--1qvPB */
-}
+  &--unread {
+    .title-container {
+      position: relative;
 
-.contact {
-  /* LastUpdates-module--contact--12hrd */
-}
-
-.update--unread {
-  /* LastUpdates-module--update--unread--xFVEr */
-}
-
-.title-container {
-  /* LastUpdates-module--title-container--1f8HZ */
+      &:after {
+        background-color: #3993ff;
+        border-radius: 50%;
+        content: "";
+        height: .8rem;
+        left: -1.4rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: .8rem;
+      }
+    }
+  }
 }

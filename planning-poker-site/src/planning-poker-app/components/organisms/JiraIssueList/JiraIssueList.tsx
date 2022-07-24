@@ -58,7 +58,7 @@ export const JiraIssueList = ({
 
   return (
     <>
-      <div className={styles['select-all-container']}>
+      <div className={styles.selectAllContainer}>
         <div>
           {!!issues.length && (
             <FormCheckbox
@@ -73,7 +73,7 @@ export const JiraIssueList = ({
       </div>
       {!!issues.length ? (
         <>
-          <ul className={styles['issue-list']}>
+          <ul className={styles.issueList}>
             {issues.map((issue, i) => {
               const isChecked = !!selectedIssues.find(
                 (_issue) => _issue.id === issue.id,
@@ -81,10 +81,10 @@ export const JiraIssueList = ({
               return (
                 <li
                   key={i}
-                  className={styles['issue']}
+                  className={styles.issue}
                   onClick={() => handleIssueCheckboxChanged(!isChecked, issue)}
                 >
-                  <div className={styles['issue__checkbox']}>
+                  <div className={styles.issue__checkbox}>
                     <Checkbox
                       checked={isChecked}
                       onChange={(_val, state: boolean) =>
@@ -93,8 +93,8 @@ export const JiraIssueList = ({
                       boxSize="big"
                     />
                   </div>
-                  <div className={styles['issue__left']}>
-                    <div className={styles['issue__key']}>
+                  <div className={styles.issue__left}>
+                    <div className={styles.issue__key}>
                       {issue.url ? (
                         <a
                           href={issue.url}
@@ -107,11 +107,11 @@ export const JiraIssueList = ({
                         <span>{issue.key}</span>
                       )}
                     </div>
-                    <div className={styles['issue__summary']}>
+                    <div className={styles.issue__summary}>
                       <p>{issue.summary}</p>
                     </div>
                   </div>
-                  <div className={styles['issue__points']}>
+                  <div className={styles.issue__points}>
                     <span>
                       {typeof issue.storyPoints === 'string' ||
                       typeof issue.storyPoints === 'number'

@@ -49,12 +49,12 @@ export const AddIssueInline = ({ onIssueAdded }: AddIssueInlineProps) => {
       : 'Add an issue';
 
   return (
-    <div className={styles['container']} ref={addIssueContainerRef}>
+    <div className={styles.container} ref={addIssueContainerRef}>
       <TextareaInlineEdit
         buttonLabel={
           <>
             <Icon icon="plus" />
-            <span className={styles['button-label']}>{label}</span>
+            <span className={styles.buttonLabel}>{label}</span>
           </>
         }
         textareaPlaceholder="Enter a title for the issue"

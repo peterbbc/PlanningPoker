@@ -1,19 +1,68 @@
 .root {
-  /* Checkbox-module--root--2zj8b */
+  &:hover {
+    background-color: transparent;
+  }
+
+  .icon {
+    background-color: #f9f9f9;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, 0));
+    border-radius: .3rem;
+    box-shadow: inset 0 0 0 1px rgba(16, 22, 26, .2), inset 0 -1px 0 rgba(16, 22, 26, .1);
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .checkedIcon {
+    background-color: #3993ff;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, 0));
+
+    &:before {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 1.003 0 0 0-1.42 1.42l3 3c.18.18.43.29.71.29s.53-.11.71-.29l5-5A1.003 1.003 0 0 0 12 5z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      content: "";
+      display: block;
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+  }
+
+  &.Mui-focusVisible {
+    .icon {
+      outline: 2px auto #0061d6;
+      outline-offset: 2;
+    }
+  }
+
+  &.big {
+    .icon {
+      border-radius: .4rem;
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+
+    &:before {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 1.003 0 0 0-1.42 1.42l3 3c.18.18.43.29.71.29s.53-.11.71-.29l5-5A1.003 1.003 0 0 0 12 5z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
 }
 
-.icon {
-  /* Checkbox-module--icon--2KL3F */
-}
 
-.checkedIcon {
-  /* Checkbox-module--checkedIcon--46XN0 */
-}
+input {
+  &:hover {
+    ~ .icon {
+      background-color: #f1f1f1;
+    }
 
-.Mui-focusVisible {
-  /* Checkbox-module--Mui-focusVisible--2bIlB */
-}
+    ~ .checkedIcon {
+      background-color: #74b3ff;
+    }
+  }
 
-.big {
-  /* Checkbox-module--big--2lkiS */
+  &:disabled {
+    ~ .icon {
+      background: rgba(206, 217, 224, .5);
+      box-shadow: none;
+    }
+  }
 }

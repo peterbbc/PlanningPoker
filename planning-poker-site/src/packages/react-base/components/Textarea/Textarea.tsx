@@ -58,7 +58,7 @@ const TextareaFC: React.ForwardRefRenderFunction<
     <textarea
       id={name}
       ref={ref}
-      className={styles['textarea']}
+      className={styles.textarea}
       value={value}
       autoFocus={autoFocus}
       onFocus={handleInputFocus}

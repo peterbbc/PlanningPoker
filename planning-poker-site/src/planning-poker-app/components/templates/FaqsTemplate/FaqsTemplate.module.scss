@@ -1,15 +1,27 @@
 .faqs {
-  /* Faqs-module--faqs--31NQx */
+  ol,
+  ul {
+    li {
+      margin-bottom: 1.2rem;
+    }
+  }
 }
 
 .index {
-  /* Faqs-module--index--3kdrL */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: .8rem;
+  }
 }
 
 .faq {
-  /* Faqs-module--faq--2ahwy */
-}
+  position: relative;
 
-.anchor {
-  /* Faqs-module--anchor--3Aa5w */
+  .anchor {
+    position: absolute;
+    top: -15.6rem;
+  }
 }

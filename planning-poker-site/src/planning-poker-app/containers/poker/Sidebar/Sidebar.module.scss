@@ -1,43 +1,89 @@
 .header {
-  /* Sidebar-module--header--3t3o7 */
-}
+  display: flex;
+  height: 10rem;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-.header__left {
-  /* Sidebar-module--header__left--2bB3- */
-}
+  &__left,
+  &__right {
+    align-items: center;
+    display: flex;
+    height: 10rem;
+  }
 
-.header__right {
-  /* Sidebar-module--header__right--23GNG */
+  &__divider {
+    background-color: #d1d4d7;
+    height: 32px;
+    margin: 0 .8rem;
+    width: 2px;
+  }
 }
 
 .content-wrapper {
-  /* Sidebar-module--content-wrapper--2lUJJ */
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 10rem;
 }
 
 .content {
-  /* Sidebar-module--content--2LYYK */
-}
+  display: grid;
+  grid-template-rows: 1fr auto;
+  max-height: 100%;
+  width: 100%;
 
-.issues-container {
-  /* Sidebar-module--issues-container--2V4AX */
+  .issues-container {
+    overflow-y: auto;
+    padding: 2px 0 4px;
+  }
 }
 
 .title {
-  /* Sidebar-module--title--1hZxI */
-}
-
-.header__divider {
-  /* Sidebar-module--header__divider--3wzgy */
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .close {
-  /* Sidebar-module--close--itzSu */
+  margin-right: -1.2rem;
 }
 
 .add-issue {
-  /* Sidebar-module--add-issue--5EFl9 */
+  padding: 1.2rem 4rem;
 }
 
-.jira-actions {
-  /* Sidebar-module--jira-actions--3onsG */
+@media(max-width:919px) {
+  .header {
+    height: 8rem;
+    padding: 0 1.6rem;
+
+    &__left,
+    &__right {
+      height: 8rem;
+    }
+
+    &__divider {
+      display: none;
+    }
+  }
+
+  .content-wrapper {
+    top: 8rem;
+  }
+
+  .add-issue {
+    padding: 1.2rem 1.6rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .jira-actions {
+    display: none;
+  }
 }

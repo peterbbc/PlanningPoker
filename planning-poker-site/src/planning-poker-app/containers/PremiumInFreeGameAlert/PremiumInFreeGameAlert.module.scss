@@ -1,3 +1,17 @@
 .premium-in-free-game-alert {
-  /* PremiumInFreeGameAlert-module--premium-in-free-game-alert--1SVva */
+  align-items: center;
+  background: #0095ff;
+  color: #fff;
+  display: flex;
+  font-size: 1.6rem;
+  height: 4.8rem;
+  left: 0;
+  padding: 0 4rem;
+  position: fixed;
+  right: 0;
+  top: 10rem;
+
+  @media (max-width: 920px) {
+    top: 8rem;
+  }
 }

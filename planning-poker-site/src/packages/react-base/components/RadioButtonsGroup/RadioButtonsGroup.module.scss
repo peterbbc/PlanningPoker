@@ -1,11 +1,22 @@
 .label {
-  /* RadioButtonsGroup-module--label--1jjBf */
-}
+  margin-right: 2.4rem !important;
 
-.label--selected {
-  /* RadioButtonsGroup-module--label--selected--1Sr28 */
+  &--selected {
+    &, span {
+      font-weight: 700;
+    }
+  }
+
+  span {
+    font-size: 1.6rem;
+  }
 }
 
 .radio {
-  /* RadioButtonsGroup-module--radio--1wv-I */
+  color: #3993ff;
+  font-size: 2.4rem !important;
+
+  &:hover {
+    background-color: #ebf4ff !important;
+  }
 }

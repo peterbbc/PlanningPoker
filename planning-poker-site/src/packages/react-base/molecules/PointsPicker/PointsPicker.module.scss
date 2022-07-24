@@ -1,51 +1,127 @@
 .button {
-  /* PointsPicker-module--button--3UyU4 */
-}
+  align-items: center;
+  border: 0;
+  border-radius: .8rem;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 5.6rem;
+  justify-content: center;
+  letter-spacing: .02em;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .09s linear;
+  width: 5.6rem;
 
-.button--is-in-card {
-  /* PointsPicker-module--button--is-in-card--V781w */
-}
+  @media (min-width: 920px) {
+    height: 4.8rem;
+    width: 4.8rem;
 
-.button--over-white {
-  /* PointsPicker-module--button--over-white--1d67d */
-}
+    &--is-in-card {
+      font-size: 1.6rem;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
 
-.button--over-white--is-active {
-  /* PointsPicker-module--button--over-white--is-active--2hFa3 */
-}
+  &--over-white {
+    background-color: #e8e9ea;
 
-.button--over-grey200 {
-  /* PointsPicker-module--button--over-grey200--3AWoL */
-}
+    &:hover {
+      background-color: #d1d4d7;
+    }
 
-.button--is-active {
-  /* PointsPicker-module--button--is-active--1krLl */
-}
+    &.is-active {
+      background-color: #a8aeb2;
+    }
+  }
 
-.button--over-grey100 {
-  /* PointsPicker-module--button--over-grey100--3nI0L */
-}
+  &--over-grey200 {
+    background-color: #d1d4d7;
 
-.button--over-primary-white {
-  /* PointsPicker-module--button--over-primary-white--2lfcW */
+    &:hover {
+      background-color: #e8e9ea;
+    }
+
+    &.is-active {
+      background-color: #bfc3c5;
+    }
+  }
+
+  &--over-grey100 {
+    background-color: #e8e9ea;
+
+    &:hover {
+      background-color: #d1d4d7;
+    }
+
+    &.is-active {
+      background-color: #a8aeb2;
+    }
+  }
+
+  &--over-primary-white {
+    background-color: #fff;
+
+    &:hover {
+      background-color: #ebf4ff;
+    }
+
+    &.is-active {
+      background-color: #bbd6f7;
+    }
+  }
 }
 
 .dropdown {
-  /* PointsPicker-module--dropdown--2Z7WZ */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px hsla(204, 6%, 68%, .4);
+  min-width: 30rem;
+  overflow: hidden;
+  z-index: 9999;
 }
 
 .list {
-  /* PointsPicker-module--list--dtGEs */
+  column-gap: 1.6rem;
+  cursor: default;
+  display: grid;
+  grid-template-columns: 4.8rem 4.8rem 4.8rem 4.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 2.4rem;
+  row-gap: 1.6rem;
+  width: 100%;
 }
 
-.story-points-selector__points {
-  /* PointsPicker-module--story-points-selector__points--JAzSW */
-}
+.story-points-selector {
+  &__points {
+    background-color: #f1f1f1;
 
-.story-points-selector__points--voting {
-  /* PointsPicker-module--story-points-selector__points--voting--2tdmI */
-}
+    &--voting,
+    & {
+      align-items: center;
+      border-radius: .8rem;
+      color: #1a2935;
+      cursor: default;
+      display: inline-flex;
+      font-size: 1.8rem;
+      font-weight: 700;
+      height: 4.8rem;
+      justify-content: center;
+      width: 4.8rem;
+    }
 
-.story-points-selector__points--cursor-pointer {
-  /* PointsPicker-module--story-points-selector__points--cursor-pointer--3kXUH */
+    &--voting {
+      background-color: #d1d4d7;
+    }
+
+    &--cursor-pointer {
+      cursor: pointer;
+    }
+  }
 }

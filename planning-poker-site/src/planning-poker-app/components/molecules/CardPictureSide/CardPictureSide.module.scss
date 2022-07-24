@@ -1,15 +1,38 @@
 .picture-side {
-  /* CardPictureSide-module--picture-side--3PT9w */
-}
+  align-items: center;
+  backface-visibility: hidden;
+  background: #3993ff;
+  background: linear-gradient(45deg, #3993ff 12%, transparent 0, transparent 88%, #3993ff 0), linear-gradient(135deg, transparent 37%, #1a7bf2 0, #1a7bf2 63%, transparent 0), linear-gradient(45deg, transparent 37%, #3993ff 0, #3993ff 63%, transparent 0), #74b3ff;
+  background-size: 17px 17px;
+  border: 1px solid hsla(204, 6%, 68%, .4);
+  border-radius: .6rem;
+  box-shadow: 0 2px 4px hsla(204, 6%, 68%, .4);
+  display: flex;
+  height: 6rem;
+  justify-content: center;
+  overflow: hidden;
+  width: 3.5rem;
 
-.l {
-  /* CardPictureSide-module--l--5Yqg9 */
-}
+  &.l {
+    border-radius: .8rem;
+    height: 8rem;
+    width: 4.8rem;
+  }
 
-.xl {
-  /* CardPictureSide-module--xl--2KEnh */
-}
+  &.xl {
+    border-radius: .12rem;
+    height: 10.4rem;
+    width: 6.4rem;
+  }
 
-.pattern {
-  /* CardPictureSide-module--pattern--1HTze */
+  .pattern {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 920px) {
+    border-radius: .8rem;
+    height: 7rem;
+    width: 4rem;
+  }
 }

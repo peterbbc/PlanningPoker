@@ -1,39 +1,104 @@
 .timer {
-  /* Timer-module--timer--39_VC */
+  border: 1px solid #f9f9f9;
+  border-radius: 8px;
+  border-radius: 100%;
+  display: flex;
+  left: 2.4rem;
+  position: fixed;
+  top: 12rem;
+  transition: all .09s linear;
+  z-index: 4;
+
+  @media (max-width: 919px) {
+    left: 2.4rem;
+    top: 8.8rem;
+  }
+
+  @media (max-width: 720px) {
+    display: none;
+  }
 }
 
 .timer-circle {
-  /* Timer-module--timer-circle--2t_4V */
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .svg {
-  /* Timer-module--svg--JsA4o */
+  border-radius: 50%;
+  height: 48px;
+  transform: rotate(-90deg);
+  width: 48px;
 }
 
 .circle {
-  /* Timer-module--circle--YLusU */
-}
+  fill: #00d68f;
+  stroke: #ebf4ff;
+  stroke-width: 32;
+  stroke-dasharray: 0 100;
+  transition: all .09s linear;
 
-.circle--warning {
-  /* Timer-module--circle--warning--1UNgg */
-}
+  &--warning {
+    fill: #fa0;
+  }
 
-.circle--danger {
-  /* Timer-module--circle--danger--2ilut */
+  &--danger {
+    fill: #ff3d71;
+  }
 }
 
 .start-timer-container {
-  /* Timer-module--start-timer-container--wLlfp */
+  padding: 2.4rem;
 }
 
 .sync-votings {
-  /* Timer-module--sync-votings--3IHHG */
+  cursor: pointer;
 }
 
 .ended-alert {
-  /* Timer-module--ended-alert--3hZun */
-}
+  align-items: center;
+  background: #ff3d71;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  font-size: 1.6rem;
+  height: 4rem;
+  justify-content: space-between;
+  padding-left: .8rem;
+  position: absolute;
+  right: -.8rem;
+  top: 50%;
+  transform: translate(100%, -50%);
+  width: 22rem;
 
-.ended-alert__close {
-  /* Timer-module--ended-alert__close--3l5Gl */
+  * {
+    line-height: 1.3em !important;
+  }
+
+  div {
+    flex-shrink: 0;
+  }
+
+  &__close {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 1.6rem;
+    height: 3.2rem;
+    justify-content: center;
+    margin: 0 .4rem 0 0;
+    outline: 0;
+    padding: 0;
+    width: 3.2rem;
+
+    &:hover {
+      background-color: hsla(0, 0%, 100%, .2);
+    }
+  }
 }

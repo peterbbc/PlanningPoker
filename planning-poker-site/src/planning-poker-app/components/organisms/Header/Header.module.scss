@@ -1,55 +1,153 @@
 .header {
-  /* Header-module--header--1Buac */
+  background-color: #fff;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all .2s;
+  z-index: 9;
+
+  &,
+  .left,
+  .right {
+    align-items: center;
+    display: flex;
+  }
 }
 
-.left {
-  /* Header-module--left--267pO */
+@media (max-width: 919px) {
+  .header {
+    height: 8rem;
+  }
+
+  .auth-button {
+    display: none;
+  }
+
+  .burger-button {
+    align-items: center;
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    width: 8rem;
+  }
+
+  .logo-link {
+    align-items: center;
+    display: flex;
+    height: 8rem;
+    justify-content: flex-start;
+    justify-content: center;
+    outline: 0;
+    text-decoration: none;
+    transition: all .15s;
+    width: 8rem;
+
+    .logo-icon {
+      width: 4rem;
+    }
+
+  }
+
+  .logo-way-link {
+    &,
+    &:hover {
+      margin-left: 2.4rem;
+    }
+  }
+
+  .title {
+    display: none;
+  }
 }
 
-.right {
-  /* Header-module--right--1lnib */
+@media (min-width: 472px) {
+  .title {
+    display: block;
+    font-size: 2.25rem;
+    margin: 0;
+    padding: 0;
+
+    &--anchor {
+      cursor: pointer;
+    }
+  }
+
+  .header {
+    &--home {
+      .title {
+        color: #fff;
+      }
+    }
+  }
 }
 
-.auth-button {
-  /* Header-module--auth-button--3-o7N */
-}
-
-.burger-button {
-  /* Header-module--burger-button--FN4SH */
-}
-
-.logo-link {
-  /* Header-module--logo-link--2D3Yu */
-}
-
-.logo-icon {
-  /* Header-module--logo-icon--2_jSs */
-}
-
-.logo-way-link {
-  /* Header-module--logo-way-link--2_lFM */
-}
-
-.title {
-  /* Header-module--title--3P2Qg */
-}
-
-.title--anchor {
-  /* Header-module--title--anchor--Yt92V */
-}
-
-.header--home {
-  /* Header-module--header--home--3D2nD */
-}
-
-.cta {
-  /* Header-module--cta--3miJh */
-}
-
+.cta,
 .cta-pricing {
-  /* Header-module--cta-pricing--2cP9- */
+  display: none;
 }
 
-.cta-pricing--next-to-dropdown {
-  /* Header-module--cta-pricing--next-to-dropdown--3bLRm */
+@media (min-width: 920px) {
+  .header {
+    height: 10rem;
+  }
+
+  .left {
+    padding: 0 2rem 0 4rem;
+  }
+
+  .right {
+    padding: 0 4rem 0 2rem;
+  }
+
+  .logo-link {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    outline: 0;
+    text-decoration: none;
+    transition: all .15s;
+
+    .logo-icon {
+      width: 3.8rem;
+    }
+  }
+
+  .logo-way-link {
+    box-sizing: content-box;
+    color: #3993ff;
+    display: inline-block;
+    height: 40px;
+    padding-top: 4px;
+  }
+
+  .burger-button {
+    display: none;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding: 0 1.6rem;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-left: 2.4rem;
+  }
+
+  .cta-pricing {
+    align-items: center;
+    border-right: 2px solid #e8e9ea;
+    display: inline-flex;
+    height: 4rem;
+    margin-right: 2.4rem;
+    padding-right: 2.4rem;
+
+    &--next-to-dropdown {
+      padding-right: 3.2rem;
+    }
+  }
 }

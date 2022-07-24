@@ -54,10 +54,10 @@ const SelectFC: React.ForwardRefRenderFunction<any, SelectProps<OptionType>> = (
 ) => {
   const className = cx(
     styles.select,
-    isSmallDrodpwon && styles['select--small-dropdown'],
-    size === 'small' && styles['select--small'],
-    isError && styles['select--error'],
-    isTableHeader && styles['select--table-header'],
+    isSmallDrodpwon && styles.selectSmallDropdown,
+    size === 'small' && styles.selectSmall,
+    isError && styles.selectError,
+    isTableHeader && styles.selectTableHeader,
   );
 
   return (

@@ -1,35 +1,89 @@
 .select-all-container {
-  /* JiraIssueList-module--select-all-container--3ZiDM */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .settings-button {
-  /* JiraIssueList-module--settings-button--1ttwQ */
+  flex-shrink: 0;
 }
 
 .issue-list {
-  /* JiraIssueList-module--issue-list--2X8v- */
-}
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-.issue {
-  /* JiraIssueList-module--issue--3ELTp */
-}
+  .issue {
+    align-items: flex-start;
+    cursor: default;
+    display: flex;
 
-.issue__checkbox {
-  /* JiraIssueList-module--issue__checkbox--4BPeI */
-}
+    &__checkbox {
+      border-radius: 100%;
+      margin: auto 1.6rem auto 0;
+    }
 
-.issue__left {
-  /* JiraIssueList-module--issue__left--RDAZL */
-}
+    &__left {
+      margin-right: auto;
+      padding-right: 2.4rem;
+    }
 
-.issue__key {
-  /* JiraIssueList-module--issue__key--jAzN8 */
-}
+    &__key {
+      align-items: flex-end;
+      display: flex;
+      font-size: 1.6rem;
+      min-height: 3.6rem;
+      padding-bottom: .4rem;
 
-.issue__summary {
-  /* JiraIssueList-module--issue__summary--Q49Gm */
-}
+      a {
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
 
-.issue__points {
-  /* JiraIssueList-module--issue__points--3blue */
+    &__summary {
+      align-items: flex-start;
+      display: flex;
+      min-height: 3.6rem;
+      padding-bottom: 1.1rem;
+      padding-top: .2rem;
+
+      p {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &__points {
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      height: 7.2rem;
+      justify-content: center;
+      width: 7.2rem;
+
+      span {
+        align-items: center;
+        background-color: #f1f1f1;
+        border-radius: .8rem;
+        display: inline-flex;
+        font-size: 1.8rem;
+        font-weight: 700;
+        height: 3.8rem;
+        justify-content: center;
+        width: 3.8rem;
+      }
+    }
+
+    &:hover {
+      .issue__checkbox {
+        background-color: #f9f9f9;
+      }
+    }
+  }
 }

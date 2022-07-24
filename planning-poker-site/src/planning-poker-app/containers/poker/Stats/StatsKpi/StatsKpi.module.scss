@@ -1,11 +1,29 @@
 .stats-kpi {
-  /* StatsKpi-module--stats-kpi--YEjCW */
-}
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 11.2rem;
 
-.label {
-  /* StatsKpi-module--label--1yqsc */
-}
+  .label {
+    color: #a8aeb2;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
 
-.value {
-  /* StatsKpi-module--value--p1KWm */
+  .value {
+    color: #1a2935;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: .8em;
+  }
+
+  @media (max-height: 599px), (max-width: 919px) {
+    .label {
+      margin-bottom: .8rem;
+    }
+
+    .value {
+      line-height: 4.8rem;
+    }
+  }
 }

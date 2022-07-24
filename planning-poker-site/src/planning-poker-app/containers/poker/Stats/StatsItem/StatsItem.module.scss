@@ -1,31 +1,73 @@
 .stats-item {
-  /* StatsItem-module--stats-item--2oyPM */
-}
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-.bar-container {
-  /* StatsItem-module--bar-container--1gPSI */
-}
+  .bar-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
 
-.bar-background {
-  /* StatsItem-module--bar-background--srSzw */
-}
+    @media (max-height: 599px), (max-width: 919px) {
+      display: none;
+    }
+  }
 
-.bar-fill {
-  /* StatsItem-module--bar-fill--2YuP7 */
-}
+  .bar-background {
+    background-color: #f1f1f1;
+    border-radius: .8rem;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: .8rem;
+  }
 
-.card-container {
-  /* StatsItem-module--card-container--2qkj- */
-}
+  .bar-fill {
+    background-color: #a8aeb2;
+    border-radius: .8rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
 
-.card {
-  /* StatsItem-module--card--ZdEam */
-}
+  .card-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
 
-.votes-label {
-  /* StatsItem-module--votes-label--1XhQW */
-}
+  .card {
+    align-items: center;
+    border: 2px solid #a8aeb2;
+    border-radius: .8rem;
+    color: #a8aeb2;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 6.4rem;
+    justify-content: center;
+    width: 4rem;
+  }
 
-.stats-item--is-most-voted {
-  /* StatsItem-module--stats-item--is-most-voted--1qj2k */
+  .votes-label {
+    color: #a8aeb2;
+    font-size: 1.6rem;
+  }
+
+  &--is-most-voted {
+    .bar-fill {
+      background-color: #1a2935;
+    }
+
+    .votes-label {
+      color: #1a2935;
+    }
+
+    .card {
+      border-color: #1a2935;
+      color: #1a2935;
+    }
+  }
 }

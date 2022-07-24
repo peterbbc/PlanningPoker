@@ -25,7 +25,7 @@ export const AuthButton: React.FC<AuthButtonProps> = ({ buttonColor }) => {
 
   if (isAnonymous && !user.displayName) {
     return (
-      <div className={styles['dropdown-logout']}>
+      <div className={styles.dropdownLogout}>
         <ButtonLink
           onClick={() => setIsOpenAuthType('sign-up')}
           buttonColor={buttonColor}
@@ -53,7 +53,7 @@ export const AuthButton: React.FC<AuthButtonProps> = ({ buttonColor }) => {
       dropdown={<AuthDropdown onClose={() => setIsOpen(false)} />}
       translate="no"
     >
-      <span className={styles['display-name-picture']}>
+      <span className={styles.displayNamePicture}>
         <ProfileImage
           src={user?.profilePictureUrl}
           alt={user?.displayName || DEFAULT_DISPLAY_NAME}

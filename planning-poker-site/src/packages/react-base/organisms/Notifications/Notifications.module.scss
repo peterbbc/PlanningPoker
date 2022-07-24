@@ -1,47 +1,100 @@
 .notifications-container {
-  /* Notifications-module--notifications-container--1k3la */
+  left: 50%;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 110;
+
+  > span {
+    flex-shrink: 0;
+  }
 }
 
 .notification {
-  /* Notifications-module--notification--2T25Y */
-  .enter {
-    /* Notifications-module--notification--enter--6SPds */
-    &.active {
-      /* Notifications-module--notification--enter-active--2hIRx */
+  background: rgba(26, 41, 53, .9);
+  border-radius: 8px;
+  display: flex;
+  margin-top: 1.6rem;
+  max-width: 95vw;
+  overflow: hidden;
+  transition: all .15s ease-in-out;
+  width: max-content;
+
+  .center,
+  .left,
+  .right {
+    padding: 2.4rem 0;
+  }
+
+  .right {
+    padding-top: 1rem;
+
+    @media (min-width: 920px) {
+      padding-top: 1.2rem;
     }
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 7.2rem;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .icon {
+    color: #00d68f;
+    padding: .4rem 0 0;
+  }
+
+  .icon--error {
+    color: #ff3d71;
+  }
+
+  .enter {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  .enter--active {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .leave {
-    /* Notifications-module--notification--leave--38hUW */
-    &.active {
-      /* Notifications-module--notification--leave-active--1JVm5 */
+    opacity: 1;
+
+    &:not(:last-child) {
+      max-height: 300px;
+      opacity: 0;
     }
   }
-}
 
-.left {
-  /* Notifications-module--left--2cmmK */
-}
+  .leave-active {
+    &:last-child {
+      opacity: 0;
+    }
 
-.right {
-  /* Notifications-module--right--3EMvs */
-}
-
-.center {
-  /* Notifications-module--center--2O1In */
-}
-
-.icon {
-  /* Notifications-module--icon--Kj_7d */
-  .error {
-    /* Notifications-module--icon--error--2Rte9 */
+    &:not(:last-child) {
+      max-height: 0;
+    }
   }
 }
 
 .title {
-  /* Notifications-module--title--woX-q */
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .content {
-  /* Notifications-module--content--3ZZbA */
+  color: #a8aeb2;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: .8rem 0 0;
 }

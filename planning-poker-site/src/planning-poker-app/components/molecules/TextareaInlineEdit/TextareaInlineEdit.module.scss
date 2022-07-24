@@ -1,67 +1,133 @@
 .textarea {
-  /* TextareaInlineEdit-module--textarea--FeCxV */
-}
+  background: transparent;
+  background-color: #fff;
+  border: 2px solid #e8e9ea;
+  border-radius: 6px;
+  color: #1a2935;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4em;
+  outline: none;
+  padding: 1.6rem;
+  position: relative;
+  resize: none;
+  transition: all .1s;
+  width: 100%;
+  z-index: 1;
 
-.value {
-  /* TextareaInlineEdit-module--value--3tGAL */
-}
+  &:focus,
+  &:hover {
+    border-color: #d1d4d7;
+  }
 
-.key {
-  /* TextareaInlineEdit-module--key--1Zsjh */
-}
+  @at-root .value {
+    border-radius: 7px;
+    cursor: pointer;
+    margin: -.8rem;
+    padding: .8rem;
 
-.textarea--key {
-  /* TextareaInlineEdit-module--textarea--key--1Q7UG */
-}
+    &:hover {
+      background: #f1f1f1;
+    }
+  }
 
-.summary {
-  /* TextareaInlineEdit-module--summary--2exDx */
-}
+  @at-root .key,
+  &--key {
+    color: #48545d;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
 
-.textarea--summary {
-  /* TextareaInlineEdit-module--textarea--summary--2Lp3s */
-}
+  @at-root .summary,
+  &--summary {
+    color: #1a2935;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.45em;
+  }
 
-.description {
-  /* TextareaInlineEdit-module--description--12YEc */
-}
+  @at-root .description,
+  &--description {
+    color: #1a2935;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.45em;
+  }
 
-.textarea--description {
-  /* TextareaInlineEdit-module--textarea--description--1Dko2 */
-}
+  &--issue-card {
+    @at-root .issue-card,
+    .issue-card-no-permission,
+    & {
+      border: 0;
+      color: #1a2935;
+      font-size: 1.8rem;
+    }
 
-.issue-card {
-  /* TextareaInlineEdit-module--issue-card--1Vmtn */
-}
-
-.issue-card-no-permission {
-  /* TextareaInlineEdit-module--issue-card-no-permission--3Ot8h */
-}
-
-.textarea--issue-card {
-  /* TextareaInlineEdit-module--textarea--issue-card--1_CdR */
+    background-color: #f1f1f1;
+  }
 }
 
 .textarea-actions {
-  /* TextareaInlineEdit-module--textarea-actions--29hIy */
+  padding: 1.6rem 0;
+
+  > * {
+    margin-right: 1.6rem;
+  }
 }
 
 .press-intro-label {
-  /* TextareaInlineEdit-module--press-intro-label--2_vJS */
+  color: #a8aeb2;
+  font-size: 1.6rem;
+  text-align: right;
 }
 
 .button {
-  /* TextareaInlineEdit-module--button--7edXv */
-}
+  align-items: center;
+  background: #f1f1f1;
+  border: 0;
+  border-radius: .8rem;
+  color: #48545d;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.8rem;
+  font-weight: 400;
+  height: 5.6rem;
+  letter-spacing: .02em;
+  outline: 0;
+  padding: 0 2.4rem;
+  position: relative;
+  text-align: left;
+  transition: all .09s linear;
+  width: 100%;
 
-.icon-elemnent {
-  /* TextareaInlineEdit-module--icon-elemnent--5Y1qT */
-}
+  @media (min-width: 920px) {
+    &,
+    .icon-elemnent {
+      height: 4.8rem;
+    }
+  }
 
-.button--mode-issue-card {
-  /* TextareaInlineEdit-module--button--mode-issue-card--K2KEc */
-}
+  &:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #d7e9ff;
+  }
 
-.button--mode-issue-card-no-permission {
-  /* TextareaInlineEdit-module--button--mode-issue-card-no-permission--10S4c */
+  &:hover {
+    background: #e8e9ea;
+  }
+
+  &:active {
+    background: #d1d4d7;
+  }
+
+  &--mode-issue-card,
+  &--mode-issue-card-no-permission {
+    background: transparent;
+    color: #3993ff;
+    color: #48545d;
+    font-weight: 700;
+
+    &:hover {
+      background: #f9f9f9;
+    }
+  }
 }

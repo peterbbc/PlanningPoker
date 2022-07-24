@@ -12,12 +12,12 @@ export const VerticalDividerWithScroll = ({
   content,
 }: VerticalDividerWithScrollProps) => {
   return (
-    <div className={styles['wrapper']}>
-      <div className={styles['content-container']}>
-        <div className={styles['content']}>{content}</div>
+    <div className={styles.wrapper}>
+      <div className={styles.contentContainer}>
+        <div className={styles.content}>{content}</div>
       </div>
-      <div className={styles['scroll-shadow']} />
-      <div className={styles['bottom-content']}>{bottomContent}</div>
+      <div className={styles.scrollShadow} />
+      <div className={styles.bottomContent}>{bottomContent}</div>
     </div>
   );
 };

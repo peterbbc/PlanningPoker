@@ -148,7 +148,7 @@ export const SaveInJiraModal = ({
         error && (
           <div>
             <VerticalSpacing spacing="spacing-m" />
-            <div className={styles['message-error']}>
+            <div className={styles.messageError}>
               <FlexBox alignItems="center">
                 <Icon icon="info" />
                 <HoritzontalSpacing spacing="spacing-m" />

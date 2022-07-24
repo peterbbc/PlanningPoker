@@ -1,95 +1,314 @@
-.wrapper {
-  /* Table-module--wrapper--__RTU */
+@media (max-width: 919px) {
+  .wrapper {
+    max-width: 98vw;
+    padding-bottom: 1.6rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas: "left top right""left table right""left bottom right";
+    grid-template-columns: 8rem 1fr 8rem;
+    grid-template-rows: auto 1fr auto;
+    max-width: 100%;
+    min-height: 38rem;
+    width: 44rem;
+  }
+
+  .table {
+    background: #d7e9ff;
+    border-radius: 2.8rem;
+    grid-area: table;
+    min-width: 16rem;
+    padding: 0 1.6rem;
+    position: relative;
+  }
+
+  .bottom,
+  .left,
+  .right,
+  .table,
+  .top {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .top {
+    align-items: flex-end;
+    padding-bottom: 1.6rem;
+  }
+
+  .bottom {
+    align-items: flex-start;
+    padding-top: 1.6rem;
+  }
+
+  .left,
+  .right {
+    padding: 12rem 0;
+  }
+
+  .player-container {
+    &:not(:last-child) {
+      .left &,
+      .right & {
+        margin-top: 2.4rem;
+      }
+    }
+
+    &:not(:first-child) {
+      .bottom &,
+      .top & {
+        margin-left: .8rem;
+      }
+    }
+  }
+
+  .player-container {
+    display: flex;
+    max-width: 8rem;
+    width: 8rem;
+  }
 }
 
-.container {
-  /* Table-module--container--2AIZ_ */
-}
+@media (min-width: 920px) {
+  .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 0;
+    width: 100%;
 
-.table {
-  /* Table-module--table--1t6Tx */
-}
+    &--is-crowded {
+      .bottom,
+      .top {
+        padding: 0;
 
-.top {
-  /* Table-module--top--3aPZe */
-}
+        .player-container {
+          &:not(:first-child) {
+            margin-left: 1.4rem;
+          }
+        }
+      }
+    }
+  }
 
-.bottom {
-  /* Table-module--bottom--3m0u6 */
-}
+  .container {
+    grid-gap: .8rem;
+    display: inline-grid;
+    grid-template-areas: "left top right""left table right""left bottom right";
+    grid-template-columns: 10.4rem 1fr 10.4rem;
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
+    min-height: 200px;
+    width: auto;
 
-.left {
-  /* Table-module--left--1bJTV */
-}
+    &--user-is-lonely {
+      grid-template-rows: 8rem 1fr 13.4rem;
+    }
+  }
 
-.right {
-  /* Table-module--right--19fq6 */
-}
+  .table {
+    background: #d7e9ff;
+    border-radius: 2.8rem;
+    grid-area: table;
+    height: auto;
+    margin: 0 auto;
+    min-height: 15.1rem;
+    min-width: 33.8rem;
+    padding: 0 1.6rem;
+    position: relative;
+    width: 100%;
+  }
 
-.player-container {
-  /* Table-module--player-container--2Vw4Z */
-}
+  .bottom,
+  .left,
+  .right,
+  .table,
+  .top {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 
-.container--is-user-lonely {
-  /* Table-module--container--is-user-lonely--3Fm1k */
-}
+  .top {
+    align-items: flex-end;
+    padding-bottom: .8rem;
+  }
 
-.wrapper--is-crowded {
-  /* Table-module--wrapper--is-crowded--1Gb30 */
+  .bottom {
+    align-items: flex-start;
+    padding: 1.2rem 0 .4rem;
+  }
+
+  .player-container {
+    max-width: 10.4rem;
+    width: 10.4rem;
+  }
+
+  .left,
+  .right {
+    padding: 8rem 0;
+  }
+
+  .player-container {
+    &:not(:last-child) {
+      .left &,
+      .right & {
+        margin-top: 2.4rem;
+      }
+    }
+
+    &:not(:first-child) {
+      .bottom &,
+      .top & {
+        margin-left: 4rem;
+      }
+    }
+  }
 }
 
 .table-content {
-  /* Table-module--table-content--24AOf */
+  align-items: center;
+  border-radius: 16px;
+  bottom: 2.4rem;
+  display: flex;
+  justify-content: center;
+  left: 2.4rem;
+  position: absolute;
+  right: 2.4rem;
+  top: 2.4rem;
+}
+
+.bottom,
+.left,
+.right,
+.top {
+  z-index: 2;
+}
+
+.left,
+.right {
+  flex-direction: column-reverse;
+  z-index: 3;
+}
+
+.top {
+  align-items: stretch;
+  grid-area: top;
+}
+
+.bottom {
+  align-items: stretch;
+  grid-area: bottom;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
 }
 
 .show-cards-wrapper {
-  /* Table-module--show-cards-wrapper--1Urzn */
-}
+  position: relative;
 
-.results-button {
-  /* Table-module--results-button--25g6k */
+  .results-button {
+    left: 50%;
+    position: absolute;
+    top: 120%;
+    transform: translate(-50%);
+  }
 }
 
 .vote-again {
-  /* Table-module--vote-again--2LJTF */
+  margin-top: .8rem;
+  text-align: center;
 }
 
 .invite-players-container {
-  /* Table-module--invite-players-container--1YrWB */
-}
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
-.invite-players-label {
-  /* Table-module--invite-players-label--iuxvW */
-}
+  .invite-players-label {
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+  }
 
-.invite-players-button {
-  /* Table-module--invite-players-button--2YnIN */
+  .invite-players-button,
+  .invite-players-label span {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 920px) {
+    .invite-players-button,
+    .invite-players-label {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 .show-card-button {
-  /* Table-module--show-card-button--3C1ri */
+  bottom: 24px;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
 }
 
 .table-caption {
-  /* Table-module--table-caption--1sP1h */
+  color: #48545d;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  @media (min-width: 920px) {
+    font-size: 1.8rem;
+  }
 }
 
 .table-vertical-layout {
-  /* Table-module--table-vertical-layout--BH8yv */
+  background: #d7e9ff;
+  border-radius: 44px;
+  bottom: 220px;
+  left: 50%;
+  position: fixed;
+  top: 184px;
+  transform: translateX(-50%);
+  width: calc(100vw - 200px);
 }
 
-.label-big-screen {
-  /* Table-module--label-big-screen--3RupQ */
-}
-
+.label-big-screen,
 .label-small-screen {
-  /* Table-module--label-small-screen--1-8Sc */
+  display: none;
 }
 
 .button-reset {
-  /* Table-module--button-reset--12k4C */
+  background-color: #48545d !important;
+
+  &:hover {
+    background-color: #1a2935 !important;
+  }
 }
 
-.label-super-small-screen {
-  /* Table-module--label-super-small-screen--38rGl */
+@media (min-width: 369px) {
+  .label-super-small-screen {
+    display: none;
+  }
+
+  .label-small-screen {
+    display: inline;
+  }
+}
+
+@media (min-width: 920px) {
+  .label-small-screen {
+    display: none;
+  }
+
+  .label-big-screen {
+    display: inline;
+  }
 }

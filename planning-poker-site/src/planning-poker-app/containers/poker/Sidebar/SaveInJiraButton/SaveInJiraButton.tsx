@@ -84,7 +84,7 @@ export const SaveInJiraButton = () => {
 
   return (
     <>
-      <div className={styles['wrapper']} ref={toggleButtonRef}>
+      <div className={styles.wrapper} ref={toggleButtonRef}>
         <ButtonIcon
           onClick={() => {
             if (!hasClickedSavedInJira) {

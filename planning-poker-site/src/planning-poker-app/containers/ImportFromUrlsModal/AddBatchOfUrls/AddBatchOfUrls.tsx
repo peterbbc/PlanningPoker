@@ -46,11 +46,11 @@ export const AddBatchOfUrls = ({
     });
   };
   return (
-    <div className={styles['container']}>
+    <div className={styles.container}>
       <p>Paste your issues´ urls in the box below to add them into the game.</p>
       <p>Each valid url will create a new ticket.</p>
       <p>Please paste each url in a new line.</p>
-      <form onSubmit={handleFormSubmit} className={styles['form']}>
+      <form onSubmit={handleFormSubmit} className={styles.form}>
         <FormTextarea
           ref={textareaRef}
           value={urls}

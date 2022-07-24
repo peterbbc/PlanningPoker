@@ -1,67 +1,176 @@
 .tooltip {
-  /* HelpTooltip-module--tooltip--1TdS8 */
+  background-color: #1a2935;
+  border-radius: 1.6rem;
+  box-shadow: 0 4px 8px hsla(204, 6%, 68%, .4);
+  color: #fff;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  transition: opacity .2s;
+  width: 35.6rem;
+  z-index: 10;
+
+  .title {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: .8rem;
+    padding-right: 2.4rem;
+  }
+
+  .close {
+    align-items: center;
+    display: none;
+    height: 4.8rem;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.8rem;
+  }
+
+  .icon {
+    color: #a8aeb2;
+    flex-shrink: 0;
+    width: 3.2rem;
+  }
+
+  .content {
+    padding: 2.4rem;
+
+    p {
+      color: #f9f9f9;
+      font-size: 1.6rem;
+      line-height: 1.45em;
+      margin: 0 0 .8rem;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &:before,
+  &:after {
+    border-color: transparent;
+    border-style: solid;
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &--left {
+    transform: translate(-110%, -50%);
+
+    &:before {
+      border-left-color: #1a2935;
+      border-width: .8rem 0 .8rem .8rem;
+      right: -.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--sort-issues {
+    transform: translate(-97%, -50%);
+  }
+
+  &--right {
+    transform: translate(10%, -50%);
+
+    &:before {
+      border-right-color: #1a2935;
+      border-width: .8rem .8rem .8rem 0;
+      left: -.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--top {
+    transform: translateY(-110%);
+  }
+
+  &--bottom {
+    transform: translate(-50%, 10%);
+
+    &:before {
+      border-bottom-color: #1a2935;
+      border-width: 0 .8rem .8rem;
+      left: 50%;
+      top: -.7rem;
+      transform: translate(-50%);
+    }
+  }
+
+  &--issues {
+    transform: translate(-90%, 10%);
+
+    &:before {
+      left: auto;
+      right: 1.8rem;
+    }
+  }
+
+  &--add-issue {
+    transform: translate(-70%, 10%);
+  }
+
+  &--card-selector {
+    transform: translate(-100%, -72%);
+
+    &:before {
+      top: 70%;
+    }
+  }
+
+  @media (max-width: 1530px) {
+    &--card-selector {
+      transform: translateY(-144%);
+
+      &:before {
+        border-color: #1a2935 transparent transparent;
+        border-width: .8rem .8rem 0;
+        bottom: -.7rem;
+        left: 50%;
+        right: auto;
+        top: auto;
+        transform: none;
+      }
+    }
+  }
+
+  &--table-left {
+    transform: translate(-100%, -50%);
+  }
+
+  &--table-right {
+    transform: translateY(-50%);
+    width: 33rem;
+  }
+
+  &--is-open {
+    opacity: .9;
+
+    .close {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 920px) {
+    display: none;
+  }
 }
 
 .title {
-  /* HelpTooltip-module--title--3_rLn */
-}
-
-.close {
-  /* HelpTooltip-module--close--NY-ih */
-}
-
-.icon {
-  /* HelpTooltip-module--icon--1nHqg */
-}
-
-.content {
-  /* HelpTooltip-module--content--YSZV7 */
-}
-
-.tooltip--left {
-  /* HelpTooltip-module--tooltip--left--3ltUM */
-}
-
-.tooltip--sort-issues {
-  /* HelpTooltip-module--tooltip--sort-issues--bYSwm */
-}
-
-.tooltip--right {
-  /* HelpTooltip-module--tooltip--right--lePBU */
-}
-
-.tooltip--top {
-  /* HelpTooltip-module--tooltip--top--euWzK */
-}
-
-.tooltip--bottom {
-  /* HelpTooltip-module--tooltip--bottom--1LeZQ */
-}
-
-.tooltip--issues {
-  /* HelpTooltip-module--tooltip--issues--1WBOE */
-}
-
-.tooltip--add-issue {
-  /* HelpTooltip-module--tooltip--add-issue--3Dh_7 */
-}
-
-.tooltip--card-selector {
-  /* HelpTooltip-module--tooltip--card-selector--151tF */
-}
-
-.tooltip--table-left {
-  /* HelpTooltip-module--tooltip--table-left--1we-d */
-}
-
-.tooltip--table-right {
-  /* HelpTooltip-module--tooltip--table-right--uymsw */
-}
-
-.tooltip--is-open {
-  /* HelpTooltip-module--tooltip--is-open--1wxLQ */
+  align-items: center;
+  display: flex;
 }
 
 .title-label {
-  /* HelpTooltip-module--title-label--3VTju */
+  margin-left: .8rem;
+  padding-bottom: .6rem;
 }

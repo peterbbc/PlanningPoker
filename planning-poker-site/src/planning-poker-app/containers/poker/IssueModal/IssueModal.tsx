@@ -132,8 +132,8 @@ export const IssueModal = ({ issue, onClose }: IssueModalProps) => {
           />
         }
       >
-        <div className={styles['issue-modal']}>
-          <div className={styles['key-container']}>
+        <div className={styles.issueModal}>
+          <div className={styles.keyContainer}>
             <TextareaInlineEdit
               mode="key"
               buttonLabel="Add key"
@@ -141,7 +141,7 @@ export const IssueModal = ({ issue, onClose }: IssueModalProps) => {
               onBlur={handleKeyBlur}
             />
           </div>
-          <div className={styles['summary-container']}>
+          <div className={styles.summaryContainer}>
             <TextareaInlineEdit
               mode="summary"
               buttonLabel="Add summary"
@@ -152,9 +152,9 @@ export const IssueModal = ({ issue, onClose }: IssueModalProps) => {
 
           <VerticalSpacing spacing="spacing-xl" />
 
-          <div className={styles['link-container']}>
-            <span className={styles['label']}>
-              <span className={styles['label__span']}>Link</span>
+          <div className={styles.linkContainer}>
+            <span className={styles.label}>
+              <span className={styles.label__span}>Link</span>
               {!!currentIssue.url && issue.provider !== 'jira' && (
                 <ButtonIcon
                   onClick={() => setIsFocusLink(true)}
@@ -186,9 +186,9 @@ export const IssueModal = ({ issue, onClose }: IssueModalProps) => {
 
           <VerticalSpacing spacing="spacing-xl" />
 
-          <div className={styles['description-container']}>
-            <span className={styles['label']}>
-              <span className={styles['label__span']}>Description</span>
+          <div className={styles.descriptionContainer}>
+            <span className={styles.label}>
+              <span className={styles.label__span}>Description</span>
               {!!currentIssue.description && issue.provider !== 'jira' && (
                 <ButtonIcon
                   onClick={() => setIsFocusDescription(true)}
@@ -220,7 +220,7 @@ export const IssueModal = ({ issue, onClose }: IssueModalProps) => {
             )}
           </div>
           <VerticalSpacing spacing="spacing-xl" />
-          <div className={styles['issue-modal__footer']}>
+          <div className={styles.issueModal__footer}>
             <div>
               <ButtonActivable
                 isActive={!!currentIssue.isVotingNow}
@@ -242,7 +242,7 @@ export const IssueModal = ({ issue, onClose }: IssueModalProps) => {
                   : 'Vote this issue'}
               </ButtonActivable>
             </div>
-            <div className={styles['issue-modal__points']}>
+            <div className={styles.issueModal__points}>
               <PointsPicker
                 align="left-top"
                 value={

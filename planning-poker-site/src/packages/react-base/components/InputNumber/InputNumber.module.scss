@@ -1,23 +1,61 @@
 .wrapper {
-  /* InputNumber-module--wrapper--3DqGy */
-}
+  align-items: center;
+  border: 2px solid #e8e9ea;
+  border-radius: .6rem;
+  display: inline-flex;
+  position: relative;
 
-.input {
-  /* InputNumber-module--input--3dOZQ */
-}
+  .input {
+    background: transparent;
+    border: 0;
+    font-size: 1.8rem;
+    height: 3.2rem;
+    width: 5.6rem;
+  }
 
-.minus-button {
-  /* InputNumber-module--minus-button--2k4E5 */
-}
+  .minus-button,
+  .plus-button {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+    height: 5.6rem;
+    width: 5.6rem;
 
-.plus-button {
-  /* InputNumber-module--plus-button--2lvBl */
-}
+    &:not(.button--disabled) {
+      &:hover {
+        background-color: #f9f9f9;
+      }
+    }
 
-.minus-button--disabled {
-  /* InputNumber-module--minus-button--disabled--2-t_P */
-}
+    @media (min-width: 920px) {
+      height: 4.8rem;
+      width: 4.8rem;
+    }
+  }
 
-.plus-button--disabled {
-  /* InputNumber-module--plus-button--disabled--amCE6 */
+  .minus-button {
+    border-radius: .6rem 0 0 .6rem;
+    border-right: 2px solid #e8e9ea;
+  }
+
+  .plus-button {
+    border-left: 2px solid #e8e9ea;
+    border-radius: 0 .6rem .6rem 0;
+  }
+
+  .button--disabled {
+    cursor: default;
+  }
+
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+  }
 }

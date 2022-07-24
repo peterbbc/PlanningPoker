@@ -160,7 +160,7 @@ export const TextareaInlineEdit = ({
       >
         <div
           onClick={() => setIsFocus(true)}
-          className={cx(styles['value'], styles[mode])}
+          className={cx(styles.value, styles[mode])}
         >
           <FormatedTextContainer
             mode={mode === 'issue-card-no-permission' ? 'issue-card' : mode}

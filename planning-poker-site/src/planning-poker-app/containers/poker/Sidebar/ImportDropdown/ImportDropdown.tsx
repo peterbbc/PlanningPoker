@@ -71,7 +71,7 @@ export const ImportDropdown = () => {
 
   return (
     <>
-      <div className={styles['wrapper']} ref={toggleButtonRef}>
+      <div className={styles.wrapper} ref={toggleButtonRef}>
         <ButtonDropdown
           isOpen={isOpen}
           onIsOpenChange={() => {
@@ -106,7 +106,7 @@ export const ImportDropdown = () => {
                   },
                 },
               ]}
-            ></ContextMenu>
+            />
           }
         >
           <Icon icon="import" />

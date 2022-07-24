@@ -133,16 +133,16 @@ export const HeaderPoker = () => {
                         appContext.settingsModal[1](true);
                         setIsGameMenuOpen(false);
                       }}
-                      icon={<Icon icon="cog" />}
-                    ></DropdownItem>
+                      icon={<Icon icon="cog"/>}
+                    />
                     <DropdownItem
                       label="Voting History"
-                      icon={<Icon icon="issues" />}
+                      icon={<Icon icon="issues"/>}
                       onClick={() => {
                         appContext.votingHistoryModal[1](true);
                         setIsGameMenuOpen(false);
                       }}
-                    ></DropdownItem>
+                    />
                   </>
                 }
               >
@@ -193,11 +193,11 @@ export const HeaderPoker = () => {
               ref={issuesButtonRef}
               buttonStyle="secondary"
               isActive={!!isSidebarOpen}
-              icon={<Icon icon="issues" />}
+              icon={<Icon icon="issues"/>}
               tooltip={isSidebarOpen ? 'Hide issues' : 'Show issues'}
               onClick={handleIssuesClick}
               isHeaderButton
-            ></Button>
+            />
           </div>
           <InviteTooltip
             refNode={inviteButtonRef}

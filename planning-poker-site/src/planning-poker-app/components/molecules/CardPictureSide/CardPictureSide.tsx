@@ -13,10 +13,10 @@ export const CardPictureSide: React.FC<CardPictureSideProps> = ({
   size,
 }) => {
   const className = cx(
-    styles['picture-side'],
-    isSelected && styles['is-selected'],
+    styles.pictureSide,
+    isSelected && styles.isSelected,
     size && styles[size],
   );
 
-  return <div className={className}></div>;
+  return <div className={className} />;
 };

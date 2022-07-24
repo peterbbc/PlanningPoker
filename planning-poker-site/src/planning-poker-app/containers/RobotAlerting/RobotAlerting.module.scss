@@ -1,47 +1,125 @@
 .robot-alerting {
-  /* RobotAlerting-module--robot-alerting--HCmJy */
+  bottom: 2.4rem;
+  height: 6.4rem;
+  left: 2.4rem;
+  position: fixed;
+  width: 6.4rem;
+  z-index: 10;
+
+  .robot-button {
+    align-items: center;
+    background-color: #d7e9ff;
+    border: 0;
+    border-radius: 6.4rem;
+    cursor: pointer;
+    display: flex;
+    height: 6.4rem;
+    justify-content: center;
+    opacity: .4;
+    outline: none;
+    padding: 0 0 .6rem;
+    transition: all .12s;
+    width: 6.4rem;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--active {
+      background: #c4dfff;
+    }
+
+    img {
+      width: 4rem;
+    }
+  }
+
+  .unread-messages-dot {
+    background-color: #3993ff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 1.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.6rem;
+  }
+
+  .popup {
+    background: #fff;
+    border-radius: 8px;
+    bottom: 0;
+    box-shadow: 0 2px 4px rgba(26, 41, 53, .14);
+    display: none;
+    font-size: 1.6rem;
+    left: 7.6rem;
+    max-width: calc(100vw - 14.6rem);
+    min-height: 8rem;
+    position: absolute;
+
+    &__text {
+      padding: 2.4rem 46.2rem 2.4rem 2.4rem;
+      width: max-content;
+    }
+
+    &__cta {
+      position: absolute;
+      right: 8.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__close {
+      position: absolute;
+      right: 2.4rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--top {
+        right: .4rem;
+        top: .4rem;
+        transform: none;
+      }
+    }
+
+    &--is-free-game-alert {
+      .popup {
+        padding: 2.4rem 27.2rem 2.4rem 2.4rem;
+      }
+    }
+  }
+
+  &--is-open {
+    .popup {
+      display: flex;
+    }
+
+    .robot-button {
+      opacity: 1;
+    }
+  }
+
+  &--has-notifiaction {
+    .robot-button {
+      opacity: .8;
+    }
+  }
+
+  @media (max-width: 920px) {
+    display: none;
+
+    .popup {
+      &__text {
+        width: 100%;
+      }
+
+      &__cta {
+        margin: 0 auto 0 -1.6rem;
+      }
+    }
+  }
 }
 
-.robot-button {
-  /* RobotAlerting-module--robot-button--3oSi4 */
-}
-
-.robot-button--active {
-  /* RobotAlerting-module--robot-button--active--25BHO */
-}
-
-.unread-messages-dot {
-  /* RobotAlerting-module--unread-messages-dot--V49-h */
-}
-
-.popup {
-  /* RobotAlerting-module--popup--2k5bX */
-}
-
-.popup__text {
-  /* RobotAlerting-module--popup__text--28fK7 */
-}
-
-.popup__cta {
-  /* RobotAlerting-module--popup__cta--37MKR */
-}
-
-.popup__close {
-  /* RobotAlerting-module--popup__close--2on5J */
-}
-
-.popup__close--top {
-  /* RobotAlerting-module--popup__close--top--36HGD */
-}
-
-.robot-alerting--is-free-game-alert {
-  /* RobotAlerting-module--robot-alerting--is-free-game-alert--2hf2f */
-}
-
-.robot-alerting--is-open {
-  /* RobotAlerting-module--robot-alerting--is-open--12nfp */
-}
-
-.robot-alerting--has-notifiaction {
-  /* RobotAlerting-module--robot-alerting--has-notifiaction--1SYOh */
+.message-link {
+  font-weight: 400;
 }

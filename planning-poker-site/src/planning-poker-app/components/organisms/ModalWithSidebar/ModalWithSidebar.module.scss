@@ -1,11 +1,22 @@
 .container {
-  /* ModalWithSidebar-module--container--3PMIq */
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 6.4rem;
+}
+
+.sidebar,
+.content {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .sidebar {
-  /* ModalWithSidebar-module--sidebar--1hZBm */
-}
-
-.content {
-  /* ModalWithSidebar-module--content--12P3d */
+  border-right: 2px solid #e8e9ea;
 }

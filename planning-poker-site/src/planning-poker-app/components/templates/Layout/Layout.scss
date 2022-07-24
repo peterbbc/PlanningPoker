@@ -1,6 +1,13 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+  height: -webkit-fill-available;
+  min-width: 100%;
+}
+
 body,
 html {
-  background: #fff
+  background: #fff;
 }
 
 body {
@@ -12,6 +19,7 @@ body {
   line-height: 1.3em;
   margin: 0;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   min-width: 100vw;
 
   @media (min-width:920px) {

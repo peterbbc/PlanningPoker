@@ -149,7 +149,7 @@ export const ImportMapper = ({
   };
 
   return (
-    <div className={styles['import-mapper']}>
+    <div className={styles.importMapper}>
       <table width="100%">
         <colgroup>
           <col span={1} style={{ width: '40%' }} />
@@ -161,7 +161,7 @@ export const ImportMapper = ({
         <thead>
           <tr>
             <th>
-              <div className={styles['select-wrapper']}>
+              <div className={styles.selectWrapper}>
                 <FormSelect
                   label="Summary (required)"
                   options={headers}
@@ -169,16 +169,14 @@ export const ImportMapper = ({
                   value={headers.find(
                     (header) => header.value === mapping.summary?.toString(),
                   )}
-                  onChange={(option) =>
-                    handleHeaderSelectChange(option, 'summary')
-                  }
+                  onChange={(option) => handleHeaderSelectChange(option, 'summary')}
                 />
                 <span>Summary</span>
                 <VerticalSpacing spacing="spacing-s" />
               </div>
             </th>
             <th>
-              <div className={styles['select-wrapper']}>
+              <div className={styles.selectWrapper}>
                 <FormSelect
                   label="Key"
                   options={headers}
@@ -194,7 +192,7 @@ export const ImportMapper = ({
               </div>
             </th>
             <th>
-              <div className={styles['select-wrapper']}>
+              <div className={styles.selectWrapper}>
                 <FormSelect
                   label="Description"
                   options={headers}
@@ -204,16 +202,14 @@ export const ImportMapper = ({
                     (header) =>
                       header.value === mapping.description?.toString(),
                   )}
-                  onChange={(option) =>
-                    handleHeaderSelectChange(option, 'description')
-                  }
+                  onChange={(option) => handleHeaderSelectChange(option, 'description')}
                 />
                 <span>Description</span>
                 <VerticalSpacing spacing="spacing-s" />
               </div>
             </th>
             <th>
-              <div className={styles['select-wrapper']}>
+              <div className={styles.selectWrapper}>
                 <FormSelect
                   label="Link"
                   options={headers}
@@ -229,7 +225,7 @@ export const ImportMapper = ({
               </div>
             </th>
             <th>
-              <div className={styles['select-wrapper']}>
+              <div className={styles.selectWrapper}>
                 <FormSelect
                   label="Story Points"
                   options={headers}
@@ -239,9 +235,7 @@ export const ImportMapper = ({
                     (header) =>
                       header.value === mapping.storyPoints?.toString(),
                   )}
-                  onChange={(option) =>
-                    handleHeaderSelectChange(option, 'storyPoints')
-                  }
+                  onChange={(option) => handleHeaderSelectChange(option, 'storyPoints')}
                 />
                 <span>Story Points</span>
                 <VerticalSpacing spacing="spacing-s" />

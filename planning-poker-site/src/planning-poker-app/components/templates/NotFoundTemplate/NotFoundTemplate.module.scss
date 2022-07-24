@@ -1,3 +1,7 @@
 .robot-image {
-  /* NotFoundTemplate-module--robot-image--3iTf9 */
+  max-width: 54rem;
+
+  @media (max-width: 80rem) {
+    max-width: 40rem;
+  }
 }

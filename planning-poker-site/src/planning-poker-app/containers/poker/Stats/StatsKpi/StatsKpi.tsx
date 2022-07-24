@@ -10,9 +10,9 @@ interface StatsKpiProps {
 
 export const StatsKpi = ({ label, isChart, value }: StatsKpiProps) => {
   return (
-    <div className={styles['stats-kpi']}>
-      <div className={styles['label']}>{label}</div>
-      <div className={isChart ? '' : styles['value']}>{value}</div>
+    <div className={styles.statsKpi}>
+      <div className={styles.label}>{label}</div>
+      <div className={isChart ? '' : styles.value}>{value}</div>
     </div>
   );
 };

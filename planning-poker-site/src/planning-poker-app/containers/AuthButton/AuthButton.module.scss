@@ -1,23 +1,25 @@
 .home-link {
-  /* AuthButton-module--home-link--3V52Y */
+  font-weight: 400;
 }
 
 .dropdown-logout {
-  /* AuthButton-module--dropdown-logout--bKfzL */
+  align-items: center;
+  display: flex;
+
+  a + a {
+    margin-left: .8rem;
+  }
 }
 
 .name {
-  /* AuthButton-module--name--9DWGY */
+  font-size: 1.8rem;
 }
 
 .chevron {
-  /* AuthButton-module--chevron--vswXx */
+  margin-left: .4rem;
 }
 
+.display-name-empty-picture,
 .display-name-picture {
-  /* AuthButton-module--display-name-picture--2epx5 */
-}
-
-.display-name-empty-picture {
-  /* AuthButton-module--display-name-empty-picture--1Gyg6 */
+  margin-right: .8rem;
 }

@@ -64,7 +64,7 @@ export const FormCheckboxList = ({
 
   return (
     <div>
-      <div className={styles['label-conatiner']}>
+      <div className={styles.labelConatiner}>
         <Span spanStyle="bold">{label}</Span>
         <div>
           <ButtonLink onClick={handleClearAll}>{`Clear (${
@@ -98,7 +98,7 @@ export const FormCheckboxList = ({
         );
 
         return (
-          <div key={checkbox.id} className={styles['form-element-wrapper']}>
+          <div key={checkbox.id} className={styles.formElementWrapper}>
             <FormCheckbox
               id={id ? `${id}-${checkbox.id}` : checkbox.id}
               label={checkbox.label}

@@ -1,7 +1,28 @@
 .import-mapper {
-  /* ImportMapper-module--import-mapper--CpcNI */
+  table,
+  td,
+  th {
+    border: none;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 1.6rem .8rem;
+    max-width: 100%;
+
+    th {
+      text-align: left;
+    }
+
+    td {
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
 }
 
 .select-wrapper {
-  /* ImportMapper-module--select-wrapper--L_QTw */
+  min-width: 120px;
 }

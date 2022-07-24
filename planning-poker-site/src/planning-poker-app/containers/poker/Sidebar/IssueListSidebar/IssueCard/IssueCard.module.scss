@@ -1,47 +1,108 @@
 .element {
-  /* IssueCard-module--element--109B- */
+  display: block;
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: 1.2rem;
+  }
 }
 
 .issue-card {
-  /* IssueCard-module--issue-card--1JbXh */
-}
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(26, 41, 53, .24);
+  cursor: pointer;
+  display: block;
+  padding: 2.4rem 1.6rem 1.6rem;
+  position: relative;
+  width: 100%;
 
-.issue-card__header {
-  /* IssueCard-module--issue-card__header--BJhla */
-}
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.issue-card__key {
-  /* IssueCard-module--issue-card__key--3MwN3 */
-}
+  &__key {
+    color: #48545d;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 
-.issue-card__summary {
-  /* IssueCard-module--issue-card__summary--32QlK */
-}
+    > a {
+      color: #3993ff;
+      font-weight: 700;
+      text-decoration: none;
 
-.issue-card__context-menu {
-  /* IssueCard-module--issue-card__context-menu--1B9in */
-}
+      &:hover {
+        color: #74b3ff;
+      }
+    }
+  }
 
-.issue-card__footer {
-  /* IssueCard-module--issue-card__footer--1ww6U */
-}
+  &__summary {
+    color: #1a2935;
+    font-size: 1.6rem;
+    line-height: 1.45em;
+    margin: .8rem 0 0;
+    padding: 0;
+    word-break: break-word;
 
-.issue-card__footer-right {
-  /* IssueCard-module--issue-card__footer-right--fhAej */
-}
+    @media (max-width: 919px) {
+      margin: 1.6rem 0 0;
+    }
+  }
 
-.issue-card__link {
-  /* IssueCard-module--issue-card__link--2Rtei */
-}
+  &__context-menu {
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+  }
 
-.issue-card--menu-open {
-  /* IssueCard-module--issue-card--menu-open--1qLA0 */
-}
+  &__footer {
+    align-items: center;
+    display: flex;
+    height: 4.8rem;
+    justify-content: space-between;
+    margin-top: 1.6rem;
 
-.issue-card--voting {
-  /* IssueCard-module--issue-card--voting--TyBKC */
+    @media (max-width: 919px) {
+      margin-top: 3.2rem;
+    }
+  }
+
+  &__footer-right {
+    align-items: center;
+    display: flex;
+    height: 4.8rem;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+  }
+
+  &__link {
+    margin-right: 1.6rem;
+  }
+
+  &--menu-open,
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+  &--voting {
+    background-color: #ebf4ff;
+
+    &.issue-card--menu-open,
+    &:hover {
+      background-color: #d7e9ff;
+    }
+  }
 }
 
 .sortable-helper {
-  /* IssueCard-module--sortable-helper--3-Vau */
+  z-index: 9999;
+
+  .issue-card {
+    transform: rotate(2deg);
+  }
 }

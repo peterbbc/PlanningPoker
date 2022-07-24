@@ -43,10 +43,10 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
   };
 
   return (
-    <div className={styles['dropdown']}>
+    <div className={styles.dropdown}>
       {isGuestOrRegistered && (
         <>
-          <div className={styles['display-name-box']}>
+          <div className={styles.displayNameBox}>
             <ProfileImage
               size="xl"
               src={user?.profilePictureUrl}
@@ -56,32 +56,32 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
                 onClose();
               }}
             />
-            <div className={styles['display-name-wrapper']}>
+            <div className={styles.displayNameWrapper}>
               <div
-                className={styles['display-name']}
+                className={styles.displayName}
                 onClick={() => {
                   setIsEditDisplayNameModalOpen(true);
                   onClose();
                 }}
               >
-                <span className={styles['display-name-value']}>
+                <span className={styles.displayNameValue}>
                   {user?.displayName || DEFAULT_DISPLAY_NAME}{' '}
                 </span>
                 <Icon icon="pencil" />
               </div>
               {(isPremium || isFacilitator) && (
-                <div className={styles['display-name-label-wrapper']}>
-                  <span className={styles['display-name-label-icon']}>
+                <div className={styles.displayNameLabelWrapper}>
+                  <span className={styles.displayNameLabelIcon}>
                     <Crown type="user" />
                   </span>
-                  <span className={styles['display-name-label']}>
+                  <span className={styles.displayNameLabel}>
                     {isPremium ? 'Premium' : 'Facilitator'}
                   </span>
                 </div>
               )}
               {isAnonymous && (
-                <div className={styles['display-name-label-wrapper']}>
-                  <span className={styles['display-name-label']}>
+                <div className={styles.displayNameLabelWrapper}>
+                  <span className={styles.displayNameLabel}>
                     Guest user
                   </span>
                 </div>
@@ -89,7 +89,7 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
             </div>
           </div>
           {!isPremium && !isFacilitator && (
-            <div className={styles['go-unlimited-box']}>
+            <div className={styles.goUnlimitedBox}>
               <Button
                 onClick={() => {
                   setIsPricingModalOpen(true);
@@ -102,7 +102,7 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
             </div>
           )}
 
-          <div className={styles['divider']} />
+          <div className={styles.divider} />
 
           <DropdownItem
             label="My games"
@@ -156,7 +156,7 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
           icon={<Icon icon="manage-facilitators" />}
         />
       )}
-      {!isAnonymous && <div className={styles['divider']} />}
+      {!isAnonymous && <div className={styles.divider} />}
       {/* ----- Join us block */}
       {isAnonymous && user?.displayName && (
         <>
@@ -176,7 +176,7 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
               onClose();
             }}
           />
-          <div className={styles['divider']} />
+          <div className={styles.divider} />
         </>
       )}
       {/* ----- Permanent block */}
@@ -188,16 +188,16 @@ export const AuthDropdown = ({ onClose }: AuthDropdownProps) => {
           onClose();
         }}
       />
-      <a className={styles['item-link']} href="/legal-notice" target="_blank">
+      <a className={styles.itemLink} href="/legal-notice" target="_blank">
         <DropdownItem label="Legal notice" icon={<Icon icon="shield" />} />
       </a>
-      <a className={styles['item-link']} href="/faqs" target="_blank">
+      <a className={styles.itemLink} href="/faqs" target="_blank">
         <DropdownItem label="FAQs" icon={<Icon icon="hilfe" />} />
       </a>
       {/* ----- Signout block */}
       {isGuestOrRegistered && (
         <>
-          <div className={styles['divider']} />
+          <div className={styles.divider} />
           <DropdownItem
             label="Sign out"
             icon={<Icon icon="union" />}

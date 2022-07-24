@@ -1,19 +1,32 @@
 .wrapper {
-  /* VerticalDividerWithScroll-module--wrapper--Eo1-S */
-}
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 
-.content-container {
-  /* VerticalDividerWithScroll-module--content-container--1wHYZ */
-}
+  .content-container {
+    height: calc(100% - 11.2rem);
+    margin: 0;
+    overflow-y: auto;
+    padding: 0;
+  }
 
-.content {
-  /* VerticalDividerWithScroll-module--content--ezEi- */
-}
+  .content {
+    padding: 0 2.4rem;
+  }
 
-.scroll-shadow {
-  /* VerticalDividerWithScroll-module--scroll-shadow--2OWzv */
-}
+  .scroll-shadow {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 53.12%, #fff);
+    bottom: 9.6rem;
+    height: 6.4rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
 
-.bottom-content {
-  /* VerticalDividerWithScroll-module--bottom-content--N77aL */
+  .bottom-content {
+    align-items: center;
+    display: flex;
+    height: 11.2rem;
+    padding: 0 2.4rem;
+  }
 }
